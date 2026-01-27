@@ -54,6 +54,7 @@ class TableWidget(QWidget):
         super().__init__(parent)
         self._replay_state: ReplayState | None = None
         self._hand: Hand | None = None
+        self._hero_stack_rect: QRectF | None = None
         self.setMinimumSize(400, 300)
 
     def set_hand(self, hand: Hand) -> None:
@@ -301,6 +302,9 @@ class TableWidget(QWidget):
             20,
         )
         painter.drawText(stack_rect, Qt.AlignmentFlag.AlignCenter, stack_text)
+
+        if player.is_hero:
+            self._hero_stack_rect = stack_rect
 
     def _format_stack(self, stack: float) -> str:
         """Format stack size for display."""
