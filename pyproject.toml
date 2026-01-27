@@ -1,0 +1,36 @@
+[project]
+name = "winaback"
+version = "0.1.0"
+description = "Winamax Poker Tournament Replayer"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "toml>=0.10.2",
+    "PyQt6>=6.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-qt>=4.4.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+warn_return_any = true
+warn_unused_ignores = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[dependency-groups]
+dev = [
+    "types-toml>=0.10.8.20240310",
+]

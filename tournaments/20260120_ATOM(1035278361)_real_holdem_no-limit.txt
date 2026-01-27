@@ -1,0 +1,5172 @@
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-1-1768934733 - Holdem no limit (25/100/200) - 2026/01/20 18:45:33 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: Win2Win21 (20000, 2.50€ bounty)
+Seat 2: jesusito33 (20000, 2.50€ bounty)
+Seat 3: A.MAKETTE (20000, 2.50€ bounty)
+Seat 4: tarzakerva17 (20000, 2.50€ bounty)
+Seat 5: MysterSifu (20000, 2.50€ bounty)
+Seat 6: Ziehmax (20000, 2.50€ bounty)
+*** ANTE/BLINDS ***
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+A.MAKETTE posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [7c 4c]
+*** PRE-FLOP *** 
+MysterSifu raises 300 to 500
+Ziehmax folds
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 calls 300
+*** FLOP *** [2c Qh Ks]
+tarzakerva17 checks
+MysterSifu bets 438
+tarzakerva17 calls 438
+*** TURN *** [2c Qh Ks][7d]
+tarzakerva17 checks
+MysterSifu checks
+*** RIVER *** [2c Qh Ks 7d][Tc]
+tarzakerva17 checks
+MysterSifu bets 1382
+tarzakerva17 folds
+MysterSifu collected 3508 from pot
+*** SUMMARY ***
+Total pot 3508 | No rake
+Board: [2c Qh Ks 7d Tc]
+Seat 5: MysterSifu won 3508
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-2-1768934782 - Holdem no limit (25/100/200) - 2026/01/20 18:46:22 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: Win2Win21 (19975, 2.50€ bounty)
+Seat 2: jesusito33 (19975, 2.50€ bounty)
+Seat 3: A.MAKETTE (19875, 2.50€ bounty)
+Seat 4: tarzakerva17 (19037, 2.50€ bounty)
+Seat 5: MysterSifu (21163, 2.50€ bounty)
+Seat 6: Ziehmax (19975, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+Ziehmax posts ante 25
+tarzakerva17 posts small blind 100
+MysterSifu posts big blind 200
+Dealt to jesusito33 [5h 6h]
+*** PRE-FLOP *** 
+Ziehmax raises 300 to 500
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 calls 400
+MysterSifu folds
+*** FLOP *** [9s Qd 2c]
+tarzakerva17 checks
+Ziehmax bets 473
+tarzakerva17 folds
+Ziehmax collected 1823 from pot
+*** SUMMARY ***
+Total pot 1823 | No rake
+Board: [9s Qd 2c]
+Seat 6: Ziehmax won 1823
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-3-1768934815 - Holdem no limit (25/100/200) - 2026/01/20 18:46:55 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: Win2Win21 (19950, 2.50€ bounty)
+Seat 2: jesusito33 (19950, 2.50€ bounty)
+Seat 3: A.MAKETTE (19850, 2.50€ bounty)
+Seat 4: tarzakerva17 (18512, 2.50€ bounty)
+Seat 5: MysterSifu (20938, 2.50€ bounty)
+Seat 6: Ziehmax (20800, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts small blind 100
+Ziehmax posts big blind 200
+Dealt to jesusito33 [8c 2c]
+*** PRE-FLOP *** 
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 calls 200
+MysterSifu folds
+Ziehmax checks
+*** FLOP *** [6c Qc Kh]
+Ziehmax checks
+tarzakerva17 checks
+*** TURN *** [6c Qc Kh][5h]
+Ziehmax checks
+tarzakerva17 checks
+*** RIVER *** [6c Qc Kh 5h][Kc]
+Ziehmax checks
+tarzakerva17 checks
+*** SHOW DOWN ***
+Ziehmax shows [4s 9d] (One pair : Kings)
+tarzakerva17 shows [Ad 4h] (One pair : Kings)
+tarzakerva17 collected 650 from pot
+*** SUMMARY ***
+Total pot 650 | No rake
+Board: [6c Qc Kh 5h Kc]
+Seat 4: tarzakerva17 (button) showed [Ad 4h] and won 650 with One pair : Kings
+Seat 6: Ziehmax (big blind) showed [4s 9d] and lost with One pair : Kings
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-4-1768934891 - Holdem no limit (25/100/200) - 2026/01/20 18:48:11 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: Win2Win21 (19925, 2.50€ bounty)
+Seat 2: jesusito33 (19925, 2.50€ bounty)
+Seat 3: A.MAKETTE (19825, 2.50€ bounty)
+Seat 4: tarzakerva17 (18937, 2.50€ bounty)
+Seat 5: MysterSifu (20813, 2.50€ bounty)
+Seat 6: Ziehmax (20575, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Ziehmax posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts small blind 100
+Win2Win21 posts big blind 200
+Dealt to jesusito33 [3s 8d]
+*** PRE-FLOP *** 
+jesusito33 folds
+A.MAKETTE raises 300 to 500
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+Win2Win21 calls 300
+*** FLOP *** [7s Ks 4s]
+Win2Win21 checks
+A.MAKETTE bets 313
+Win2Win21 calls 313
+*** TURN *** [7s Ks 4s][7c]
+Win2Win21 checks
+A.MAKETTE checks
+*** RIVER *** [7s Ks 4s 7c][Kh]
+Win2Win21 bets 1219
+A.MAKETTE calls 1219
+*** SHOW DOWN ***
+A.MAKETTE shows [Ad 9d] (Two pairs : Kings and 7)
+Win2Win21 shows [Qh Kc] (Full of Kings and 7)
+Win2Win21 collected 4314 from pot
+*** SUMMARY ***
+Total pot 4314 | No rake
+Board: [7s Ks 4s 7c Kh]
+Seat 1: Win2Win21 (big blind) showed [Qh Kc] and won 4314 with Full of Kings and 7
+Seat 3: A.MAKETTE showed [Ad 9d] and lost with Two pairs : Kings and 7
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-5-1768934951 - Holdem no limit (25/100/200) - 2026/01/20 18:49:11 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: Win2Win21 (22182, 2.50€ bounty)
+Seat 2: jesusito33 (19900, 2.50€ bounty)
+Seat 3: A.MAKETTE (17768, 2.50€ bounty)
+Seat 4: tarzakerva17 (18912, 2.50€ bounty)
+Seat 5: MysterSifu (20788, 2.50€ bounty)
+Seat 6: Ziehmax (20450, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+Win2Win21 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [3s 8h]
+*** PRE-FLOP *** 
+A.MAKETTE folds
+tarzakerva17 raises 200 to 400
+MysterSifu folds
+Ziehmax folds
+Win2Win21 calls 300
+jesusito33 folds
+*** FLOP *** [8c 4h Qh]
+Win2Win21 checks
+tarzakerva17 checks
+*** TURN *** [8c 4h Qh][5s]
+Win2Win21 checks
+tarzakerva17 checks
+*** RIVER *** [8c 4h Qh 5s][Js]
+Win2Win21 checks
+tarzakerva17 checks
+*** SHOW DOWN ***
+tarzakerva17 shows [Kh Td] (High card : King)
+Win2Win21 shows [Jh 9h] (One pair : Jacks)
+Win2Win21 collected 1150 from pot
+*** SUMMARY ***
+Total pot 1150 | No rake
+Board: [8c 4h Qh 5s Js]
+Seat 1: Win2Win21 (small blind) showed [Jh 9h] and won 1150 with One pair : Jacks
+Seat 4: tarzakerva17 showed [Kh Td] and lost with High card : King
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-6-1768935000 - Holdem no limit (25/100/200) - 2026/01/20 18:50:00 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: Win2Win21 (22907, 2.50€ bounty)
+Seat 2: jesusito33 (19675, 2.50€ bounty)
+Seat 3: A.MAKETTE (17743, 2.50€ bounty)
+Seat 4: tarzakerva17 (18487, 2.50€ bounty)
+Seat 5: MysterSifu (20763, 2.50€ bounty)
+Seat 6: Ziehmax (20425, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+Win2Win21 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+jesusito33 posts small blind 100
+A.MAKETTE posts big blind 200
+Dealt to jesusito33 [2h 9h]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+Win2Win21 folds
+jesusito33 calls 100
+A.MAKETTE checks
+*** FLOP *** [Ks Qs Jd]
+jesusito33 checks
+A.MAKETTE checks
+*** TURN *** [Ks Qs Jd][Tc]
+jesusito33 bets 275
+A.MAKETTE folds
+jesusito33 collected 825 from pot
+*** SUMMARY ***
+Total pot 825 | No rake
+Board: [Ks Qs Jd Tc]
+Seat 2: jesusito33 (small blind) won 825
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-7-1768935039 - Holdem no limit (25/100/200) - 2026/01/20 18:50:39 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: Win2Win21 (22882, 2.50€ bounty)
+Seat 2: jesusito33 (20000, 2.50€ bounty)
+Seat 3: A.MAKETTE (17518, 2.50€ bounty)
+Seat 4: tarzakerva17 (18462, 2.50€ bounty)
+Seat 5: MysterSifu (20738, 2.50€ bounty)
+Seat 6: Ziehmax (20400, 2.50€ bounty)
+*** ANTE/BLINDS ***
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+A.MAKETTE posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [6h 7h]
+*** PRE-FLOP *** 
+MysterSifu folds
+Ziehmax raises 300 to 500
+Win2Win21 calls 500
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 folds
+*** FLOP *** [9s Qs Jd]
+Ziehmax checks
+Win2Win21 bets 943
+Ziehmax calls 943
+*** TURN *** [9s Qs Jd][5c]
+Ziehmax checks
+Win2Win21 bets 2669
+Ziehmax calls 2669
+*** RIVER *** [9s Qs Jd 5c][5h]
+Ziehmax checks
+Win2Win21 checks
+*** SHOW DOWN ***
+Ziehmax shows [Ks 8s] (One pair : 5)
+Win2Win21 shows [Jc Tc] (Two pairs : Jacks and 5)
+Win2Win21 collected 8674 from pot
+*** SUMMARY ***
+Total pot 8674 | No rake
+Board: [9s Qs Jd 5c 5h]
+Seat 1: Win2Win21 showed [Jc Tc] and won 8674 with Two pairs : Jacks and 5
+Seat 6: Ziehmax showed [Ks 8s] and lost with One pair : 5
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-8-1768935102 - Holdem no limit (25/100/200) - 2026/01/20 18:51:42 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: Win2Win21 (27419, 2.50€ bounty)
+Seat 2: jesusito33 (19975, 2.50€ bounty)
+Seat 3: A.MAKETTE (17393, 2.50€ bounty)
+Seat 4: tarzakerva17 (18237, 2.50€ bounty)
+Seat 5: MysterSifu (20713, 2.50€ bounty)
+Seat 6: Ziehmax (16263, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+Ziehmax posts ante 25
+tarzakerva17 posts small blind 100
+MysterSifu posts big blind 200
+Dealt to jesusito33 [2c 2d]
+*** PRE-FLOP *** 
+Ziehmax folds
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 calls 100
+MysterSifu checks
+*** FLOP *** [Jc Ac 8s]
+tarzakerva17 bets 400
+MysterSifu folds
+tarzakerva17 collected 950 from pot
+*** SUMMARY ***
+Total pot 950 | No rake
+Board: [Jc Ac 8s]
+Seat 4: tarzakerva17 (small blind) won 950
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-9-1768935121 - Holdem no limit (25/100/200) - 2026/01/20 18:52:01 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: Win2Win21 (27394, 2.50€ bounty)
+Seat 2: jesusito33 (19950, 2.50€ bounty)
+Seat 3: A.MAKETTE (17368, 2.50€ bounty)
+Seat 4: tarzakerva17 (18562, 2.50€ bounty)
+Seat 5: MysterSifu (20488, 2.50€ bounty)
+Seat 6: Ziehmax (16238, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts small blind 100
+Ziehmax posts big blind 200
+Dealt to jesusito33 [Ts Qh]
+*** PRE-FLOP *** 
+Win2Win21 raises 300 to 500
+jesusito33 calls 500
+A.MAKETTE folds
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+*** FLOP *** [3c 2s Tc]
+Win2Win21 bets 1450
+jesusito33 folds
+Win2Win21 collected 2900 from pot
+*** SUMMARY ***
+Total pot 2900 | No rake
+Board: [3c 2s Tc]
+Seat 1: Win2Win21 won 2900
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-10-1768935173 - Holdem no limit (25/100/200) - 2026/01/20 18:52:53 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: Win2Win21 (28319, 2.50€ bounty)
+Seat 2: jesusito33 (19425, 2.50€ bounty)
+Seat 3: A.MAKETTE (17343, 2.50€ bounty)
+Seat 4: tarzakerva17 (18537, 2.50€ bounty)
+Seat 5: MysterSifu (20363, 2.50€ bounty)
+Seat 6: Ziehmax (16013, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Ziehmax posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts small blind 100
+Win2Win21 posts big blind 200
+Dealt to jesusito33 [Ah 9d]
+*** PRE-FLOP *** 
+jesusito33 raises 400 to 600
+A.MAKETTE folds
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+Win2Win21 folds
+jesusito33 collected 1050 from pot
+*** SUMMARY ***
+Total pot 1050 | No rake
+Seat 2: jesusito33 won 1050
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-11-1768935216 - Holdem no limit (25/100/200) - 2026/01/20 18:53:36 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: Win2Win21 (28094, 2.50€ bounty)
+Seat 2: jesusito33 (19850, 2.50€ bounty)
+Seat 3: A.MAKETTE (17318, 2.50€ bounty)
+Seat 4: tarzakerva17 (18512, 2.50€ bounty)
+Seat 5: MysterSifu (20338, 2.50€ bounty)
+Seat 6: Ziehmax (15888, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+Win2Win21 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [6d Th]
+*** PRE-FLOP *** 
+A.MAKETTE raises 300 to 500
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax calls 500
+Win2Win21 folds
+jesusito33 folds
+*** FLOP *** [Kh 4h Kc]
+A.MAKETTE checks
+Ziehmax checks
+*** TURN *** [Kh 4h Kc][6h]
+A.MAKETTE bets 725
+Ziehmax folds
+A.MAKETTE collected 2175 from pot
+*** SUMMARY ***
+Total pot 2175 | No rake
+Board: [Kh 4h Kc 6h]
+Seat 3: A.MAKETTE won 2175
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-12-1768935250 - Holdem no limit (25/100/200) - 2026/01/20 18:54:10 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: Win2Win21 (27969, 2.50€ bounty)
+Seat 2: jesusito33 (19625, 2.50€ bounty)
+Seat 3: A.MAKETTE (18243, 2.50€ bounty)
+Seat 4: tarzakerva17 (18487, 2.50€ bounty)
+Seat 5: MysterSifu (20313, 2.50€ bounty)
+Seat 6: Ziehmax (15363, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+Win2Win21 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+jesusito33 posts small blind 100
+A.MAKETTE posts big blind 200
+Dealt to jesusito33 [4s 2s]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+Win2Win21 folds
+jesusito33 calls 100
+A.MAKETTE raises 500 to 700
+jesusito33 folds
+A.MAKETTE collected 1050 from pot
+*** SUMMARY ***
+Total pot 1050 | No rake
+Seat 3: A.MAKETTE (big blind) won 1050
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-13-1768935284 - Holdem no limit (25/100/200) - 2026/01/20 18:54:44 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: Win2Win21 (27944, 2.50€ bounty)
+Seat 2: jesusito33 (19400, 2.50€ bounty)
+Seat 3: A.MAKETTE (18568, 2.50€ bounty)
+Seat 4: tarzakerva17 (18462, 2.50€ bounty)
+Seat 5: MysterSifu (20288, 2.50€ bounty)
+Seat 6: Ziehmax (15338, 2.50€ bounty)
+*** ANTE/BLINDS ***
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+A.MAKETTE posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [7c Kc]
+*** PRE-FLOP *** 
+MysterSifu folds
+Ziehmax folds
+Win2Win21 folds
+jesusito33 raises 300 to 500
+A.MAKETTE folds
+tarzakerva17 calls 300
+*** FLOP *** [4c Jc 8s]
+tarzakerva17 checks
+jesusito33 bets 625
+tarzakerva17 calls 625
+*** TURN *** [4c Jc 8s][2c]
+tarzakerva17 checks
+jesusito33 bets 1250
+tarzakerva17 calls 1250
+*** RIVER *** [4c Jc 8s 2c][Ah]
+tarzakerva17 bets 6000
+jesusito33 calls 6000
+*** SHOW DOWN ***
+jesusito33 shows [7c Kc] (Flush King high)
+tarzakerva17 shows [3c Ac] (Flush Ace high)
+tarzakerva17 collected 17000 from pot
+*** SUMMARY ***
+Total pot 17000 | No rake
+Board: [4c Jc 8s 2c Ah]
+Seat 2: jesusito33 (button) showed [7c Kc] and lost with Flush King high
+Seat 4: tarzakerva17 (big blind) showed [3c Ac] and won 17000 with Flush Ace high
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-14-1768935661 - Holdem no limit (25/100/200) - 2026/01/20 19:01:01 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: Win2Win21 (27919, 2.50€ bounty)
+Seat 2: jesusito33 (11000, 2.50€ bounty)
+Seat 3: A.MAKETTE (18443, 2.50€ bounty)
+Seat 4: tarzakerva17 (27062, 2.50€ bounty)
+Seat 5: MysterSifu (20263, 2.50€ bounty)
+Seat 6: Ziehmax (15313, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+Ziehmax posts ante 25
+tarzakerva17 posts small blind 100
+MysterSifu posts big blind 200
+Dealt to jesusito33 [9d 7d]
+*** PRE-FLOP *** 
+Ziehmax folds
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 folds
+MysterSifu collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Seat 5: MysterSifu (big blind) won 450
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-15-1768935695 - Holdem no limit (25/100/200) - 2026/01/20 19:01:35 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: Win2Win21 (27894, 2.50€ bounty)
+Seat 2: jesusito33 (10975, 2.50€ bounty)
+Seat 3: A.MAKETTE (18418, 2.50€ bounty)
+Seat 4: tarzakerva17 (26937, 2.50€ bounty)
+Seat 5: MysterSifu (20488, 2.50€ bounty)
+Seat 6: Ziehmax (15288, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts small blind 100
+Ziehmax posts big blind 200
+Dealt to jesusito33 [Kc Ac]
+*** PRE-FLOP *** 
+Win2Win21 folds
+jesusito33 raises 400 to 600
+A.MAKETTE raises 1650 to 2250
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+jesusito33 raises 1750 to 4000
+A.MAKETTE calls 1750
+*** FLOP *** [4s 9s Jh]
+jesusito33 checks
+A.MAKETTE bets 2113
+jesusito33 raises 4837 to 6950 and is all-in
+A.MAKETTE calls 4837
+*** TURN *** [4s 9s Jh][9h]
+*** RIVER *** [4s 9s Jh 9h][6d]
+*** SHOW DOWN ***
+A.MAKETTE shows [As Qh] (One pair : 9)
+jesusito33 shows [Kc Ac] (One pair : 9)
+jesusito33 collected 22350 from pot
+*** SUMMARY ***
+Total pot 22350 | No rake
+Board: [4s 9s Jh 9h 6d]
+Seat 2: jesusito33 showed [Kc Ac] and won 22350 with One pair : 9
+Seat 3: A.MAKETTE showed [As Qh] and lost with One pair : 9
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-16-1768935767 - Holdem no limit (25/100/200) - 2026/01/20 19:02:47 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: Win2Win21 (27869, 2.50€ bounty)
+Seat 2: jesusito33 (22350, 2.50€ bounty)
+Seat 3: A.MAKETTE (7443, 2.50€ bounty)
+Seat 4: tarzakerva17 (26912, 2.50€ bounty)
+Seat 5: MysterSifu (20363, 2.50€ bounty)
+Seat 6: Ziehmax (15063, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Ziehmax posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts small blind 100
+Win2Win21 posts big blind 200
+Dealt to jesusito33 [As 3c]
+*** PRE-FLOP *** 
+jesusito33 raises 200 to 400
+A.MAKETTE raises 7018 to 7418 and is all-in
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE collected 8268 from pot
+*** SUMMARY ***
+Total pot 8268 | No rake
+Seat 3: A.MAKETTE won 8268
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-17-1768935808 - Holdem no limit (25/100/200) - 2026/01/20 19:03:28 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: Win2Win21 (27644, 2.50€ bounty)
+Seat 2: jesusito33 (21925, 2.50€ bounty)
+Seat 3: A.MAKETTE (8268, 2.50€ bounty)
+Seat 4: tarzakerva17 (26887, 2.50€ bounty)
+Seat 5: MysterSifu (20338, 2.50€ bounty)
+Seat 6: Ziehmax (14938, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+Win2Win21 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [2s Kd]
+*** PRE-FLOP *** 
+A.MAKETTE folds
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+Win2Win21 folds
+jesusito33 collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Seat 2: jesusito33 (big blind) won 450
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-18-1768935825 - Holdem no limit (25/100/200) - 2026/01/20 19:03:45 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: Win2Win21 (27519, 2.50€ bounty)
+Seat 2: jesusito33 (22150, 2.50€ bounty)
+Seat 3: A.MAKETTE (8243, 2.50€ bounty)
+Seat 4: tarzakerva17 (26862, 2.50€ bounty)
+Seat 5: MysterSifu (20313, 2.50€ bounty)
+Seat 6: Ziehmax (14913, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+Win2Win21 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+jesusito33 posts small blind 100
+A.MAKETTE posts big blind 200
+Dealt to jesusito33 [7c 5h]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu folds
+Ziehmax folds
+Win2Win21 folds
+jesusito33 raises 200 to 400
+A.MAKETTE calls 200
+*** FLOP *** [6d Ts Qs]
+jesusito33 checks
+A.MAKETTE checks
+*** TURN *** [6d Ts Qs][Jh]
+jesusito33 checks
+A.MAKETTE bets 1100
+jesusito33 folds
+A.MAKETTE collected 2050 from pot
+*** SUMMARY ***
+Total pot 2050 | No rake
+Board: [6d Ts Qs Jh]
+Seat 3: A.MAKETTE (big blind) won 2050
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-19-1768935866 - Holdem no limit (25/100/200) - 2026/01/20 19:04:26 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: Win2Win21 (27494, 2.50€ bounty)
+Seat 2: jesusito33 (21725, 2.50€ bounty)
+Seat 3: A.MAKETTE (8768, 2.50€ bounty)
+Seat 4: tarzakerva17 (26837, 2.50€ bounty)
+Seat 5: MysterSifu (20288, 2.50€ bounty)
+Seat 6: Ziehmax (14888, 2.50€ bounty)
+*** ANTE/BLINDS ***
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+MysterSifu posts ante 25
+Ziehmax posts ante 25
+A.MAKETTE posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [Js 6c]
+*** PRE-FLOP *** 
+MysterSifu raises 300 to 500
+Ziehmax raises 1000 to 1500
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 folds
+MysterSifu calls 1000
+*** FLOP *** [Ac Ts Qc]
+MysterSifu checks
+Ziehmax bets 2243
+MysterSifu calls 2243
+*** TURN *** [Ac Ts Qc][4d]
+MysterSifu checks
+Ziehmax bets 11120 and is all-in
+MysterSifu calls 11120
+*** RIVER *** [Ac Ts Qc 4d][Td]
+*** SHOW DOWN ***
+Ziehmax shows [9s 9c] (Two pairs : Tens and 9)
+MysterSifu shows [Qd Jh] (Two pairs : Queens and Tens)
+MysterSifu collected 30176 from pot
+*** SUMMARY ***
+Total pot 30176 | No rake
+Board: [Ac Ts Qc 4d Td]
+Seat 5: MysterSifu showed [Qd Jh] and won 30176 with Two pairs : Queens and Tens
+Seat 6: Ziehmax showed [9s 9c] and lost with Two pairs : Tens and 9
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-20-1768935913 - Holdem no limit (25/100/200) - 2026/01/20 19:05:13 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: Win2Win21 (27469, 2.50€ bounty)
+Seat 2: jesusito33 (21700, 2.50€ bounty)
+Seat 3: A.MAKETTE (8643, 2.50€ bounty)
+Seat 4: tarzakerva17 (26612, 2.50€ bounty)
+Seat 5: MysterSifu (35576, 3€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts small blind 100
+MysterSifu posts big blind 200
+Dealt to jesusito33 [9c 7h]
+*** PRE-FLOP *** 
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 raises 400 to 600
+MysterSifu folds
+tarzakerva17 collected 925 from pot
+*** SUMMARY ***
+Total pot 925 | No rake
+Seat 4: tarzakerva17 (small blind) won 925
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-21-1768935928 - Holdem no limit (25/100/200) - 2026/01/20 19:05:28 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: Win2Win21 (27444, 2.50€ bounty)
+Seat 2: jesusito33 (21675, 2.50€ bounty)
+Seat 3: A.MAKETTE (8618, 2.50€ bounty)
+Seat 4: tarzakerva17 (26912, 2.50€ bounty)
+Seat 5: MysterSifu (35351, 3€ bounty)
+Seat 6: noe_chicha (20000, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts small blind 100
+noe_chicha posts big blind 200
+Dealt to jesusito33 [Ts 8d]
+*** PRE-FLOP *** 
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 calls 200
+MysterSifu calls 100
+noe_chicha checks
+*** FLOP *** [Qc 9h 7s]
+MysterSifu checks
+noe_chicha checks
+tarzakerva17 bets 200
+MysterSifu folds
+noe_chicha calls 200
+*** TURN *** [Qc 9h 7s][Kh]
+noe_chicha checks
+tarzakerva17 checks
+*** RIVER *** [Qc 9h 7s Kh][5d]
+noe_chicha checks
+tarzakerva17 checks
+*** SHOW DOWN ***
+noe_chicha shows [8h 7c] (One pair : 7)
+tarzakerva17 shows [Ac 9s] (One pair : 9)
+tarzakerva17 collected 1150 from pot
+*** SUMMARY ***
+Total pot 1150 | No rake
+Board: [Qc 9h 7s Kh 5d]
+Seat 4: tarzakerva17 (button) showed [Ac 9s] and won 1150 with One pair : 9
+Seat 6: noe_chicha (big blind) showed [8h 7c] and lost with One pair : 7
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-22-1768936002 - Holdem no limit (25/100/200) - 2026/01/20 19:06:42 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: Win2Win21 (27419, 2.50€ bounty)
+Seat 2: jesusito33 (21650, 2.50€ bounty)
+Seat 3: A.MAKETTE (8593, 2.50€ bounty)
+Seat 4: tarzakerva17 (27637, 2.50€ bounty)
+Seat 5: MysterSifu (35126, 3€ bounty)
+Seat 6: noe_chicha (19575, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts small blind 100
+Win2Win21 posts big blind 200
+Dealt to jesusito33 [4h Kd]
+*** PRE-FLOP *** 
+jesusito33 folds
+A.MAKETTE raises 300 to 500
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha calls 400
+Win2Win21 folds
+*** FLOP *** [Kh 4c 9d]
+noe_chicha checks
+A.MAKETTE bets 473
+noe_chicha folds
+A.MAKETTE collected 1823 from pot
+*** SUMMARY ***
+Total pot 1823 | No rake
+Board: [Kh 4c 9d]
+Seat 3: A.MAKETTE won 1823
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-23-1768936048 - Holdem no limit (25/100/200) - 2026/01/20 19:07:28 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: Win2Win21 (27194, 2.50€ bounty)
+Seat 2: jesusito33 (21625, 2.50€ bounty)
+Seat 3: A.MAKETTE (9418, 2.50€ bounty)
+Seat 4: tarzakerva17 (27612, 2.50€ bounty)
+Seat 5: MysterSifu (35101, 3€ bounty)
+Seat 6: noe_chicha (19050, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+Win2Win21 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [Qs 5h]
+*** PRE-FLOP *** 
+A.MAKETTE folds
+tarzakerva17 raises 650 to 850
+MysterSifu calls 850
+noe_chicha folds
+Win2Win21 calls 750
+jesusito33 folds
+*** FLOP *** [4c 5c Ks]
+Win2Win21 checks
+tarzakerva17 checks
+MysterSifu bets 1015
+Win2Win21 raises 2849 to 3864
+tarzakerva17 folds
+MysterSifu folds
+Win2Win21 collected 7779 from pot
+*** SUMMARY ***
+Total pot 7779 | No rake
+Board: [4c 5c Ks]
+Seat 1: Win2Win21 (small blind) won 7779
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-24-1768936096 - Holdem no limit (25/100/200) - 2026/01/20 19:08:16 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: Win2Win21 (30234, 2.50€ bounty)
+Seat 2: jesusito33 (21400, 2.50€ bounty)
+Seat 3: A.MAKETTE (9393, 2.50€ bounty)
+Seat 4: tarzakerva17 (26737, 2.50€ bounty)
+Seat 5: MysterSifu (33211, 3€ bounty)
+Seat 6: noe_chicha (19025, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+Win2Win21 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+jesusito33 posts small blind 100
+A.MAKETTE posts big blind 200
+Dealt to jesusito33 [7h 5c]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu raises 300 to 500
+noe_chicha folds
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE folds
+MysterSifu collected 950 from pot
+*** SUMMARY ***
+Total pot 950 | No rake
+Seat 5: MysterSifu won 950
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-25-1768936110 - Holdem no limit (25/100/200) - 2026/01/20 19:08:30 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: Win2Win21 (30209, 2.50€ bounty)
+Seat 2: jesusito33 (21275, 2.50€ bounty)
+Seat 3: A.MAKETTE (9168, 2.50€ bounty)
+Seat 4: tarzakerva17 (26712, 2.50€ bounty)
+Seat 5: MysterSifu (33636, 3€ bounty)
+Seat 6: noe_chicha (19000, 2.50€ bounty)
+*** ANTE/BLINDS ***
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+A.MAKETTE posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [4s 3d]
+*** PRE-FLOP *** 
+MysterSifu raises 300 to 500
+noe_chicha calls 500
+Win2Win21 folds
+jesusito33 folds
+A.MAKETTE calls 400
+tarzakerva17 folds
+*** FLOP *** [7d Ks 5h]
+A.MAKETTE checks
+MysterSifu bets 925
+noe_chicha raises 2081 to 3006
+A.MAKETTE folds
+MysterSifu raises 5688 to 8694
+noe_chicha calls 5688
+*** TURN *** [7d Ks 5h][9h]
+MysterSifu bets 12505
+noe_chicha calls 9781 and is all-in
+*** RIVER *** [7d Ks 5h 9h][8h]
+*** SHOW DOWN ***
+MysterSifu shows [Kd Jd] (One pair : Kings)
+noe_chicha shows [Kh Qc] (One pair : Kings)
+noe_chicha collected 38800 from main pot
+MysterSifu collected 2724 from side pot 1
+*** SUMMARY ***
+Total pot 41524 | No rake
+Board: [7d Ks 5h 9h 8h]
+Seat 5: MysterSifu showed [Kd Jd] and won 2724 with One pair : Kings
+Seat 6: noe_chicha showed [Kh Qc] and won 38800 with One pair : Kings
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-26-1768936155 - Holdem no limit (25/100/200) - 2026/01/20 19:09:15 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: Win2Win21 (30184, 2.50€ bounty)
+Seat 2: jesusito33 (21250, 2.50€ bounty)
+Seat 3: A.MAKETTE (8643, 2.50€ bounty)
+Seat 4: tarzakerva17 (26487, 2.50€ bounty)
+Seat 5: MysterSifu (14636, 3€ bounty)
+Seat 6: noe_chicha (38800, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+noe_chicha posts ante 25
+tarzakerva17 posts small blind 100
+MysterSifu posts big blind 200
+Dealt to jesusito33 [5s 8d]
+*** PRE-FLOP *** 
+noe_chicha folds
+Win2Win21 raises 300 to 500
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 folds
+MysterSifu calls 300
+*** FLOP *** [5d Qs Kc]
+MysterSifu checks
+Win2Win21 checks
+*** TURN *** [5d Qs Kc][4s]
+MysterSifu checks
+Win2Win21 checks
+*** RIVER *** [5d Qs Kc 4s][Kh]
+MysterSifu checks
+Win2Win21 checks
+*** SHOW DOWN ***
+MysterSifu shows [6c Ac] (One pair : Kings)
+Win2Win21 shows [7h Ah] (One pair : Kings)
+Win2Win21 collected 1250 from pot
+*** SUMMARY ***
+Total pot 1250 | No rake
+Board: [5d Qs Kc 4s Kh]
+Seat 1: Win2Win21 showed [7h Ah] and won 1250 with One pair : Kings
+Seat 5: MysterSifu (big blind) showed [6c Ac] and lost with One pair : Kings
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-27-1768936193 - Holdem no limit (25/100/200) - 2026/01/20 19:09:53 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: Win2Win21 (30909, 2.50€ bounty)
+Seat 2: jesusito33 (21225, 2.50€ bounty)
+Seat 3: A.MAKETTE (8618, 2.50€ bounty)
+Seat 4: tarzakerva17 (26362, 2.50€ bounty)
+Seat 5: MysterSifu (14111, 3€ bounty)
+Seat 6: noe_chicha (38775, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts small blind 100
+noe_chicha posts big blind 200
+Dealt to jesusito33 [Qc Ks]
+*** PRE-FLOP *** 
+Win2Win21 folds
+jesusito33 raises 400 to 600
+A.MAKETTE folds
+tarzakerva17 calls 600
+MysterSifu folds
+noe_chicha calls 400
+*** FLOP *** [6s Ad 7d]
+noe_chicha checks
+jesusito33 bets 718
+tarzakerva17 folds
+noe_chicha calls 718
+*** TURN *** [6s Ad 7d][4d]
+noe_chicha checks
+jesusito33 bets 1743
+noe_chicha calls 1743
+*** RIVER *** [6s Ad 7d 4d][Qd]
+noe_chicha checks
+jesusito33 checks
+*** SHOW DOWN ***
+jesusito33 shows [Qc Ks] (One pair : Queens)
+noe_chicha shows [3s Ac] (One pair : Aces)
+noe_chicha collected 6972 from pot
+*** SUMMARY ***
+Total pot 6972 | No rake
+Board: [6s Ad 7d 4d Qd]
+Seat 2: jesusito33 showed [Qc Ks] and lost with One pair : Queens
+Seat 6: noe_chicha (big blind) showed [3s Ac] and won 6972 with One pair : Aces
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-28-1768936257 - Holdem no limit (25/100/200) - 2026/01/20 19:10:57 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: Win2Win21 (30884, 2.50€ bounty)
+Seat 2: jesusito33 (18139, 2.50€ bounty)
+Seat 3: A.MAKETTE (8593, 2.50€ bounty)
+Seat 4: tarzakerva17 (25737, 2.50€ bounty)
+Seat 5: MysterSifu (13986, 3€ bounty)
+Seat 6: noe_chicha (42661, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+A.MAKETTE posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts small blind 100
+Win2Win21 posts big blind 200
+Dealt to jesusito33 [Qs 9s]
+*** PRE-FLOP *** 
+jesusito33 folds
+A.MAKETTE folds
+tarzakerva17 folds
+MysterSifu raises 300 to 500
+noe_chicha calls 400
+Win2Win21 folds
+*** FLOP *** [7s 6d Ts]
+noe_chicha checks
+MysterSifu checks
+*** TURN *** [7s 6d Ts][Th]
+noe_chicha checks
+MysterSifu checks
+*** RIVER *** [7s 6d Ts Th][7h]
+noe_chicha checks
+MysterSifu checks
+*** SHOW DOWN ***
+noe_chicha shows [Kc Qh] (Two pairs : Tens and 7)
+MysterSifu shows [Jd Ah] (Two pairs : Tens and 7)
+MysterSifu collected 1350 from pot
+*** SUMMARY ***
+Total pot 1350 | No rake
+Board: [7s 6d Ts Th 7h]
+Seat 5: MysterSifu (button) showed [Jd Ah] and won 1350 with Two pairs : Tens and 7
+Seat 6: noe_chicha (small blind) showed [Kc Qh] and lost with Two pairs : Tens and 7
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-29-1768936285 - Holdem no limit (25/100/200) - 2026/01/20 19:11:25 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: Win2Win21 (30659, 2.50€ bounty)
+Seat 2: jesusito33 (18114, 2.50€ bounty)
+Seat 4: tarzakerva17 (25712, 2.50€ bounty)
+Seat 5: MysterSifu (14811, 3€ bounty)
+Seat 6: noe_chicha (42136, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+Win2Win21 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [Qs Qd]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha calls 200
+Win2Win21 folds
+jesusito33 raises 400 to 600
+noe_chicha calls 400
+*** FLOP *** [Jc Qh 3s]
+jesusito33 checks
+noe_chicha checks
+*** TURN *** [Jc Qh 3s][6h]
+jesusito33 bets 713
+noe_chicha calls 713
+*** RIVER *** [Jc Qh 3s 6h][As]
+jesusito33 bets 2281
+noe_chicha calls 2281
+*** SHOW DOWN ***
+noe_chicha shows [8h Ac] (One pair : Aces)
+jesusito33 shows [Qs Qd] (Trips of Queens)
+jesusito33 collected 7413 from pot
+*** SUMMARY ***
+Total pot 7413 | No rake
+Board: [Jc Qh 3s 6h As]
+Seat 2: jesusito33 (big blind) showed [Qs Qd] and won 7413 with Trips of Queens
+Seat 6: noe_chicha (button) showed [8h Ac] and lost with One pair : Aces
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-30-1768936333 - Holdem no limit (25/100/200) - 2026/01/20 19:12:13 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: Win2Win21 (30534, 2.50€ bounty)
+Seat 2: jesusito33 (21908, 2.50€ bounty)
+Seat 3: Shadow5562 (20000, 2.50€ bounty)
+Seat 4: tarzakerva17 (25687, 2.50€ bounty)
+Seat 5: MysterSifu (14786, 3€ bounty)
+Seat 6: noe_chicha (38517, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+Win2Win21 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+jesusito33 posts small blind 100
+Shadow5562 posts big blind 200
+Dealt to jesusito33 [Kd Ac]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha folds
+Win2Win21 folds
+jesusito33 raises 400 to 600
+Shadow5562 folds
+jesusito33 collected 950 from pot
+*** SUMMARY ***
+Total pot 950 | No rake
+Seat 2: jesusito33 (small blind) won 950
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-31-1768936347 - Holdem no limit (25/100/200) - 2026/01/20 19:12:27 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: Win2Win21 (30509, 2.50€ bounty)
+Seat 2: jesusito33 (22233, 2.50€ bounty)
+Seat 3: Shadow5562 (19775, 2.50€ bounty)
+Seat 4: tarzakerva17 (25662, 2.50€ bounty)
+Seat 5: MysterSifu (14761, 3€ bounty)
+Seat 6: noe_chicha (38492, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+Shadow5562 posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [2d 4c]
+*** PRE-FLOP *** 
+MysterSifu folds
+noe_chicha folds
+Win2Win21 folds
+jesusito33 folds
+Shadow5562 raises 550 to 750
+tarzakerva17 folds
+Shadow5562 collected 1100 from pot
+*** SUMMARY ***
+Total pot 1100 | No rake
+Seat 3: Shadow5562 (small blind) won 1100
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-32-1768936372 - Holdem no limit (25/100/200) - 2026/01/20 19:12:52 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: Win2Win21 (30484, 2.50€ bounty)
+Seat 2: jesusito33 (22208, 2.50€ bounty)
+Seat 3: Shadow5562 (20100, 2.50€ bounty)
+Seat 4: tarzakerva17 (25437, 2.50€ bounty)
+Seat 5: MysterSifu (14736, 3€ bounty)
+Seat 6: noe_chicha (38467, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+Win2Win21 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+noe_chicha posts ante 25
+tarzakerva17 posts small blind 100
+MysterSifu posts big blind 200
+Dealt to jesusito33 [2d 4h]
+*** PRE-FLOP *** 
+noe_chicha folds
+Win2Win21 raises 400 to 600
+jesusito33 folds
+Shadow5562 raises 1650 to 2250
+tarzakerva17 folds
+MysterSifu folds
+Win2Win21 calls 1650
+*** FLOP *** [Th 4s 8c]
+Win2Win21 checks
+Shadow5562 bets 4950
+Win2Win21 folds
+Shadow5562 collected 9900 from pot
+*** SUMMARY ***
+Total pot 9900 | No rake
+Board: [Th 4s 8c]
+Seat 3: Shadow5562 (button) won 9900
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-33-1768936408 - Holdem no limit (25/100/200) - 2026/01/20 19:13:28 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 2: jesusito33 (22183, 2.50€ bounty)
+Seat 3: Shadow5562 (22775, 2.50€ bounty)
+Seat 4: tarzakerva17 (25312, 2.50€ bounty)
+Seat 5: MysterSifu (14511, 3€ bounty)
+Seat 6: noe_chicha (38442, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts small blind 100
+noe_chicha posts big blind 200
+Dealt to jesusito33 [Th 9c]
+*** PRE-FLOP *** 
+jesusito33 folds
+Shadow5562 raises 200 to 400
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha calls 200
+*** FLOP *** [6h 6c 3c]
+noe_chicha checks
+Shadow5562 bets 513
+noe_chicha folds
+Shadow5562 collected 1538 from pot
+*** SUMMARY ***
+Total pot 1538 | No rake
+Board: [6h 6c 3c]
+Seat 3: Shadow5562 won 1538
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-34-1768936429 - Holdem no limit (25/100/200) - 2026/01/20 19:13:49 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (20000, 2.50€ bounty)
+Seat 2: jesusito33 (22158, 2.50€ bounty)
+Seat 3: Shadow5562 (23375, 2.50€ bounty)
+Seat 4: tarzakerva17 (25287, 2.50€ bounty)
+Seat 5: MysterSifu (14386, 3€ bounty)
+Seat 6: noe_chicha (38017, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts small blind 100
+MUSTANG7474 posts big blind 200
+Dealt to jesusito33 [7d 8s]
+*** PRE-FLOP *** 
+jesusito33 folds
+Shadow5562 folds
+tarzakerva17 raises 650 to 850
+MysterSifu folds
+noe_chicha calls 750
+MUSTANG7474 folds
+*** FLOP *** [Tc 4s 6c]
+noe_chicha checks
+tarzakerva17 checks
+*** TURN *** [Tc 4s 6c][2d]
+noe_chicha checks
+tarzakerva17 checks
+*** RIVER *** [Tc 4s 6c 2d][Ad]
+noe_chicha checks
+tarzakerva17 bets 2050
+noe_chicha folds
+tarzakerva17 collected 4100 from pot
+*** SUMMARY ***
+Total pot 4100 | No rake
+Board: [Tc 4s 6c 2d Ad]
+Seat 4: tarzakerva17 won 4100
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-35-1768936487 - Holdem no limit (25/100/200) - 2026/01/20 19:14:47 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (19775, 2.50€ bounty)
+Seat 2: jesusito33 (22133, 2.50€ bounty)
+Seat 3: Shadow5562 (23350, 2.50€ bounty)
+Seat 4: tarzakerva17 (26462, 2.50€ bounty)
+Seat 5: MysterSifu (14361, 3€ bounty)
+Seat 6: noe_chicha (37142, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+MUSTANG7474 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [Js 4s]
+*** PRE-FLOP *** 
+Shadow5562 folds
+tarzakerva17 folds
+MysterSifu raises 300 to 500
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 calls 300
+*** FLOP *** [6d Tc 6c]
+jesusito33 checks
+MysterSifu checks
+*** TURN *** [6d Tc 6c][Ac]
+jesusito33 bets 438
+MysterSifu folds
+jesusito33 collected 1688 from pot
+*** SUMMARY ***
+Total pot 1688 | No rake
+Board: [6d Tc 6c Ac]
+Seat 2: jesusito33 (big blind) won 1688
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-36-1768936532 - Holdem no limit (25/100/200) - 2026/01/20 19:15:32 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (19650, 2.50€ bounty)
+Seat 2: jesusito33 (22858, 2.50€ bounty)
+Seat 3: Shadow5562 (23325, 2.50€ bounty)
+Seat 4: tarzakerva17 (26437, 2.50€ bounty)
+Seat 5: MysterSifu (13836, 3€ bounty)
+Seat 6: noe_chicha (37117, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+MUSTANG7474 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+jesusito33 posts small blind 100
+Shadow5562 posts big blind 200
+Dealt to jesusito33 [3c 2h]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha folds
+MUSTANG7474 calls 200
+jesusito33 folds
+Shadow5562 checks
+*** FLOP *** [9c 8d 9h]
+Shadow5562 checks
+MUSTANG7474 checks
+*** TURN *** [9c 8d 9h][Kc]
+Shadow5562 bets 423
+MUSTANG7474 calls 423
+*** RIVER *** [9c 8d 9h Kc][Kd]
+Shadow5562 checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+Shadow5562 shows [8s Qh] (Two pairs : Kings and 9)
+MUSTANG7474 shows [Ac 2c] (Two pairs : Kings and 9)
+MUSTANG7474 collected 1496 from pot
+*** SUMMARY ***
+Total pot 1496 | No rake
+Board: [9c 8d 9h Kc Kd]
+Seat 1: MUSTANG7474 (button) showed [Ac 2c] and won 1496 with Two pairs : Kings and 9
+Seat 3: Shadow5562 (big blind) showed [8s Qh] and lost with Two pairs : Kings and 9
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-37-1768936572 - Holdem no limit (25/100/200) - 2026/01/20 19:16:12 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (20498, 2.50€ bounty)
+Seat 2: jesusito33 (22733, 2.50€ bounty)
+Seat 3: Shadow5562 (22677, 2.50€ bounty)
+Seat 4: tarzakerva17 (26412, 2.50€ bounty)
+Seat 5: MysterSifu (13811, 3€ bounty)
+Seat 6: noe_chicha (37092, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+Shadow5562 posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [Ac Jd]
+*** PRE-FLOP *** 
+MysterSifu folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 400 to 600
+Shadow5562 calls 500
+tarzakerva17 folds
+*** FLOP *** [Qd Qc Kc]
+Shadow5562 checks
+jesusito33 bets 543
+Shadow5562 folds
+jesusito33 collected 2093 from pot
+*** SUMMARY ***
+Total pot 2093 | No rake
+Board: [Qd Qc Kc]
+Seat 2: jesusito33 (button) won 2093
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-38-1768936600 - Holdem no limit (25/100/200) - 2026/01/20 19:16:40 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (20473, 2.50€ bounty)
+Seat 2: jesusito33 (23658, 2.50€ bounty)
+Seat 3: Shadow5562 (22052, 2.50€ bounty)
+Seat 4: tarzakerva17 (26187, 2.50€ bounty)
+Seat 5: MysterSifu (13786, 3€ bounty)
+Seat 6: noe_chicha (37067, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+noe_chicha posts ante 25
+tarzakerva17 posts small blind 100
+MysterSifu posts big blind 200
+Dealt to jesusito33 [6c Kh]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 200 to 400
+Shadow5562 folds
+tarzakerva17 folds
+MysterSifu calls 200
+*** FLOP *** [Kd 9d 6s]
+MysterSifu checks
+jesusito33 bets 525
+MysterSifu calls 525
+*** TURN *** [Kd 9d 6s][Qc]
+MysterSifu checks
+jesusito33 bets 1050
+MysterSifu folds
+jesusito33 collected 3150 from pot
+*** SUMMARY ***
+Total pot 3150 | No rake
+Board: [Kd 9d 6s Qc]
+Seat 2: jesusito33 won 3150
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-39-1768936640 - Holdem no limit (25/100/200) - 2026/01/20 19:17:20 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (20448, 2.50€ bounty)
+Seat 2: jesusito33 (24808, 2.50€ bounty)
+Seat 3: Shadow5562 (22027, 2.50€ bounty)
+Seat 4: tarzakerva17 (26062, 2.50€ bounty)
+Seat 5: MysterSifu (12836, 3€ bounty)
+Seat 6: noe_chicha (37042, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts small blind 100
+noe_chicha posts big blind 200
+Dealt to jesusito33 [7h 6c]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 200
+jesusito33 folds
+Shadow5562 raises 400 to 600
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha calls 400
+MUSTANG7474 calls 400
+*** FLOP *** [7c As 2d]
+noe_chicha checks
+MUSTANG7474 bets 200
+Shadow5562 raises 1125 to 1325
+noe_chicha folds
+MUSTANG7474 calls 1125
+*** TURN *** [7c As 2d][3s]
+MUSTANG7474 checks
+Shadow5562 bets 20077 and is all-in
+MUSTANG7474 folds
+Shadow5562 collected 24777 from pot
+*** SUMMARY ***
+Total pot 24777 | No rake
+Board: [7c As 2d 3s]
+Seat 3: Shadow5562 won 24777
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-40-1768936678 - Holdem no limit (25/100/200) - 2026/01/20 19:17:58 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (18498, 2.50€ bounty)
+Seat 2: jesusito33 (24783, 2.50€ bounty)
+Seat 3: Shadow5562 (24777, 2.50€ bounty)
+Seat 4: tarzakerva17 (26037, 2.50€ bounty)
+Seat 5: MysterSifu (12711, 3€ bounty)
+Seat 6: noe_chicha (36417, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts small blind 100
+MUSTANG7474 posts big blind 200
+Dealt to jesusito33 [8d 5c]
+*** PRE-FLOP *** 
+jesusito33 folds
+Shadow5562 raises 400 to 600
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha folds
+MUSTANG7474 calls 400
+*** FLOP *** [Jd Ks 3h]
+MUSTANG7474 checks
+Shadow5562 bets 725
+MUSTANG7474 folds
+Shadow5562 collected 2175 from pot
+*** SUMMARY ***
+Total pot 2175 | No rake
+Board: [Jd Ks 3h]
+Seat 3: Shadow5562 won 2175
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-41-1768936697 - Holdem no limit (25/100/200) - 2026/01/20 19:18:17 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (17873, 2.50€ bounty)
+Seat 2: jesusito33 (24758, 2.50€ bounty)
+Seat 3: Shadow5562 (25602, 2.50€ bounty)
+Seat 4: tarzakerva17 (26012, 2.50€ bounty)
+Seat 5: MysterSifu (12686, 3€ bounty)
+Seat 6: noe_chicha (36292, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+MUSTANG7474 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [Jh Qs]
+*** PRE-FLOP *** 
+Shadow5562 folds
+tarzakerva17 folds
+MysterSifu folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Seat 2: jesusito33 (big blind) won 450
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-42-1768936704 - Holdem no limit (25/100/200) - 2026/01/20 19:18:24 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (17748, 2.50€ bounty)
+Seat 2: jesusito33 (24983, 2.50€ bounty)
+Seat 3: Shadow5562 (25577, 2.50€ bounty)
+Seat 4: tarzakerva17 (25987, 2.50€ bounty)
+Seat 5: MysterSifu (12661, 3€ bounty)
+Seat 6: noe_chicha (36267, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+MUSTANG7474 posts ante 25
+tarzakerva17 posts ante 25
+MysterSifu posts ante 25
+noe_chicha posts ante 25
+jesusito33 posts small blind 100
+Shadow5562 posts big blind 200
+Dealt to jesusito33 [2s Qc]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+MysterSifu raises 300 to 500
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+Shadow5562 folds
+MysterSifu collected 950 from pot
+*** SUMMARY ***
+Total pot 950 | No rake
+Seat 5: MysterSifu won 950
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-43-1768936743 - Holdem no limit (25/100/200) - 2026/01/20 19:19:03 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (17723, 2.50€ bounty)
+Seat 2: jesusito33 (24858, 2.50€ bounty)
+Seat 3: Shadow5562 (25352, 2.50€ bounty)
+Seat 4: tarzakerva17 (25962, 2.50€ bounty)
+Seat 6: noe_chicha (36242, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+noe_chicha posts ante 25
+Shadow5562 posts small blind 100
+tarzakerva17 posts big blind 200
+Dealt to jesusito33 [3c Js]
+*** PRE-FLOP *** 
+noe_chicha raises 200 to 400
+MUSTANG7474 calls 400
+jesusito33 folds
+Shadow5562 folds
+tarzakerva17 folds
+*** FLOP *** [Kh 4c 8s]
+noe_chicha checks
+MUSTANG7474 checks
+*** TURN *** [Kh 4c 8s][8d]
+noe_chicha checks
+MUSTANG7474 bets 200
+noe_chicha calls 200
+*** RIVER *** [Kh 4c 8s 8d][Kc]
+noe_chicha checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+noe_chicha shows [6h 6d] (Two pairs : Kings and 8)
+MUSTANG7474 shows [As 4h] (Two pairs : Kings and 8)
+MUSTANG7474 collected 1625 from pot
+*** SUMMARY ***
+Total pot 1625 | No rake
+Board: [Kh 4c 8s 8d Kc]
+Seat 1: MUSTANG7474 showed [As 4h] and won 1625 with Two pairs : Kings and 8
+Seat 6: noe_chicha showed [6h 6d] and lost with Two pairs : Kings and 8
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-44-1768936773 - Holdem no limit (25/100/200) - 2026/01/20 19:19:33 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (18723, 2.50€ bounty)
+Seat 2: jesusito33 (24833, 2.50€ bounty)
+Seat 3: Shadow5562 (25227, 2.50€ bounty)
+Seat 4: tarzakerva17 (25737, 2.50€ bounty)
+Seat 5: pauvre876540 (20000, 2.50€ bounty)
+Seat 6: noe_chicha (35617, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 25
+pauvre876540 posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+noe_chicha posts ante 25
+tarzakerva17 posts small blind 100
+pauvre876540 posts big blind 200
+Dealt to jesusito33 [Qc 3d]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+Shadow5562 raises 200 to 400
+tarzakerva17 folds
+pauvre876540 folds
+Shadow5562 collected 850 from pot
+*** SUMMARY ***
+Total pot 850 | No rake
+Seat 3: Shadow5562 (button) won 850
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-45-1768936789 - Holdem no limit (25/100/200) - 2026/01/20 19:19:49 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (18698, 2.50€ bounty)
+Seat 2: jesusito33 (24808, 2.50€ bounty)
+Seat 3: Shadow5562 (25652, 2.50€ bounty)
+Seat 4: tarzakerva17 (25612, 2.50€ bounty)
+Seat 5: pauvre876540 (19775, 2.50€ bounty)
+Seat 6: noe_chicha (35592, 2.50€ bounty)
+*** ANTE/BLINDS ***
+pauvre876540 posts ante 25
+noe_chicha posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+pauvre876540 posts small blind 100
+noe_chicha posts big blind 200
+Dealt to jesusito33 [2s Qh]
+*** PRE-FLOP *** 
+MUSTANG7474 folds
+jesusito33 folds
+Shadow5562 raises 200 to 400
+tarzakerva17 calls 400
+pauvre876540 folds
+noe_chicha calls 200
+*** FLOP *** [3d Ts Qc]
+noe_chicha checks
+Shadow5562 bets 508
+tarzakerva17 calls 508
+noe_chicha folds
+*** TURN *** [3d Ts Qc][Js]
+Shadow5562 checks
+tarzakerva17 checks
+*** RIVER *** [3d Ts Qc Js][Ac]
+Shadow5562 checks
+tarzakerva17 checks
+*** SHOW DOWN ***
+Shadow5562 shows [As Tc] (Two pairs : Aces and Tens)
+tarzakerva17 shows [Jd Ah] (Two pairs : Aces and Jacks)
+tarzakerva17 collected 2466 from pot
+*** SUMMARY ***
+Total pot 2466 | No rake
+Board: [3d Ts Qc Js Ac]
+Seat 3: Shadow5562 showed [As Tc] and lost with Two pairs : Aces and Tens
+Seat 4: tarzakerva17 (button) showed [Jd Ah] and won 2466 with Two pairs : Aces and Jacks
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-46-1768936842 - Holdem no limit (25/100/200) - 2026/01/20 19:20:42 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (18673, 2.50€ bounty)
+Seat 2: jesusito33 (24783, 2.50€ bounty)
+Seat 3: Shadow5562 (24719, 2.50€ bounty)
+Seat 4: tarzakerva17 (27145, 2.50€ bounty)
+Seat 5: pauvre876540 (19650, 2.50€ bounty)
+Seat 6: noe_chicha (35167, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 25
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+pauvre876540 posts ante 25
+noe_chicha posts small blind 100
+MUSTANG7474 posts big blind 200
+Dealt to jesusito33 [9h Qd]
+*** PRE-FLOP *** 
+jesusito33 folds
+Shadow5562 folds
+tarzakerva17 calls 200
+pauvre876540 calls 200
+noe_chicha calls 100
+MUSTANG7474 checks
+*** FLOP *** [Jh 2c Jc]
+noe_chicha checks
+MUSTANG7474 bets 200
+tarzakerva17 folds
+pauvre876540 folds
+noe_chicha folds
+MUSTANG7474 collected 1150 from pot
+*** SUMMARY ***
+Total pot 1150 | No rake
+Board: [Jh 2c Jc]
+Seat 1: MUSTANG7474 (big blind) won 1150
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 1 - HandId: #4446486702751481892-47-1768936880 - Holdem no limit (25/100/200) - 2026/01/20 19:21:20 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (19398, 2.50€ bounty)
+Seat 2: jesusito33 (24758, 2.50€ bounty)
+Seat 3: Shadow5562 (24694, 2.50€ bounty)
+Seat 4: tarzakerva17 (26920, 2.50€ bounty)
+Seat 5: pauvre876540 (19425, 2.50€ bounty)
+Seat 6: noe_chicha (34942, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 25
+jesusito33 posts ante 25
+Shadow5562 posts ante 25
+tarzakerva17 posts ante 25
+pauvre876540 posts ante 25
+noe_chicha posts ante 25
+MUSTANG7474 posts small blind 100
+jesusito33 posts big blind 200
+Dealt to jesusito33 [5h 6s]
+*** PRE-FLOP *** 
+Shadow5562 raises 400 to 600
+tarzakerva17 folds
+pauvre876540 calls 600
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+*** FLOP *** [Ad Ac 9d]
+Shadow5562 bets 1073
+pauvre876540 folds
+Shadow5562 collected 2723 from pot
+*** SUMMARY ***
+Total pot 2723 | No rake
+Board: [Ad Ac 9d]
+Seat 3: Shadow5562 won 2723
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #4446486702751481892-48-1768936902 - Holdem no limit (30/125/250) - 2026/01/20 19:21:42 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (19273, 2.50€ bounty)
+Seat 2: jesusito33 (24533, 2.50€ bounty)
+Seat 3: Shadow5562 (25719, 2.50€ bounty)
+Seat 4: tarzakerva17 (26895, 2.50€ bounty)
+Seat 5: pauvre876540 (18800, 2.50€ bounty)
+Seat 6: noe_chicha (34917, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 30
+Shadow5562 posts ante 30
+MUSTANG7474 posts ante 30
+tarzakerva17 posts ante 30
+pauvre876540 posts ante 30
+noe_chicha posts ante 30
+jesusito33 posts small blind 125
+Shadow5562 posts big blind 250
+Dealt to jesusito33 [2h 4s]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+pauvre876540 calls 250
+noe_chicha calls 250
+MUSTANG7474 folds
+jesusito33 folds
+Shadow5562 checks
+*** FLOP *** [Kh 5d 6h]
+Shadow5562 checks
+pauvre876540 checks
+noe_chicha checks
+*** TURN *** [Kh 5d 6h][Ad]
+Shadow5562 bets 528
+pauvre876540 folds
+noe_chicha folds
+Shadow5562 collected 1583 from pot
+*** SUMMARY ***
+Total pot 1583 | No rake
+Board: [Kh 5d 6h Ad]
+Seat 3: Shadow5562 (big blind) won 1583
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #4446486702751481892-49-1768936954 - Holdem no limit (30/125/250) - 2026/01/20 19:22:34 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (19243, 2.50€ bounty)
+Seat 2: jesusito33 (24378, 2.50€ bounty)
+Seat 3: Shadow5562 (26494, 2.50€ bounty)
+Seat 4: tarzakerva17 (26865, 2.50€ bounty)
+Seat 5: pauvre876540 (18520, 2.50€ bounty)
+Seat 6: noe_chicha (34637, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Shadow5562 posts ante 30
+tarzakerva17 posts ante 30
+MUSTANG7474 posts ante 30
+jesusito33 posts ante 30
+pauvre876540 posts ante 30
+noe_chicha posts ante 30
+Shadow5562 posts small blind 125
+tarzakerva17 posts big blind 250
+Dealt to jesusito33 [5h Qd]
+*** PRE-FLOP *** 
+pauvre876540 folds
+noe_chicha folds
+MUSTANG7474 calls 250
+jesusito33 folds
+Shadow5562 folds
+tarzakerva17 checks
+*** FLOP *** [Tc 7d 7c]
+tarzakerva17 bets 500
+MUSTANG7474 raises 500 to 1000
+tarzakerva17 calls 500
+*** TURN *** [Tc 7d 7c][Ah]
+tarzakerva17 checks
+MUSTANG7474 checks
+*** RIVER *** [Tc 7d 7c Ah][Ad]
+tarzakerva17 checks
+MUSTANG7474 bets 982
+tarzakerva17 calls 982
+*** SHOW DOWN ***
+tarzakerva17 shows [8h Th] (Two pairs : Aces and Tens)
+MUSTANG7474 shows [Ts Jc] (Two pairs : Aces and Tens)
+MUSTANG7474 collected 4769 from pot
+*** SUMMARY ***
+Total pot 4769 | No rake
+Board: [Tc 7d 7c Ah Ad]
+Seat 1: MUSTANG7474 showed [Ts Jc] and won 4769 with Two pairs : Aces and Tens
+Seat 4: tarzakerva17 (big blind) showed [8h Th] and lost with Two pairs : Aces and Tens
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #4446486702751481892-50-1768937001 - Holdem no limit (30/125/250) - 2026/01/20 19:23:21 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (21750, 2.50€ bounty)
+Seat 2: jesusito33 (24348, 2.50€ bounty)
+Seat 3: Shadow5562 (26339, 2.50€ bounty)
+Seat 4: tarzakerva17 (24603, 2.50€ bounty)
+Seat 5: pauvre876540 (18490, 2.50€ bounty)
+Seat 6: noe_chicha (34607, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 30
+pauvre876540 posts ante 30
+MUSTANG7474 posts ante 30
+jesusito33 posts ante 30
+Shadow5562 posts ante 30
+noe_chicha posts ante 30
+tarzakerva17 posts small blind 125
+pauvre876540 posts big blind 250
+Dealt to jesusito33 [5s Ah]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 calls 250
+jesusito33 folds
+Shadow5562 folds
+tarzakerva17 folds
+pauvre876540 checks
+*** FLOP *** [9s 3s Qd]
+pauvre876540 checks
+MUSTANG7474 checks
+*** TURN *** [9s 3s Qd][4d]
+pauvre876540 checks
+MUSTANG7474 checks
+*** RIVER *** [9s 3s Qd 4d][6s]
+pauvre876540 checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+pauvre876540 shows [5d 8h] (High card : Queen)
+MUSTANG7474 shows [Js Tc] (High card : Queen)
+MUSTANG7474 collected 805 from pot
+*** SUMMARY ***
+Total pot 805 | No rake
+Board: [9s 3s Qd 4d 6s]
+Seat 1: MUSTANG7474 showed [Js Tc] and won 805 with High card : Queen
+Seat 5: pauvre876540 (big blind) showed [5d 8h] and lost with High card : Queen
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #4446486702751481892-51-1768937075 - Holdem no limit (30/125/250) - 2026/01/20 19:24:35 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (22275, 2.50€ bounty)
+Seat 2: jesusito33 (24318, 2.50€ bounty)
+Seat 3: Shadow5562 (26309, 2.50€ bounty)
+Seat 4: tarzakerva17 (24448, 2.50€ bounty)
+Seat 5: pauvre876540 (18210, 2.50€ bounty)
+Seat 6: noe_chicha (34577, 2.50€ bounty)
+*** ANTE/BLINDS ***
+pauvre876540 posts ante 30
+noe_chicha posts ante 30
+MUSTANG7474 posts ante 30
+jesusito33 posts ante 30
+Shadow5562 posts ante 30
+tarzakerva17 posts ante 30
+pauvre876540 posts small blind 125
+noe_chicha posts big blind 250
+Dealt to jesusito33 [7d 2h]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 250
+jesusito33 folds
+Shadow5562 folds
+tarzakerva17 folds
+pauvre876540 folds
+noe_chicha checks
+*** FLOP *** [Jh Jd 7s]
+noe_chicha checks
+MUSTANG7474 bets 282
+noe_chicha folds
+MUSTANG7474 collected 1087 from pot
+*** SUMMARY ***
+Total pot 1087 | No rake
+Board: [Jh Jd 7s]
+Seat 1: MUSTANG7474 won 1087
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #4446486702751481892-52-1768937110 - Holdem no limit (30/125/250) - 2026/01/20 19:25:10 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (22800, 2.50€ bounty)
+Seat 2: jesusito33 (24288, 2.50€ bounty)
+Seat 3: Shadow5562 (26279, 2.50€ bounty)
+Seat 4: tarzakerva17 (24418, 2.50€ bounty)
+Seat 5: pauvre876540 (18055, 2.50€ bounty)
+Seat 6: noe_chicha (34297, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 30
+MUSTANG7474 posts ante 30
+jesusito33 posts ante 30
+Shadow5562 posts ante 30
+tarzakerva17 posts ante 30
+pauvre876540 posts ante 30
+noe_chicha posts small blind 125
+MUSTANG7474 posts big blind 250
+Dealt to jesusito33 [4c 8h]
+*** PRE-FLOP *** 
+jesusito33 folds
+Shadow5562 folds
+tarzakerva17 folds
+pauvre876540 folds
+noe_chicha calls 125
+MUSTANG7474 checks
+*** FLOP *** [Qs 6d 7d]
+noe_chicha checks
+MUSTANG7474 checks
+*** TURN *** [Qs 6d 7d][Tc]
+noe_chicha bets 544
+MUSTANG7474 folds
+noe_chicha collected 1224 from pot
+*** SUMMARY ***
+Total pot 1224 | No rake
+Board: [Qs 6d 7d Tc]
+Seat 6: noe_chicha (small blind) won 1224
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #4446486702751481892-53-1768937143 - Holdem no limit (30/125/250) - 2026/01/20 19:25:43 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (22520, 2.50€ bounty)
+Seat 2: jesusito33 (24258, 2.50€ bounty)
+Seat 4: tarzakerva17 (24388, 2.50€ bounty)
+Seat 5: pauvre876540 (18025, 2.50€ bounty)
+Seat 6: noe_chicha (34697, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 30
+jesusito33 posts ante 30
+tarzakerva17 posts ante 30
+pauvre876540 posts ante 30
+noe_chicha posts ante 30
+MUSTANG7474 posts small blind 125
+jesusito33 posts big blind 250
+Dealt to jesusito33 [7s Kc]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+pauvre876540 folds
+noe_chicha raises 500 to 750
+MUSTANG7474 folds
+jesusito33 calls 500
+*** FLOP *** [Kd Td 7c]
+jesusito33 bets 621
+noe_chicha calls 621
+*** TURN *** [Kd Td 7c][2s]
+jesusito33 bets 1509
+noe_chicha calls 1509
+*** RIVER *** [Kd Td 7c 2s][Ac]
+jesusito33 bets 3018
+noe_chicha calls 3018
+*** SHOW DOWN ***
+noe_chicha shows [Qs As] (One pair : Aces)
+jesusito33 shows [7s Kc] (Two pairs : Kings and 7)
+jesusito33 collected 12071 from pot
+*** SUMMARY ***
+Total pot 12071 | No rake
+Board: [Kd Td 7c 2s Ac]
+Seat 2: jesusito33 (big blind) showed [7s Kc] and won 12071 with Two pairs : Kings and 7
+Seat 6: noe_chicha (button) showed [Qs As] and lost with One pair : Aces
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #4446486702751481892-54-1768937212 - Holdem no limit (30/125/250) - 2026/01/20 19:26:52 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (22365, 2.50€ bounty)
+Seat 2: jesusito33 (30401, 2.50€ bounty)
+Seat 3: ptitnoeil- (20000, 2.50€ bounty)
+Seat 4: tarzakerva17 (24358, 2.50€ bounty)
+Seat 5: pauvre876540 (17995, 2.50€ bounty)
+Seat 6: noe_chicha (28769, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 30
+ptitnoeil- posts ante 30
+MUSTANG7474 posts ante 30
+tarzakerva17 posts ante 30
+pauvre876540 posts ante 30
+noe_chicha posts ante 30
+jesusito33 posts small blind 125
+ptitnoeil- posts big blind 250
+Dealt to jesusito33 [Qs 2c]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+pauvre876540 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 250 to 500
+ptitnoeil- calls 250
+*** FLOP *** [Jh 8s 5s]
+jesusito33 checks
+ptitnoeil- checks
+*** TURN *** [Jh 8s 5s][8c]
+jesusito33 checks
+ptitnoeil- bets 885
+jesusito33 folds
+ptitnoeil- collected 2065 from pot
+*** SUMMARY ***
+Total pot 2065 | No rake
+Board: [Jh 8s 5s 8c]
+Seat 3: ptitnoeil- (big blind) won 2065
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-55-1768937246 - Holdem no limit (35/150/300) - 2026/01/20 19:27:26 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (22335, 2.50€ bounty)
+Seat 2: jesusito33 (29871, 2.50€ bounty)
+Seat 3: ptitnoeil- (20650, 2.50€ bounty)
+Seat 4: tarzakerva17 (24328, 2.50€ bounty)
+Seat 5: pauvre876540 (17965, 2.50€ bounty)
+Seat 6: noe_chicha (28739, 2.50€ bounty)
+*** ANTE/BLINDS ***
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+pauvre876540 posts ante 35
+noe_chicha posts ante 35
+ptitnoeil- posts small blind 150
+tarzakerva17 posts big blind 300
+Dealt to jesusito33 [8c Td]
+*** PRE-FLOP *** 
+pauvre876540 folds
+noe_chicha folds
+MUSTANG7474 calls 300
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 checks
+*** FLOP *** [Th Kc 4c]
+tarzakerva17 checks
+MUSTANG7474 bets 300
+tarzakerva17 folds
+MUSTANG7474 collected 1260 from pot
+*** SUMMARY ***
+Total pot 1260 | No rake
+Board: [Th Kc 4c]
+Seat 1: MUSTANG7474 won 1260
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-56-1768937279 - Holdem no limit (35/150/300) - 2026/01/20 19:27:59 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (22960, 2.50€ bounty)
+Seat 2: jesusito33 (29836, 2.50€ bounty)
+Seat 3: ptitnoeil- (20465, 2.50€ bounty)
+Seat 4: tarzakerva17 (23993, 2.50€ bounty)
+Seat 5: pauvre876540 (17930, 2.50€ bounty)
+Seat 6: noe_chicha (28704, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 35
+pauvre876540 posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+noe_chicha posts ante 35
+tarzakerva17 posts small blind 150
+pauvre876540 posts big blind 300
+Dealt to jesusito33 [2d 6c]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 calls 150
+pauvre876540 raises 810 to 1110
+tarzakerva17 calls 810
+*** FLOP *** [8s Tc 6s]
+tarzakerva17 checks
+pauvre876540 bets 851
+tarzakerva17 calls 851
+*** TURN *** [8s Tc 6s][Kc]
+tarzakerva17 checks
+pauvre876540 bets 4132
+tarzakerva17 calls 4132
+*** RIVER *** [8s Tc 6s Kc][9d]
+tarzakerva17 bets 17865 and is all-in
+pauvre876540 calls 11802 and is all-in
+*** SHOW DOWN ***
+pauvre876540 shows [Ts Td] (Trips of Tens)
+tarzakerva17 shows [Jd Qs] (Straight King high)
+tarzakerva17 collected 42063 from pot
+*** SUMMARY ***
+Total pot 42063 | No rake
+Board: [8s Tc 6s Kc 9d]
+Seat 4: tarzakerva17 (small blind) showed [Jd Qs] and won 42063 with Straight King high
+Seat 5: pauvre876540 (big blind) showed [Ts Td] and lost with Trips of Tens
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-57-1768937335 - Holdem no limit (35/150/300) - 2026/01/20 19:28:55 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (22925, 2.50€ bounty)
+Seat 2: jesusito33 (29801, 2.50€ bounty)
+Seat 3: ptitnoeil- (20430, 2.50€ bounty)
+Seat 4: tarzakerva17 (42063, 3€ bounty)
+Seat 6: noe_chicha (28669, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+noe_chicha posts big blind 300
+Dealt to jesusito33 [Th 6d]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 300
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+noe_chicha checks
+*** FLOP *** [4h 3s Ks]
+noe_chicha checks
+MUSTANG7474 checks
+*** TURN *** [4h 3s Ks][8d]
+noe_chicha checks
+MUSTANG7474 checks
+*** RIVER *** [4h 3s Ks 8d][6h]
+noe_chicha checks
+MUSTANG7474 bets 300
+noe_chicha folds
+MUSTANG7474 collected 1075 from pot
+*** SUMMARY ***
+Total pot 1075 | No rake
+Board: [4h 3s Ks 8d 6h]
+Seat 1: MUSTANG7474 won 1075
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-58-1768937358 - Holdem no limit (35/150/300) - 2026/01/20 19:29:18 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (23365, 2.50€ bounty)
+Seat 2: jesusito33 (29766, 2.50€ bounty)
+Seat 3: ptitnoeil- (20395, 2.50€ bounty)
+Seat 4: tarzakerva17 (42028, 3€ bounty)
+Seat 5: JaLu1607 (20000, 2.50€ bounty)
+Seat 6: noe_chicha (28334, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+noe_chicha posts small blind 150
+MUSTANG7474 posts big blind 300
+Dealt to jesusito33 [5h Qs]
+*** PRE-FLOP *** 
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+noe_chicha folds
+MUSTANG7474 collected 625 from pot
+*** SUMMARY ***
+Total pot 625 | No rake
+Seat 1: MUSTANG7474 (big blind) won 625
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-59-1768937372 - Holdem no limit (35/150/300) - 2026/01/20 19:29:32 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (23655, 2.50€ bounty)
+Seat 2: jesusito33 (29731, 2.50€ bounty)
+Seat 3: ptitnoeil- (20360, 2.50€ bounty)
+Seat 4: tarzakerva17 (41993, 3€ bounty)
+Seat 5: JaLu1607 (20000, 2.50€ bounty)
+Seat 6: noe_chicha (28149, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+JaLu1607 posts ante 35
+noe_chicha posts ante 35
+MUSTANG7474 posts small blind 150
+jesusito33 posts big blind 300
+Dealt to jesusito33 [Jd As]
+*** PRE-FLOP *** 
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 calls 150
+jesusito33 raises 300 to 600
+MUSTANG7474 folds
+jesusito33 collected 1110 from pot
+*** SUMMARY ***
+Total pot 1110 | No rake
+Seat 2: jesusito33 (big blind) won 1110
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-60-1768937393 - Holdem no limit (35/150/300) - 2026/01/20 19:29:53 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (23320, 2.50€ bounty)
+Seat 2: jesusito33 (30206, 2.50€ bounty)
+Seat 3: ptitnoeil- (20325, 2.50€ bounty)
+Seat 4: tarzakerva17 (41958, 3€ bounty)
+Seat 5: JaLu1607 (19965, 2.50€ bounty)
+Seat 6: noe_chicha (28114, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+MUSTANG7474 posts ante 35
+tarzakerva17 posts ante 35
+JaLu1607 posts ante 35
+noe_chicha posts ante 35
+jesusito33 posts small blind 150
+ptitnoeil- posts big blind 300
+Dealt to jesusito33 [Ks 4d]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 calls 300
+jesusito33 folds
+ptitnoeil- checks
+*** FLOP *** [Kh Jd 3s]
+ptitnoeil- checks
+MUSTANG7474 checks
+*** TURN *** [Kh Jd 3s][3c]
+ptitnoeil- checks
+MUSTANG7474 checks
+*** RIVER *** [Kh Jd 3s 3c][As]
+ptitnoeil- checks
+MUSTANG7474 bets 624
+ptitnoeil- folds
+MUSTANG7474 collected 1584 from pot
+*** SUMMARY ***
+Total pot 1584 | No rake
+Board: [Kh Jd 3s 3c As]
+Seat 1: MUSTANG7474 (button) won 1584
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-61-1768937428 - Holdem no limit (35/150/300) - 2026/01/20 19:30:28 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (23945, 2.50€ bounty)
+Seat 2: jesusito33 (30021, 2.50€ bounty)
+Seat 3: ptitnoeil- (19990, 2.50€ bounty)
+Seat 4: tarzakerva17 (41923, 3€ bounty)
+Seat 5: JaLu1607 (19930, 2.50€ bounty)
+Seat 6: noe_chicha (28079, 2.50€ bounty)
+*** ANTE/BLINDS ***
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+JaLu1607 posts ante 35
+noe_chicha posts ante 35
+ptitnoeil- posts small blind 150
+tarzakerva17 posts big blind 300
+Dealt to jesusito33 [8s 5d]
+*** PRE-FLOP *** 
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 collected 660 from pot
+*** SUMMARY ***
+Total pot 660 | No rake
+Seat 4: tarzakerva17 (big blind) won 660
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-62-1768937438 - Holdem no limit (35/150/300) - 2026/01/20 19:30:38 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (23910, 2.50€ bounty)
+Seat 2: jesusito33 (29986, 2.50€ bounty)
+Seat 3: ptitnoeil- (19805, 2.50€ bounty)
+Seat 4: tarzakerva17 (42248, 3€ bounty)
+Seat 5: JaLu1607 (19895, 2.50€ bounty)
+Seat 6: noe_chicha (28044, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 35
+JaLu1607 posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+noe_chicha posts ante 35
+tarzakerva17 posts small blind 150
+JaLu1607 posts big blind 300
+Dealt to jesusito33 [9d Kd]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 450 to 750
+ptitnoeil- folds
+tarzakerva17 calls 600
+JaLu1607 folds
+*** FLOP *** [8d Tc Ks]
+tarzakerva17 bets 2010
+jesusito33 calls 2010
+*** TURN *** [8d Tc Ks][7s]
+tarzakerva17 bets 1950
+jesusito33 raises 2208 to 4158
+tarzakerva17 calls 2208
+*** RIVER *** [8d Tc Ks 7s][7h]
+tarzakerva17 checks
+jesusito33 checks
+*** SHOW DOWN ***
+jesusito33 shows [9d Kd] (Two pairs : Kings and 7)
+tarzakerva17 shows [Ad Kc] (Two pairs : Kings and 7)
+tarzakerva17 collected 14346 from pot
+*** SUMMARY ***
+Total pot 14346 | No rake
+Board: [8d Tc Ks 7s 7h]
+Seat 2: jesusito33 showed [9d Kd] and lost with Two pairs : Kings and 7
+Seat 4: tarzakerva17 (small blind) showed [Ad Kc] and won 14346 with Two pairs : Kings and 7
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-63-1768937506 - Holdem no limit (35/150/300) - 2026/01/20 19:31:46 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (23875, 2.50€ bounty)
+Seat 2: jesusito33 (23033, 2.50€ bounty)
+Seat 3: ptitnoeil- (19770, 2.50€ bounty)
+Seat 4: tarzakerva17 (49641, 3€ bounty)
+Seat 5: JaLu1607 (19560, 2.50€ bounty)
+Seat 6: noe_chicha (28009, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 35
+noe_chicha posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+JaLu1607 posts small blind 150
+noe_chicha posts big blind 300
+Dealt to jesusito33 [Js 4d]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 300
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 raises 300 to 600
+JaLu1607 calls 450
+noe_chicha folds
+MUSTANG7474 calls 300
+*** FLOP *** [Kd 5s 2d]
+JaLu1607 checks
+MUSTANG7474 checks
+tarzakerva17 checks
+*** TURN *** [Kd 5s 2d][Ts]
+JaLu1607 checks
+MUSTANG7474 bets 809
+tarzakerva17 folds
+JaLu1607 calls 809
+*** RIVER *** [Kd 5s 2d Ts][Ac]
+JaLu1607 checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+MUSTANG7474 shows [Qh Ks] (One pair : Kings)
+JaLu1607 shows [Ad 5d] (Two pairs : Aces and 5)
+JaLu1607 collected 3928 from pot
+*** SUMMARY ***
+Total pot 3928 | No rake
+Board: [Kd 5s 2d Ts Ac]
+Seat 1: MUSTANG7474 showed [Qh Ks] and lost with One pair : Kings
+Seat 5: JaLu1607 (small blind) showed [Ad 5d] and won 3928 with Two pairs : Aces and 5
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-64-1768937543 - Holdem no limit (35/150/300) - 2026/01/20 19:32:23 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (22431, 2.50€ bounty)
+Seat 2: jesusito33 (22998, 2.50€ bounty)
+Seat 3: ptitnoeil- (19735, 2.50€ bounty)
+Seat 4: tarzakerva17 (49006, 3€ bounty)
+Seat 5: JaLu1607 (22044, 2.50€ bounty)
+Seat 6: noe_chicha (27674, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 35
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+JaLu1607 posts ante 35
+noe_chicha posts small blind 150
+MUSTANG7474 posts big blind 300
+Dealt to jesusito33 [8d 2c]
+*** PRE-FLOP *** 
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 calls 300
+noe_chicha calls 150
+MUSTANG7474 checks
+*** FLOP *** [9d 5c 2h]
+noe_chicha checks
+MUSTANG7474 bets 300
+JaLu1607 folds
+noe_chicha calls 300
+*** TURN *** [9d 5c 2h][9s]
+noe_chicha checks
+MUSTANG7474 checks
+*** RIVER *** [9d 5c 2h 9s][Ac]
+noe_chicha bets 1368
+MUSTANG7474 raises 2411 to 3779
+noe_chicha calls 2411
+*** SHOW DOWN ***
+noe_chicha shows [Ah 3h] (Two pairs : Aces and 9)
+MUSTANG7474 shows [3d 9c] (Trips of 9)
+MUSTANG7474 collected 9268 from pot
+*** SUMMARY ***
+Total pot 9268 | No rake
+Board: [9d 5c 2h 9s Ac]
+Seat 1: MUSTANG7474 (big blind) showed [3d 9c] and won 9268 with Trips of 9
+Seat 6: noe_chicha (small blind) showed [Ah 3h] and lost with Two pairs : Aces and 9
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #4446486702751481892-65-1768937575 - Holdem no limit (35/150/300) - 2026/01/20 19:32:55 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (27285, 2.50€ bounty)
+Seat 2: jesusito33 (22963, 2.50€ bounty)
+Seat 3: ptitnoeil- (19700, 2.50€ bounty)
+Seat 4: tarzakerva17 (48971, 3€ bounty)
+Seat 5: JaLu1607 (21709, 2.50€ bounty)
+Seat 6: noe_chicha (23260, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 35
+jesusito33 posts ante 35
+ptitnoeil- posts ante 35
+tarzakerva17 posts ante 35
+JaLu1607 posts ante 35
+noe_chicha posts ante 35
+MUSTANG7474 posts small blind 150
+jesusito33 posts big blind 300
+Dealt to jesusito33 [9h 3c]
+*** PRE-FLOP *** 
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 calls 300
+noe_chicha calls 300
+MUSTANG7474 calls 150
+jesusito33 checks
+*** FLOP *** [Qs 5c 7c]
+MUSTANG7474 checks
+jesusito33 checks
+JaLu1607 checks
+noe_chicha checks
+*** TURN *** [Qs 5c 7c][Ts]
+MUSTANG7474 bets 300
+jesusito33 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 collected 1710 from pot
+*** SUMMARY ***
+Total pot 1710 | No rake
+Board: [Qs 5c 7c Ts]
+Seat 1: MUSTANG7474 (small blind) won 1710
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-66-1768937611 - Holdem no limit (40/175/350) - 2026/01/20 19:33:31 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (28360, 2.50€ bounty)
+Seat 2: jesusito33 (22628, 2.50€ bounty)
+Seat 3: ptitnoeil- (19665, 2.50€ bounty)
+Seat 4: tarzakerva17 (48936, 3€ bounty)
+Seat 5: JaLu1607 (21374, 2.50€ bounty)
+Seat 6: noe_chicha (22925, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+MUSTANG7474 posts ante 40
+tarzakerva17 posts ante 40
+JaLu1607 posts ante 40
+noe_chicha posts ante 40
+jesusito33 posts small blind 175
+ptitnoeil- posts big blind 350
+Dealt to jesusito33 [4c Ts]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 350 to 700
+ptitnoeil- calls 350
+*** FLOP *** [9d 3h 3c]
+jesusito33 checks
+ptitnoeil- checks
+*** TURN *** [9d 3h 3c][6h]
+jesusito33 checks
+ptitnoeil- bets 1230
+jesusito33 folds
+ptitnoeil- collected 2870 from pot
+*** SUMMARY ***
+Total pot 2870 | No rake
+Board: [9d 3h 3c 6h]
+Seat 3: ptitnoeil- (big blind) won 2870
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-67-1768937680 - Holdem no limit (40/175/350) - 2026/01/20 19:34:40 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (28320, 2.50€ bounty)
+Seat 2: jesusito33 (21888, 2.50€ bounty)
+Seat 3: ptitnoeil- (20565, 2.50€ bounty)
+Seat 4: tarzakerva17 (48896, 3€ bounty)
+Seat 5: JaLu1607 (21334, 2.50€ bounty)
+Seat 6: noe_chicha (22885, 2.50€ bounty)
+*** ANTE/BLINDS ***
+ptitnoeil- posts ante 40
+tarzakerva17 posts ante 40
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+JaLu1607 posts ante 40
+noe_chicha posts ante 40
+ptitnoeil- posts small blind 175
+tarzakerva17 posts big blind 350
+Dealt to jesusito33 [Js 2s]
+*** PRE-FLOP *** 
+JaLu1607 calls 350
+noe_chicha folds
+MUSTANG7474 calls 350
+jesusito33 folds
+ptitnoeil- calls 175
+tarzakerva17 checks
+*** FLOP *** [Qc Jh Td]
+ptitnoeil- checks
+tarzakerva17 checks
+JaLu1607 checks
+MUSTANG7474 bets 350
+ptitnoeil- raises 1050 to 1400
+tarzakerva17 folds
+JaLu1607 folds
+MUSTANG7474 folds
+ptitnoeil- collected 3390 from pot
+*** SUMMARY ***
+Total pot 3390 | No rake
+Board: [Qc Jh Td]
+Seat 3: ptitnoeil- (small blind) won 3390
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-68-1768937709 - Holdem no limit (40/175/350) - 2026/01/20 19:35:09 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (27580, 2.50€ bounty)
+Seat 2: jesusito33 (21848, 2.50€ bounty)
+Seat 3: ptitnoeil- (22165, 2.50€ bounty)
+Seat 4: tarzakerva17 (48506, 3€ bounty)
+Seat 5: JaLu1607 (20944, 2.50€ bounty)
+Seat 6: noe_chicha (22845, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 40
+JaLu1607 posts ante 40
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+noe_chicha posts ante 40
+tarzakerva17 posts small blind 175
+JaLu1607 posts big blind 350
+Dealt to jesusito33 [3d 5d]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 collected 765 from pot
+*** SUMMARY ***
+Total pot 765 | No rake
+Seat 5: JaLu1607 (big blind) won 765
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-69-1768937719 - Holdem no limit (40/175/350) - 2026/01/20 19:35:19 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (27540, 2.50€ bounty)
+Seat 2: jesusito33 (21808, 2.50€ bounty)
+Seat 3: ptitnoeil- (22125, 2.50€ bounty)
+Seat 4: tarzakerva17 (48291, 3€ bounty)
+Seat 5: JaLu1607 (21319, 2.50€ bounty)
+Seat 6: noe_chicha (22805, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 40
+noe_chicha posts ante 40
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+tarzakerva17 posts ante 40
+JaLu1607 posts small blind 175
+noe_chicha posts big blind 350
+Dealt to jesusito33 [Kc Td]
+*** PRE-FLOP *** 
+MUSTANG7474 folds
+jesusito33 raises 525 to 875
+ptitnoeil- calls 875
+tarzakerva17 calls 875
+JaLu1607 folds
+noe_chicha folds
+*** FLOP *** [6c 5d Ks]
+jesusito33 bets 848
+ptitnoeil- calls 848
+tarzakerva17 folds
+*** TURN *** [6c 5d Ks][3s]
+jesusito33 bets 1780
+ptitnoeil- calls 1780
+*** RIVER *** [6c 5d Ks 3s][5c]
+jesusito33 checks
+ptitnoeil- bets 6485
+jesusito33 folds
+ptitnoeil- collected 15131 from pot
+*** SUMMARY ***
+Total pot 15131 | No rake
+Board: [6c 5d Ks 3s 5c]
+Seat 3: ptitnoeil- won 15131
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-70-1768937779 - Holdem no limit (40/175/350) - 2026/01/20 19:36:19 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (27500, 2.50€ bounty)
+Seat 2: jesusito33 (18265, 2.50€ bounty)
+Seat 3: ptitnoeil- (27228, 2.50€ bounty)
+Seat 4: tarzakerva17 (47376, 3€ bounty)
+Seat 5: JaLu1607 (21104, 2.50€ bounty)
+Seat 6: noe_chicha (22415, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 40
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+tarzakerva17 posts ante 40
+JaLu1607 posts ante 40
+noe_chicha posts small blind 175
+MUSTANG7474 posts big blind 350
+Dealt to jesusito33 [2h 6d]
+*** PRE-FLOP *** 
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 calls 350
+noe_chicha folds
+MUSTANG7474 checks
+*** FLOP *** [Qd 7h 3d]
+MUSTANG7474 checks
+JaLu1607 bets 390
+MUSTANG7474 folds
+JaLu1607 collected 1505 from pot
+*** SUMMARY ***
+Total pot 1505 | No rake
+Board: [Qd 7h 3d]
+Seat 5: JaLu1607 (button) won 1505
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-71-1768937808 - Holdem no limit (40/175/350) - 2026/01/20 19:36:48 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (27110, 2.50€ bounty)
+Seat 2: jesusito33 (18225, 2.50€ bounty)
+Seat 3: ptitnoeil- (27188, 2.50€ bounty)
+Seat 4: tarzakerva17 (47336, 3€ bounty)
+Seat 5: JaLu1607 (21829, 2.50€ bounty)
+Seat 6: noe_chicha (22200, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+tarzakerva17 posts ante 40
+JaLu1607 posts ante 40
+noe_chicha posts ante 40
+MUSTANG7474 posts small blind 175
+jesusito33 posts big blind 350
+Dealt to jesusito33 [4s 4c]
+*** PRE-FLOP *** 
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 raises 350 to 700
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 calls 350
+*** FLOP *** [Qs 9d As]
+jesusito33 checks
+JaLu1607 bets 1180
+jesusito33 folds
+JaLu1607 collected 2995 from pot
+*** SUMMARY ***
+Total pot 2995 | No rake
+Board: [Qs 9d As]
+Seat 5: JaLu1607 won 2995
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-72-1768937825 - Holdem no limit (40/175/350) - 2026/01/20 19:37:05 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (26895, 2.50€ bounty)
+Seat 2: jesusito33 (17485, 2.50€ bounty)
+Seat 3: ptitnoeil- (27148, 2.50€ bounty)
+Seat 4: tarzakerva17 (47296, 3€ bounty)
+Seat 5: JaLu1607 (22904, 2.50€ bounty)
+Seat 6: noe_chicha (22160, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+MUSTANG7474 posts ante 40
+tarzakerva17 posts ante 40
+JaLu1607 posts ante 40
+noe_chicha posts ante 40
+jesusito33 posts small blind 175
+ptitnoeil- posts big blind 350
+Dealt to jesusito33 [9s 9c]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 calls 350
+jesusito33 raises 700 to 1050
+ptitnoeil- folds
+MUSTANG7474 folds
+jesusito33 collected 1990 from pot
+*** SUMMARY ***
+Total pot 1990 | No rake
+Seat 2: jesusito33 (small blind) won 1990
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-73-1768937900 - Holdem no limit (40/175/350) - 2026/01/20 19:38:20 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (26505, 2.50€ bounty)
+Seat 2: jesusito33 (18385, 2.50€ bounty)
+Seat 3: ptitnoeil- (26758, 2.50€ bounty)
+Seat 4: tarzakerva17 (47256, 3€ bounty)
+Seat 5: JaLu1607 (22864, 2.50€ bounty)
+Seat 6: noe_chicha (22120, 2.50€ bounty)
+*** ANTE/BLINDS ***
+ptitnoeil- posts ante 40
+tarzakerva17 posts ante 40
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+JaLu1607 posts ante 40
+noe_chicha posts ante 40
+ptitnoeil- posts small blind 175
+tarzakerva17 posts big blind 350
+Dealt to jesusito33 [Kd Qh]
+*** PRE-FLOP *** 
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 700 to 1050
+ptitnoeil- folds
+tarzakerva17 folds
+jesusito33 collected 1815 from pot
+*** SUMMARY ***
+Total pot 1815 | No rake
+Seat 2: jesusito33 (button) won 1815
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-74-1768937923 - Holdem no limit (40/175/350) - 2026/01/20 19:38:43 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (26465, 2.50€ bounty)
+Seat 2: jesusito33 (19110, 2.50€ bounty)
+Seat 3: ptitnoeil- (26543, 2.50€ bounty)
+Seat 4: tarzakerva17 (46866, 3€ bounty)
+Seat 5: JaLu1607 (22824, 2.50€ bounty)
+Seat 6: noe_chicha (22080, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 40
+JaLu1607 posts ante 40
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+noe_chicha posts ante 40
+tarzakerva17 posts small blind 175
+JaLu1607 posts big blind 350
+Dealt to jesusito33 [6d 3s]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 collected 765 from pot
+*** SUMMARY ***
+Total pot 765 | No rake
+Seat 5: JaLu1607 (big blind) won 765
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #4446486702751481892-75-1768937937 - Holdem no limit (40/175/350) - 2026/01/20 19:38:57 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (26425, 2.50€ bounty)
+Seat 2: jesusito33 (19070, 2.50€ bounty)
+Seat 3: ptitnoeil- (26503, 2.50€ bounty)
+Seat 4: tarzakerva17 (46651, 3€ bounty)
+Seat 5: JaLu1607 (23199, 2.50€ bounty)
+Seat 6: noe_chicha (22040, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 40
+noe_chicha posts ante 40
+MUSTANG7474 posts ante 40
+jesusito33 posts ante 40
+ptitnoeil- posts ante 40
+tarzakerva17 posts ante 40
+JaLu1607 posts small blind 175
+noe_chicha posts big blind 350
+Dealt to jesusito33 [Js 8c]
+*** PRE-FLOP *** 
+MUSTANG7474 folds
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 calls 350
+JaLu1607 folds
+noe_chicha checks
+*** FLOP *** [Jh Ad 4h]
+noe_chicha checks
+tarzakerva17 bets 1115
+noe_chicha calls 1115
+*** TURN *** [Jh Ad 4h][7d]
+noe_chicha checks
+tarzakerva17 bets 3345
+noe_chicha folds
+tarzakerva17 collected 6690 from pot
+*** SUMMARY ***
+Total pot 6690 | No rake
+Board: [Jh Ad 4h 7d]
+Seat 4: tarzakerva17 (button) won 6690
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #4446486702751481892-76-1768938011 - Holdem no limit (50/200/400) - 2026/01/20 19:40:11 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (26385, 2.50€ bounty)
+Seat 2: jesusito33 (19030, 2.50€ bounty)
+Seat 3: ptitnoeil- (26463, 2.50€ bounty)
+Seat 4: tarzakerva17 (48491, 3€ bounty)
+Seat 5: JaLu1607 (22984, 2.50€ bounty)
+Seat 6: noe_chicha (20535, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 50
+MUSTANG7474 posts ante 50
+jesusito33 posts ante 50
+ptitnoeil- posts ante 50
+tarzakerva17 posts ante 50
+JaLu1607 posts ante 50
+noe_chicha posts small blind 200
+MUSTANG7474 posts big blind 400
+Dealt to jesusito33 [4d Ac]
+*** PRE-FLOP *** 
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 raises 400 to 800
+noe_chicha folds
+MUSTANG7474 calls 400
+*** FLOP *** [2c Kc 8c]
+MUSTANG7474 checks
+JaLu1607 bets 735
+MUSTANG7474 folds
+JaLu1607 collected 2835 from pot
+*** SUMMARY ***
+Total pot 2835 | No rake
+Board: [2c Kc 8c]
+Seat 5: JaLu1607 (button) won 2835
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #4446486702751481892-77-1768938052 - Holdem no limit (50/200/400) - 2026/01/20 19:40:52 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (25535, 2.50€ bounty)
+Seat 2: jesusito33 (18980, 2.50€ bounty)
+Seat 3: ptitnoeil- (26413, 2.50€ bounty)
+Seat 4: tarzakerva17 (48441, 3€ bounty)
+Seat 5: JaLu1607 (24234, 2.50€ bounty)
+Seat 6: noe_chicha (20285, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 50
+jesusito33 posts ante 50
+ptitnoeil- posts ante 50
+tarzakerva17 posts ante 50
+JaLu1607 posts ante 50
+noe_chicha posts ante 50
+MUSTANG7474 posts small blind 200
+jesusito33 posts big blind 400
+Dealt to jesusito33 [5h 2h]
+*** PRE-FLOP *** 
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 calls 400
+noe_chicha folds
+MUSTANG7474 calls 200
+jesusito33 checks
+*** FLOP *** [5d 4h Td]
+MUSTANG7474 checks
+jesusito33 checks
+JaLu1607 checks
+*** TURN *** [5d 4h Td][7d]
+MUSTANG7474 checks
+jesusito33 checks
+JaLu1607 checks
+*** RIVER *** [5d 4h Td 7d][Qd]
+MUSTANG7474 bets 525
+jesusito33 folds
+JaLu1607 folds
+MUSTANG7474 collected 2025 from pot
+*** SUMMARY ***
+Total pot 2025 | No rake
+Board: [5d 4h Td 7d Qd]
+Seat 1: MUSTANG7474 (small blind) won 2025
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #4446486702751481892-78-1768938108 - Holdem no limit (50/200/400) - 2026/01/20 19:41:48 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (26585, 2.50€ bounty)
+Seat 2: jesusito33 (18530, 2.50€ bounty)
+Seat 3: ptitnoeil- (26363, 2.50€ bounty)
+Seat 4: tarzakerva17 (48391, 3€ bounty)
+Seat 5: JaLu1607 (23784, 2.50€ bounty)
+Seat 6: noe_chicha (20235, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 50
+ptitnoeil- posts ante 50
+MUSTANG7474 posts ante 50
+tarzakerva17 posts ante 50
+JaLu1607 posts ante 50
+noe_chicha posts ante 50
+jesusito33 posts small blind 200
+ptitnoeil- posts big blind 400
+Dealt to jesusito33 [9h Qh]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 calls 400
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 600 to 1000
+ptitnoeil- folds
+JaLu1607 calls 600
+*** FLOP *** [6d As 8c]
+jesusito33 checks
+JaLu1607 checks
+*** TURN *** [6d As 8c][9d]
+jesusito33 bets 945
+JaLu1607 calls 945
+*** RIVER *** [6d As 8c 9d][3h]
+jesusito33 bets 1607
+JaLu1607 folds
+jesusito33 collected 6197 from pot
+*** SUMMARY ***
+Total pot 6197 | No rake
+Board: [6d As 8c 9d 3h]
+Seat 2: jesusito33 (small blind) won 6197
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #4446486702751481892-79-1768938175 - Holdem no limit (50/200/400) - 2026/01/20 19:42:55 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (26535, 2.50€ bounty)
+Seat 2: jesusito33 (21125, 2.50€ bounty)
+Seat 3: ptitnoeil- (25913, 2.50€ bounty)
+Seat 4: tarzakerva17 (48341, 3€ bounty)
+Seat 5: JaLu1607 (21789, 2.50€ bounty)
+Seat 6: noe_chicha (20185, 2.50€ bounty)
+*** ANTE/BLINDS ***
+ptitnoeil- posts ante 50
+tarzakerva17 posts ante 50
+MUSTANG7474 posts ante 50
+jesusito33 posts ante 50
+JaLu1607 posts ante 50
+noe_chicha posts ante 50
+ptitnoeil- posts small blind 200
+tarzakerva17 posts big blind 400
+Dealt to jesusito33 [3h 3d]
+*** PRE-FLOP *** 
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 400 to 800
+ptitnoeil- folds
+tarzakerva17 calls 400
+*** FLOP *** [6h 7h As]
+tarzakerva17 checks
+jesusito33 bets 735
+tarzakerva17 raises 935 to 1670
+jesusito33 folds
+tarzakerva17 collected 4505 from pot
+*** SUMMARY ***
+Total pot 4505 | No rake
+Board: [6h 7h As]
+Seat 4: tarzakerva17 (big blind) won 4505
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #4446486702751481892-80-1768938210 - Holdem no limit (50/200/400) - 2026/01/20 19:43:30 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (26485, 2.50€ bounty)
+Seat 2: jesusito33 (19540, 2.50€ bounty)
+Seat 3: ptitnoeil- (25663, 2.50€ bounty)
+Seat 4: tarzakerva17 (50326, 3€ bounty)
+Seat 5: JaLu1607 (21739, 2.50€ bounty)
+Seat 6: noe_chicha (20135, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 50
+JaLu1607 posts ante 50
+MUSTANG7474 posts ante 50
+jesusito33 posts ante 50
+ptitnoeil- posts ante 50
+noe_chicha posts ante 50
+tarzakerva17 posts small blind 200
+JaLu1607 posts big blind 400
+Dealt to jesusito33 [8s Tc]
+*** PRE-FLOP *** 
+noe_chicha raises 400 to 800
+MUSTANG7474 calls 800
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 calls 400
+*** FLOP *** [4s 5s 3s]
+JaLu1607 checks
+noe_chicha bets 1885
+MUSTANG7474 calls 1885
+JaLu1607 calls 1885
+*** TURN *** [4s 5s 3s][Ah]
+JaLu1607 checks
+noe_chicha checks
+MUSTANG7474 checks
+*** RIVER *** [4s 5s 3s Ah][9d]
+JaLu1607 checks
+noe_chicha checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+MUSTANG7474 shows [Js Kd] (High card : Ace)
+noe_chicha shows [6d 6c] (One pair : 6)
+JaLu1607 shows [5h 4h] (Two pairs : 5 and 4)
+JaLu1607 collected 8555 from pot
+*** SUMMARY ***
+Total pot 8555 | No rake
+Board: [4s 5s 3s Ah 9d]
+Seat 1: MUSTANG7474 showed [Js Kd] and lost with High card : Ace
+Seat 5: JaLu1607 (big blind) showed [5h 4h] and won 8555 with Two pairs : 5 and 4
+Seat 6: noe_chicha showed [6d 6c] and lost with One pair : 6
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #4446486702751481892-81-1768938280 - Holdem no limit (50/200/400) - 2026/01/20 19:44:40 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (23750, 2.50€ bounty)
+Seat 2: jesusito33 (19490, 2.50€ bounty)
+Seat 3: ptitnoeil- (25613, 2.50€ bounty)
+Seat 4: tarzakerva17 (50076, 3€ bounty)
+Seat 5: JaLu1607 (27559, 2.50€ bounty)
+Seat 6: noe_chicha (17400, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 50
+noe_chicha posts ante 50
+MUSTANG7474 posts ante 50
+jesusito33 posts ante 50
+ptitnoeil- posts ante 50
+tarzakerva17 posts ante 50
+JaLu1607 posts small blind 200
+noe_chicha posts big blind 400
+Dealt to jesusito33 [6s 8c]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 400
+jesusito33 folds
+ptitnoeil- folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha checks
+*** FLOP *** [4d Qs 9s]
+noe_chicha checks
+MUSTANG7474 checks
+*** TURN *** [4d Qs 9s][6h]
+noe_chicha checks
+MUSTANG7474 checks
+*** RIVER *** [4d Qs 9s 6h][Kh]
+noe_chicha checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+noe_chicha shows [5d 8d] (High card : King)
+MUSTANG7474 shows [As 7s] (High card : Ace)
+MUSTANG7474 collected 1300 from pot
+*** SUMMARY ***
+Total pot 1300 | No rake
+Board: [4d Qs 9s 6h Kh]
+Seat 1: MUSTANG7474 showed [As 7s] and won 1300 with High card : Ace
+Seat 6: noe_chicha (big blind) showed [5d 8d] and lost with High card : King
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #4446486702751481892-82-1768938315 - Holdem no limit (50/200/400) - 2026/01/20 19:45:15 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (24600, 2.50€ bounty)
+Seat 2: jesusito33 (19440, 2.50€ bounty)
+Seat 3: ptitnoeil- (25563, 2.50€ bounty)
+Seat 4: tarzakerva17 (50026, 3€ bounty)
+Seat 5: JaLu1607 (27309, 2.50€ bounty)
+Seat 6: noe_chicha (16950, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 50
+MUSTANG7474 posts ante 50
+jesusito33 posts ante 50
+ptitnoeil- posts ante 50
+tarzakerva17 posts ante 50
+JaLu1607 posts ante 50
+noe_chicha posts small blind 200
+MUSTANG7474 posts big blind 400
+Dealt to jesusito33 [Kd Td]
+*** PRE-FLOP *** 
+jesusito33 raises 400 to 800
+ptitnoeil- raises 1800 to 2600
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha raises 14300 to 16900 and is all-in
+MUSTANG7474 folds
+jesusito33 folds
+ptitnoeil- calls 14300
+*** FLOP *** [8s Jd 5c]
+*** TURN *** [8s Jd 5c][Qh]
+*** RIVER *** [8s Jd 5c Qh][4c]
+*** SHOW DOWN ***
+ptitnoeil- shows [Ts Ac] (High card : Ace)
+noe_chicha shows [Qs Ad] (One pair : Queens)
+noe_chicha collected 35300 from pot
+*** SUMMARY ***
+Total pot 35300 | No rake
+Board: [8s Jd 5c Qh 4c]
+Seat 3: ptitnoeil- showed [Ts Ac] and lost with High card : Ace
+Seat 6: noe_chicha (small blind) showed [Qs Ad] and won 35300 with One pair : Queens
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-83-1768938372 - Holdem no limit (60/250/500) - 2026/01/20 19:46:12 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (24150, 2.50€ bounty)
+Seat 2: jesusito33 (18590, 2.50€ bounty)
+Seat 3: ptitnoeil- (8613, 2.50€ bounty)
+Seat 4: tarzakerva17 (49976, 3€ bounty)
+Seat 5: JaLu1607 (27259, 2.50€ bounty)
+Seat 6: noe_chicha (35300, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 60
+jesusito33 posts ante 60
+ptitnoeil- posts ante 60
+tarzakerva17 posts ante 60
+JaLu1607 posts ante 60
+noe_chicha posts ante 60
+MUSTANG7474 posts small blind 250
+jesusito33 posts big blind 500
+Dealt to jesusito33 [Jc Ad]
+*** PRE-FLOP *** 
+ptitnoeil- folds
+tarzakerva17 raises 1250 to 1750
+JaLu1607 folds
+noe_chicha calls 1750
+MUSTANG7474 folds
+jesusito33 calls 1250
+*** FLOP *** [7d Ts 5d]
+jesusito33 checks
+tarzakerva17 checks
+noe_chicha bets 3809
+jesusito33 folds
+tarzakerva17 folds
+noe_chicha collected 9669 from pot
+*** SUMMARY ***
+Total pot 9669 | No rake
+Board: [7d Ts 5d]
+Seat 6: noe_chicha (button) won 9669
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-84-1768938406 - Holdem no limit (60/250/500) - 2026/01/20 19:46:46 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (23840, 2.50€ bounty)
+Seat 2: jesusito33 (16780, 2.50€ bounty)
+Seat 3: ptitnoeil- (8553, 2.50€ bounty)
+Seat 4: tarzakerva17 (48166, 3€ bounty)
+Seat 5: JaLu1607 (27199, 2.50€ bounty)
+Seat 6: noe_chicha (39350, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 60
+ptitnoeil- posts ante 60
+MUSTANG7474 posts ante 60
+tarzakerva17 posts ante 60
+JaLu1607 posts ante 60
+noe_chicha posts ante 60
+jesusito33 posts small blind 250
+ptitnoeil- posts big blind 500
+Dealt to jesusito33 [Ad Kc]
+*** PRE-FLOP *** 
+tarzakerva17 calls 500
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 16220 to 16720 and is all-in
+ptitnoeil- folds
+tarzakerva17 folds
+jesusito33 collected 18080 from pot
+*** SUMMARY ***
+Total pot 18080 | No rake
+Seat 2: jesusito33 (small blind) won 18080
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-85-1768938429 - Holdem no limit (60/250/500) - 2026/01/20 19:47:09 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (23780, 2.50€ bounty)
+Seat 2: jesusito33 (18080, 2.50€ bounty)
+Seat 3: ptitnoeil- (7993, 2.50€ bounty)
+Seat 4: tarzakerva17 (47606, 3€ bounty)
+Seat 5: JaLu1607 (27139, 2.50€ bounty)
+Seat 6: noe_chicha (39290, 2.50€ bounty)
+*** ANTE/BLINDS ***
+ptitnoeil- posts ante 60
+tarzakerva17 posts ante 60
+MUSTANG7474 posts ante 60
+jesusito33 posts ante 60
+JaLu1607 posts ante 60
+noe_chicha posts ante 60
+ptitnoeil- posts small blind 250
+tarzakerva17 posts big blind 500
+Dealt to jesusito33 [7d 9s]
+*** PRE-FLOP *** 
+JaLu1607 calls 500
+noe_chicha folds
+MUSTANG7474 calls 500
+jesusito33 folds
+ptitnoeil- raises 7433 to 7933 and is all-in
+tarzakerva17 folds
+JaLu1607 calls 7433
+MUSTANG7474 folds
+*** FLOP *** [Kc Qc 3d]
+*** TURN *** [Kc Qc 3d][9h]
+*** RIVER *** [Kc Qc 3d 9h][4s]
+*** SHOW DOWN ***
+ptitnoeil- shows [8s 8c] (One pair : 8)
+JaLu1607 shows [Qs Kh] (Two pairs : Kings and Queens)
+JaLu1607 collected 17226 from pot
+*** SUMMARY ***
+Total pot 17226 | No rake
+Board: [Kc Qc 3d 9h 4s]
+Seat 3: ptitnoeil- (small blind) showed [8s 8c] and lost with One pair : 8
+Seat 5: JaLu1607 showed [Qs Kh] and won 17226 with Two pairs : Kings and Queens
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-86-1768938481 - Holdem no limit (60/250/500) - 2026/01/20 19:48:01 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (23220, 2.50€ bounty)
+Seat 2: jesusito33 (18020, 2.50€ bounty)
+Seat 4: tarzakerva17 (47046, 3€ bounty)
+Seat 5: JaLu1607 (36372, 3.75€ bounty)
+Seat 6: noe_chicha (39230, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 60
+JaLu1607 posts ante 60
+MUSTANG7474 posts ante 60
+jesusito33 posts ante 60
+noe_chicha posts ante 60
+tarzakerva17 posts small blind 250
+JaLu1607 posts big blind 500
+Dealt to jesusito33 [Qd 8s]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+tarzakerva17 calls 250
+JaLu1607 checks
+*** FLOP *** [6c 9s 4c]
+tarzakerva17 checks
+JaLu1607 checks
+*** TURN *** [6c 9s 4c][Js]
+tarzakerva17 checks
+JaLu1607 checks
+*** RIVER *** [6c 9s 4c Js][Tc]
+tarzakerva17 checks
+JaLu1607 checks
+*** SHOW DOWN ***
+tarzakerva17 shows [3s As] (High card : Ace)
+JaLu1607 shows [Jh 8d] (One pair : Jacks)
+JaLu1607 collected 1300 from pot
+*** SUMMARY ***
+Total pot 1300 | No rake
+Board: [6c 9s 4c Js Tc]
+Seat 4: tarzakerva17 (small blind) showed [3s As] and lost with High card : Ace
+Seat 5: JaLu1607 (big blind) showed [Jh 8d] and won 1300 with One pair : Jacks
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-87-1768938546 - Holdem no limit (60/250/500) - 2026/01/20 19:49:06 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (23160, 2.50€ bounty)
+Seat 2: jesusito33 (17960, 2.50€ bounty)
+Seat 4: tarzakerva17 (46486, 3€ bounty)
+Seat 5: JaLu1607 (37112, 3.75€ bounty)
+Seat 6: noe_chicha (39170, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 60
+noe_chicha posts ante 60
+MUSTANG7474 posts ante 60
+jesusito33 posts ante 60
+tarzakerva17 posts ante 60
+JaLu1607 posts small blind 250
+noe_chicha posts big blind 500
+Dealt to jesusito33 [2h 7d]
+*** PRE-FLOP *** 
+MUSTANG7474 folds
+jesusito33 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha collected 1050 from pot
+*** SUMMARY ***
+Total pot 1050 | No rake
+Seat 6: noe_chicha (big blind) won 1050
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-88-1768938554 - Holdem no limit (60/250/500) - 2026/01/20 19:49:14 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (23100, 2.50€ bounty)
+Seat 2: jesusito33 (17900, 2.50€ bounty)
+Seat 3: Crustan13 (20000, 2.50€ bounty)
+Seat 4: tarzakerva17 (46426, 3€ bounty)
+Seat 5: JaLu1607 (36802, 3.75€ bounty)
+Seat 6: noe_chicha (39660, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 60
+MUSTANG7474 posts ante 60
+jesusito33 posts ante 60
+Crustan13 posts ante 60
+tarzakerva17 posts ante 60
+JaLu1607 posts ante 60
+noe_chicha posts small blind 250
+MUSTANG7474 posts big blind 500
+Dealt to jesusito33 [8d 8s]
+*** PRE-FLOP *** 
+jesusito33 raises 500 to 1000
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 collected 2110 from pot
+*** SUMMARY ***
+Total pot 2110 | No rake
+Seat 2: jesusito33 won 2110
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-89-1768938580 - Holdem no limit (60/250/500) - 2026/01/20 19:49:40 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (22540, 2.50€ bounty)
+Seat 2: jesusito33 (18950, 2.50€ bounty)
+Seat 3: Crustan13 (19940, 2.50€ bounty)
+Seat 4: tarzakerva17 (46366, 3€ bounty)
+Seat 5: JaLu1607 (36742, 3.75€ bounty)
+Seat 6: noe_chicha (39350, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 60
+jesusito33 posts ante 60
+Crustan13 posts ante 60
+tarzakerva17 posts ante 60
+JaLu1607 posts ante 60
+noe_chicha posts ante 60
+MUSTANG7474 posts small blind 250
+jesusito33 posts big blind 500
+Dealt to jesusito33 [Ks 2h]
+*** PRE-FLOP *** 
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 collected 1110 from pot
+*** SUMMARY ***
+Total pot 1110 | No rake
+Seat 2: jesusito33 (big blind) won 1110
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 6 - HandId: #4446486702751481892-90-1768938644 - Holdem no limit (60/250/500) - 2026/01/20 19:50:44 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (22230, 2.50€ bounty)
+Seat 2: jesusito33 (19500, 2.50€ bounty)
+Seat 3: Crustan13 (19880, 2.50€ bounty)
+Seat 4: tarzakerva17 (46306, 3€ bounty)
+Seat 5: JaLu1607 (36682, 3.75€ bounty)
+Seat 6: noe_chicha (39290, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 60
+Crustan13 posts ante 60
+MUSTANG7474 posts ante 60
+tarzakerva17 posts ante 60
+JaLu1607 posts ante 60
+noe_chicha posts ante 60
+jesusito33 posts small blind 250
+Crustan13 posts big blind 500
+Dealt to jesusito33 [Ad Ac]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 calls 500
+noe_chicha folds
+MUSTANG7474 calls 500
+jesusito33 raises 18940 to 19440 and is all-in
+Crustan13 folds
+JaLu1607 folds
+MUSTANG7474 folds
+jesusito33 collected 21300 from pot
+*** SUMMARY ***
+Total pot 21300 | No rake
+Seat 2: jesusito33 (small blind) won 21300
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 7 - HandId: #4446486702751481892-91-1768938691 - Holdem no limit (70/300/600) - 2026/01/20 19:51:31 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (21670, 2.50€ bounty)
+Seat 2: jesusito33 (21300, 2.50€ bounty)
+Seat 3: Crustan13 (19320, 2.50€ bounty)
+Seat 4: tarzakerva17 (46246, 3€ bounty)
+Seat 5: JaLu1607 (36122, 3.75€ bounty)
+Seat 6: noe_chicha (39230, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Crustan13 posts ante 70
+tarzakerva17 posts ante 70
+MUSTANG7474 posts ante 70
+jesusito33 posts ante 70
+JaLu1607 posts ante 70
+noe_chicha posts ante 70
+Crustan13 posts small blind 300
+tarzakerva17 posts big blind 600
+Dealt to jesusito33 [Tc Jd]
+*** PRE-FLOP *** 
+JaLu1607 calls 600
+noe_chicha folds
+MUSTANG7474 calls 600
+jesusito33 raises 900 to 1500
+Crustan13 folds
+tarzakerva17 calls 900
+JaLu1607 calls 900
+MUSTANG7474 calls 900
+*** FLOP *** [9d Qd 5h]
+tarzakerva17 checks
+JaLu1607 checks
+MUSTANG7474 checks
+jesusito33 bets 3360
+tarzakerva17 calls 3360
+JaLu1607 folds
+MUSTANG7474 folds
+*** TURN *** [9d Qd 5h][6h]
+tarzakerva17 checks
+jesusito33 checks
+*** RIVER *** [9d Qd 5h 6h][Jh]
+tarzakerva17 bets 13440
+jesusito33 folds
+tarzakerva17 collected 26880 from pot
+*** SUMMARY ***
+Total pot 26880 | No rake
+Board: [9d Qd 5h 6h Jh]
+Seat 4: tarzakerva17 (big blind) won 26880
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 7 - HandId: #4446486702751481892-92-1768938758 - Holdem no limit (70/300/600) - 2026/01/20 19:52:38 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (20100, 2.50€ bounty)
+Seat 2: jesusito33 (16370, 2.50€ bounty)
+Seat 3: Crustan13 (18950, 2.50€ bounty)
+Seat 4: tarzakerva17 (54756, 3€ bounty)
+Seat 5: JaLu1607 (34552, 3.75€ bounty)
+Seat 6: noe_chicha (39160, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 70
+JaLu1607 posts ante 70
+MUSTANG7474 posts ante 70
+jesusito33 posts ante 70
+Crustan13 posts ante 70
+noe_chicha posts ante 70
+tarzakerva17 posts small blind 300
+JaLu1607 posts big blind 600
+Dealt to jesusito33 [6d 7s]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 calls 600
+jesusito33 folds
+Crustan13 calls 600
+tarzakerva17 folds
+JaLu1607 checks
+*** FLOP *** [Tc 5s 6s]
+JaLu1607 bets 600
+MUSTANG7474 calls 600
+Crustan13 folds
+*** TURN *** [Tc 5s 6s][Ad]
+JaLu1607 bets 1302
+MUSTANG7474 folds
+JaLu1607 collected 5022 from pot
+*** SUMMARY ***
+Total pot 5022 | No rake
+Board: [Tc 5s 6s Ad]
+Seat 5: JaLu1607 (big blind) won 5022
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 7 - HandId: #4446486702751481892-93-1768938834 - Holdem no limit (70/300/600) - 2026/01/20 19:53:54 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (18830, 2.50€ bounty)
+Seat 2: jesusito33 (16300, 2.50€ bounty)
+Seat 3: Crustan13 (18280, 2.50€ bounty)
+Seat 4: tarzakerva17 (54386, 3€ bounty)
+Seat 5: JaLu1607 (37002, 3.75€ bounty)
+Seat 6: noe_chicha (39090, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 70
+noe_chicha posts ante 70
+MUSTANG7474 posts ante 70
+jesusito33 posts ante 70
+Crustan13 posts ante 70
+tarzakerva17 posts ante 70
+JaLu1607 posts small blind 300
+noe_chicha posts big blind 600
+Dealt to jesusito33 [8h 4h]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 600
+jesusito33 folds
+Crustan13 raises 17610 to 18210 and is all-in
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+Crustan13 collected 20130 from pot
+*** SUMMARY ***
+Total pot 20130 | No rake
+Seat 3: Crustan13 won 20130
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 7 - HandId: #4446486702751481892-94-1768938858 - Holdem no limit (70/300/600) - 2026/01/20 19:54:18 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (18160, 2.50€ bounty)
+Seat 2: jesusito33 (16230, 2.50€ bounty)
+Seat 3: Crustan13 (20130, 2.50€ bounty)
+Seat 4: tarzakerva17 (54316, 3€ bounty)
+Seat 5: JaLu1607 (36632, 3.75€ bounty)
+Seat 6: noe_chicha (38420, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 70
+MUSTANG7474 posts ante 70
+jesusito33 posts ante 70
+Crustan13 posts ante 70
+tarzakerva17 posts ante 70
+JaLu1607 posts ante 70
+noe_chicha posts small blind 300
+MUSTANG7474 posts big blind 600
+Dealt to jesusito33 [5c Td]
+*** PRE-FLOP *** 
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 raises 900 to 1500
+noe_chicha calls 1200
+MUSTANG7474 folds
+*** FLOP *** [2d Kd Ac]
+noe_chicha checks
+JaLu1607 bets 1407
+noe_chicha calls 1407
+*** TURN *** [2d Kd Ac][Ks]
+noe_chicha checks
+JaLu1607 checks
+*** RIVER *** [2d Kd Ac Ks][2h]
+noe_chicha checks
+JaLu1607 checks
+*** SHOW DOWN ***
+noe_chicha shows [Ad 3d] (Two pairs : Aces and Kings)
+JaLu1607 shows [As Qd] (Two pairs : Aces and Kings)
+JaLu1607 collected 6834 from pot
+*** SUMMARY ***
+Total pot 6834 | No rake
+Board: [2d Kd Ac Ks 2h]
+Seat 5: JaLu1607 (button) showed [As Qd] and won 6834 with Two pairs : Aces and Kings
+Seat 6: noe_chicha (small blind) showed [Ad 3d] and lost with Two pairs : Aces and Kings
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 7 - HandId: #4446486702751481892-95-1768939261 - Holdem no limit (70/300/600) - 2026/01/20 20:01:01 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (17490, 2.50€ bounty)
+Seat 2: jesusito33 (16160, 2.50€ bounty)
+Seat 3: Crustan13 (20060, 2.50€ bounty)
+Seat 4: tarzakerva17 (54246, 3€ bounty)
+Seat 5: JaLu1607 (40489, 3.75€ bounty)
+Seat 6: noe_chicha (35443, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 70
+jesusito33 posts ante 70
+Crustan13 posts ante 70
+tarzakerva17 posts ante 70
+JaLu1607 posts ante 70
+noe_chicha posts ante 70
+MUSTANG7474 posts small blind 300
+jesusito33 posts big blind 600
+Dealt to jesusito33 [9d Jd]
+*** PRE-FLOP *** 
+Crustan13 folds
+tarzakerva17 raises 900 to 1500
+JaLu1607 calls 1500
+noe_chicha folds
+MUSTANG7474 calls 1200
+jesusito33 calls 900
+*** FLOP *** [Kh 8d 6c]
+MUSTANG7474 checks
+jesusito33 checks
+tarzakerva17 checks
+JaLu1607 checks
+*** TURN *** [Kh 8d 6c][Ts]
+MUSTANG7474 checks
+jesusito33 checks
+tarzakerva17 checks
+JaLu1607 checks
+*** RIVER *** [Kh 8d 6c Ts][As]
+MUSTANG7474 checks
+jesusito33 checks
+tarzakerva17 bets 1200
+JaLu1607 folds
+MUSTANG7474 folds
+jesusito33 folds
+tarzakerva17 collected 7620 from pot
+*** SUMMARY ***
+Total pot 7620 | No rake
+Board: [Kh 8d 6c Ts As]
+Seat 4: tarzakerva17 won 7620
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 7 - HandId: #4446486702751481892-96-1768939332 - Holdem no limit (70/300/600) - 2026/01/20 20:02:12 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (15920, 2.50€ bounty)
+Seat 2: jesusito33 (14590, 2.50€ bounty)
+Seat 3: Crustan13 (19990, 2.50€ bounty)
+Seat 4: tarzakerva17 (59096, 3€ bounty)
+Seat 5: JaLu1607 (38919, 3.75€ bounty)
+Seat 6: noe_chicha (35373, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 70
+Crustan13 posts ante 70
+MUSTANG7474 posts ante 70
+tarzakerva17 posts ante 70
+JaLu1607 posts ante 70
+noe_chicha posts ante 70
+jesusito33 posts small blind 300
+Crustan13 posts big blind 600
+Dealt to jesusito33 [6s 5s]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 calls 600
+noe_chicha folds
+MUSTANG7474 calls 600
+jesusito33 folds
+Crustan13 raises 2520 to 3120
+JaLu1607 folds
+MUSTANG7474 folds
+Crustan13 collected 5040 from pot
+*** SUMMARY ***
+Total pot 5040 | No rake
+Seat 3: Crustan13 (big blind) won 5040
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 7 - HandId: #4446486702751481892-97-1768939389 - Holdem no limit (70/300/600) - 2026/01/20 20:03:09 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (15250, 2.50€ bounty)
+Seat 2: jesusito33 (14220, 2.50€ bounty)
+Seat 3: Crustan13 (21840, 2.50€ bounty)
+Seat 4: tarzakerva17 (59026, 3€ bounty)
+Seat 5: JaLu1607 (38249, 3.75€ bounty)
+Seat 6: noe_chicha (35303, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Crustan13 posts ante 70
+tarzakerva17 posts ante 70
+MUSTANG7474 posts ante 70
+jesusito33 posts ante 70
+JaLu1607 posts ante 70
+noe_chicha posts ante 70
+Crustan13 posts small blind 300
+tarzakerva17 posts big blind 600
+Dealt to jesusito33 [5d 4d]
+*** PRE-FLOP *** 
+JaLu1607 calls 600
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 600 to 1200
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 raises 36979 to 38179 and is all-in
+jesusito33 folds
+JaLu1607 collected 40699 from pot
+*** SUMMARY ***
+Total pot 40699 | No rake
+Seat 5: JaLu1607 won 40699
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-98-1768939421 - Holdem no limit (80/350/700) - 2026/01/20 20:03:41 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (15180, 2.50€ bounty)
+Seat 2: jesusito33 (12950, 2.50€ bounty)
+Seat 3: Crustan13 (21470, 2.50€ bounty)
+Seat 4: tarzakerva17 (58356, 3€ bounty)
+Seat 5: JaLu1607 (40699, 3.75€ bounty)
+Seat 6: noe_chicha (35233, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+noe_chicha posts ante 80
+tarzakerva17 posts small blind 350
+JaLu1607 posts big blind 700
+Dealt to jesusito33 [Jd 6s]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 calls 700
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 calls 350
+JaLu1607 checks
+*** FLOP *** [5d Js Kd]
+tarzakerva17 checks
+JaLu1607 checks
+MUSTANG7474 bets 700
+tarzakerva17 folds
+JaLu1607 calls 700
+*** TURN *** [5d Js Kd][4s]
+JaLu1607 checks
+MUSTANG7474 bets 700
+JaLu1607 calls 700
+*** RIVER *** [5d Js Kd 4s][2s]
+JaLu1607 checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+MUSTANG7474 shows [5h Ah] (One pair : 5)
+JaLu1607 shows [3s Jc] (One pair : Jacks)
+JaLu1607 collected 5380 from pot
+*** SUMMARY ***
+Total pot 5380 | No rake
+Board: [5d Js Kd 4s 2s]
+Seat 1: MUSTANG7474 showed [5h Ah] and lost with One pair : 5
+Seat 5: JaLu1607 (big blind) showed [3s Jc] and won 5380 with One pair : Jacks
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-99-1768939457 - Holdem no limit (80/350/700) - 2026/01/20 20:04:17 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (13000, 2.50€ bounty)
+Seat 2: jesusito33 (12870, 2.50€ bounty)
+Seat 3: Crustan13 (21390, 2.50€ bounty)
+Seat 4: tarzakerva17 (57576, 3€ bounty)
+Seat 5: JaLu1607 (43899, 3.75€ bounty)
+Seat 6: noe_chicha (35153, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 80
+noe_chicha posts ante 80
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts small blind 350
+noe_chicha posts big blind 700
+Dealt to jesusito33 [Qs 4d]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 700
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 calls 700
+JaLu1607 calls 350
+noe_chicha checks
+*** FLOP *** [2c Kc 7h]
+JaLu1607 checks
+noe_chicha checks
+MUSTANG7474 checks
+tarzakerva17 checks
+*** TURN *** [2c Kc 7h][4s]
+JaLu1607 bets 1148
+noe_chicha folds
+MUSTANG7474 folds
+tarzakerva17 calls 1148
+*** RIVER *** [2c Kc 7h 4s][8d]
+JaLu1607 checks
+tarzakerva17 checks
+*** SHOW DOWN ***
+tarzakerva17 shows [Ah 4h] (One pair : 4)
+JaLu1607 shows [7s Ac] (One pair : 7)
+JaLu1607 collected 5576 from pot
+*** SUMMARY ***
+Total pot 5576 | No rake
+Board: [2c Kc 7h 4s 8d]
+Seat 4: tarzakerva17 (button) showed [Ah 4h] and lost with One pair : 4
+Seat 5: JaLu1607 (small blind) showed [7s Ac] and won 5576 with One pair : 7
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-100-1768939483 - Holdem no limit (80/350/700) - 2026/01/20 20:04:43 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (12220, 2.50€ bounty)
+Seat 2: jesusito33 (12790, 2.50€ bounty)
+Seat 3: Crustan13 (21310, 2.50€ bounty)
+Seat 4: tarzakerva17 (55648, 3€ bounty)
+Seat 5: JaLu1607 (47547, 3.75€ bounty)
+Seat 6: noe_chicha (34373, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 80
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+noe_chicha posts small blind 350
+MUSTANG7474 posts big blind 700
+Dealt to jesusito33 [Tc 2h]
+*** PRE-FLOP *** 
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha calls 350
+MUSTANG7474 checks
+*** FLOP *** [Th Ah Qs]
+noe_chicha checks
+MUSTANG7474 checks
+*** TURN *** [Th Ah Qs][Ks]
+noe_chicha checks
+MUSTANG7474 checks
+*** RIVER *** [Th Ah Qs Ks][4s]
+noe_chicha checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+MUSTANG7474 shows [4d 5d] (One pair : 4)
+noe_chicha shows [Kd 3d] (One pair : Kings)
+noe_chicha collected 1880 from pot
+*** SUMMARY ***
+Total pot 1880 | No rake
+Board: [Th Ah Qs Ks 4s]
+Seat 1: MUSTANG7474 (big blind) showed [4d 5d] and lost with One pair : 4
+Seat 6: noe_chicha (small blind) showed [Kd 3d] and won 1880 with One pair : Kings
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-101-1768939506 - Holdem no limit (80/350/700) - 2026/01/20 20:05:06 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (11440, 2.50€ bounty)
+Seat 2: jesusito33 (12710, 2.50€ bounty)
+Seat 3: Crustan13 (21230, 2.50€ bounty)
+Seat 4: tarzakerva17 (55568, 3€ bounty)
+Seat 5: JaLu1607 (47467, 3.75€ bounty)
+Seat 6: noe_chicha (35473, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+noe_chicha posts ante 80
+MUSTANG7474 posts small blind 350
+jesusito33 posts big blind 700
+Dealt to jesusito33 [4s 8s]
+*** PRE-FLOP *** 
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 calls 700
+noe_chicha folds
+MUSTANG7474 calls 350
+jesusito33 checks
+*** FLOP *** [4h 5c Jd]
+MUSTANG7474 checks
+jesusito33 checks
+JaLu1607 checks
+*** TURN *** [4h 5c Jd][Th]
+MUSTANG7474 bets 700
+jesusito33 folds
+JaLu1607 calls 700
+*** RIVER *** [4h 5c Jd Th][Td]
+MUSTANG7474 checks
+JaLu1607 checks
+*** SHOW DOWN ***
+JaLu1607 shows [3d 5d] (Two pairs : Tens and 5)
+MUSTANG7474 shows [9d Tc] (Trips of Tens)
+MUSTANG7474 collected 3980 from pot
+*** SUMMARY ***
+Total pot 3980 | No rake
+Board: [4h 5c Jd Th Td]
+Seat 1: MUSTANG7474 (small blind) showed [9d Tc] and won 3980 with Trips of Tens
+Seat 5: JaLu1607 showed [3d 5d] and lost with Two pairs : Tens and 5
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-102-1768939541 - Holdem no limit (80/350/700) - 2026/01/20 20:05:41 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (13940, 2.50€ bounty)
+Seat 2: jesusito33 (11930, 2.50€ bounty)
+Seat 3: Crustan13 (21150, 2.50€ bounty)
+Seat 4: tarzakerva17 (55488, 3€ bounty)
+Seat 5: JaLu1607 (45987, 3.75€ bounty)
+Seat 6: noe_chicha (35393, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+MUSTANG7474 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+noe_chicha posts ante 80
+jesusito33 posts small blind 350
+Crustan13 posts big blind 700
+Dealt to jesusito33 [3d 5d]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 calls 700
+noe_chicha calls 700
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 checks
+*** FLOP *** [9d Qs 5s]
+Crustan13 bets 700
+JaLu1607 calls 700
+noe_chicha folds
+*** TURN *** [9d Qs 5s][Qh]
+Crustan13 checks
+JaLu1607 checks
+*** RIVER *** [9d Qs 5s Qh][Jh]
+Crustan13 checks
+JaLu1607 checks
+*** SHOW DOWN ***
+Crustan13 shows [5h 3c] (Two pairs : Queens and 5)
+JaLu1607 shows [Js 9h] (Two pairs : Queens and Jacks)
+JaLu1607 collected 4330 from pot
+*** SUMMARY ***
+Total pot 4330 | No rake
+Board: [9d Qs 5s Qh Jh]
+Seat 3: Crustan13 (big blind) showed [5h 3c] and lost with Two pairs : Queens and 5
+Seat 5: JaLu1607 showed [Js 9h] and won 4330 with Two pairs : Queens and Jacks
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-103-1768939582 - Holdem no limit (80/350/700) - 2026/01/20 20:06:22 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (13860, 2.50€ bounty)
+Seat 2: jesusito33 (11500, 2.50€ bounty)
+Seat 3: Crustan13 (19670, 2.50€ bounty)
+Seat 4: tarzakerva17 (55408, 3€ bounty)
+Seat 5: JaLu1607 (48837, 3.75€ bounty)
+Seat 6: noe_chicha (34613, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Crustan13 posts ante 80
+tarzakerva17 posts ante 80
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+JaLu1607 posts ante 80
+noe_chicha posts ante 80
+Crustan13 posts small blind 350
+tarzakerva17 posts big blind 700
+Dealt to jesusito33 [As Ac]
+*** PRE-FLOP *** 
+JaLu1607 calls 700
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 10720 to 11420 and is all-in
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 calls 10720
+*** FLOP *** [5c 3c 5h]
+*** TURN *** [5c 3c 5h][4d]
+*** RIVER *** [5c 3c 5h 4d][9s]
+*** SHOW DOWN ***
+JaLu1607 shows [Ks 8h] (One pair : 5)
+jesusito33 shows [As Ac] (Two pairs : Aces and 5)
+jesusito33 collected 24370 from pot
+*** SUMMARY ***
+Total pot 24370 | No rake
+Board: [5c 3c 5h 4d 9s]
+Seat 2: jesusito33 (button) showed [As Ac] and won 24370 with Two pairs : Aces and 5
+Seat 5: JaLu1607 showed [Ks 8h] and lost with One pair : 5
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-104-1768939598 - Holdem no limit (80/350/700) - 2026/01/20 20:06:38 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (13780, 2.50€ bounty)
+Seat 2: jesusito33 (24370, 2.50€ bounty)
+Seat 3: Crustan13 (19240, 2.50€ bounty)
+Seat 4: tarzakerva17 (54628, 3€ bounty)
+Seat 5: JaLu1607 (37337, 3.75€ bounty)
+Seat 6: noe_chicha (34533, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+noe_chicha posts ante 80
+tarzakerva17 posts small blind 350
+JaLu1607 posts big blind 700
+Dealt to jesusito33 [7h 7c]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 700 to 1400
+Crustan13 folds
+tarzakerva17 calls 1050
+JaLu1607 calls 700
+*** FLOP *** [7d 2s 5s]
+tarzakerva17 bets 4680
+JaLu1607 folds
+jesusito33 calls 4680
+*** TURN *** [7d 2s 5s][Ad]
+tarzakerva17 checks
+jesusito33 bets 7020
+tarzakerva17 folds
+jesusito33 collected 21060 from pot
+*** SUMMARY ***
+Total pot 21060 | No rake
+Board: [7d 2s 5s Ad]
+Seat 2: jesusito33 won 21060
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-105-1768939640 - Holdem no limit (80/350/700) - 2026/01/20 20:07:20 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (13700, 2.50€ bounty)
+Seat 2: jesusito33 (32250, 2.50€ bounty)
+Seat 3: Crustan13 (19160, 2.50€ bounty)
+Seat 4: tarzakerva17 (48468, 3€ bounty)
+Seat 5: JaLu1607 (35857, 3.75€ bounty)
+Seat 6: noe_chicha (34453, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 80
+noe_chicha posts ante 80
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts small blind 350
+noe_chicha posts big blind 700
+Dealt to jesusito33 [7s 4s]
+*** PRE-FLOP *** 
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 raises 18380 to 19080 and is all-in
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+Crustan13 collected 20610 from pot
+*** SUMMARY ***
+Total pot 20610 | No rake
+Seat 3: Crustan13 won 20610
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-106-1768939652 - Holdem no limit (80/350/700) - 2026/01/20 20:07:32 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (13620, 2.50€ bounty)
+Seat 2: jesusito33 (32170, 2.50€ bounty)
+Seat 3: Crustan13 (20610, 2.50€ bounty)
+Seat 4: tarzakerva17 (48388, 3€ bounty)
+Seat 5: JaLu1607 (35427, 3.75€ bounty)
+Seat 6: noe_chicha (33673, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 80
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+noe_chicha posts small blind 350
+MUSTANG7474 posts big blind 700
+Dealt to jesusito33 [2s 8s]
+*** PRE-FLOP *** 
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 calls 700
+noe_chicha raises 1400 to 2100
+MUSTANG7474 folds
+JaLu1607 calls 1400
+*** FLOP *** [2d Qh 3s]
+noe_chicha checks
+JaLu1607 checks
+*** TURN *** [2d Qh 3s][Qc]
+noe_chicha checks
+JaLu1607 bets 3497
+noe_chicha folds
+JaLu1607 collected 8877 from pot
+*** SUMMARY ***
+Total pot 8877 | No rake
+Board: [2d Qh 3s Qc]
+Seat 5: JaLu1607 (button) won 8877
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-107-1768939687 - Holdem no limit (80/350/700) - 2026/01/20 20:08:07 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (12840, 2.50€ bounty)
+Seat 2: jesusito33 (32090, 2.50€ bounty)
+Seat 3: Crustan13 (20530, 2.50€ bounty)
+Seat 4: tarzakerva17 (48308, 3€ bounty)
+Seat 5: JaLu1607 (38627, 3.75€ bounty)
+Seat 6: noe_chicha (31493, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 80
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+noe_chicha posts ante 80
+MUSTANG7474 posts small blind 350
+jesusito33 posts big blind 700
+Dealt to jesusito33 [7h 2d]
+*** PRE-FLOP *** 
+Crustan13 calls 700
+tarzakerva17 folds
+JaLu1607 calls 700
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 checks
+*** FLOP *** [5c 9s Jh]
+jesusito33 checks
+Crustan13 bets 1026
+JaLu1607 calls 1026
+jesusito33 folds
+*** TURN *** [5c 9s Jh][2s]
+Crustan13 checks
+JaLu1607 checks
+*** RIVER *** [5c 9s Jh 2s][Qd]
+Crustan13 checks
+JaLu1607 bets 3238
+Crustan13 folds
+JaLu1607 collected 8220 from pot
+*** SUMMARY ***
+Total pot 8220 | No rake
+Board: [5c 9s Jh 2s Qd]
+Seat 5: JaLu1607 won 8220
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 8 - HandId: #4446486702751481892-108-1768939745 - Holdem no limit (80/350/700) - 2026/01/20 20:09:05 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (12410, 2.50€ bounty)
+Seat 2: jesusito33 (31310, 2.50€ bounty)
+Seat 3: Crustan13 (18724, 2.50€ bounty)
+Seat 4: tarzakerva17 (48228, 3€ bounty)
+Seat 5: JaLu1607 (41803, 3.75€ bounty)
+Seat 6: noe_chicha (31413, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 80
+Crustan13 posts ante 80
+MUSTANG7474 posts ante 80
+tarzakerva17 posts ante 80
+JaLu1607 posts ante 80
+noe_chicha posts ante 80
+jesusito33 posts small blind 350
+Crustan13 posts big blind 700
+Dealt to jesusito33 [3c 8c]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 raises 1400 to 2100
+jesusito33 folds
+Crustan13 raises 16544 to 18644 and is all-in
+MUSTANG7474 calls 10230 and is all-in
+*** FLOP *** [Ts 2d 4s]
+*** TURN *** [Ts 2d 4s][3s]
+*** RIVER *** [Ts 2d 4s 3s][4d]
+*** SHOW DOWN ***
+MUSTANG7474 shows [Ad Jc] (One pair : 4)
+Crustan13 shows [Ks Qd] (One pair : 4)
+Crustan13 collected 6314 from side pot 1
+MUSTANG7474 collected 25490 from main pot
+*** SUMMARY ***
+Total pot 31804 | No rake
+Board: [Ts 2d 4s 3s 4d]
+Seat 1: MUSTANG7474 (button) showed [Ad Jc] and won 25490 with One pair : 4
+Seat 3: Crustan13 (big blind) showed [Ks Qd] and won 6314 with One pair : 4
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-109-1768939770 - Holdem no limit (100/400/800) - 2026/01/20 20:09:30 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (25490, 2.50€ bounty)
+Seat 2: jesusito33 (30880, 2.50€ bounty)
+Seat 3: Crustan13 (6314, 2.50€ bounty)
+Seat 4: tarzakerva17 (48148, 3€ bounty)
+Seat 5: JaLu1607 (41723, 3.75€ bounty)
+Seat 6: noe_chicha (31333, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+Crustan13 posts small blind 400
+tarzakerva17 posts big blind 800
+Dealt to jesusito33 [Th 3s]
+*** PRE-FLOP *** 
+JaLu1607 calls 800
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 raises 5414 to 6214 and is all-in
+tarzakerva17 folds
+JaLu1607 calls 5414
+*** FLOP *** [6h Qc 7d]
+*** TURN *** [6h Qc 7d][3h]
+*** RIVER *** [6h Qc 7d 3h][4c]
+*** SHOW DOWN ***
+JaLu1607 shows [Ah 4h] (One pair : 4)
+Crustan13 shows [4d 4s] (Trips of 4)
+Crustan13 collected 13828 from pot
+*** SUMMARY ***
+Total pot 13828 | No rake
+Board: [6h Qc 7d 3h 4c]
+Seat 3: Crustan13 (small blind) showed [4d 4s] and won 13828 with Trips of 4
+Seat 5: JaLu1607 showed [Ah 4h] and lost with One pair : 4
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-110-1768939797 - Holdem no limit (100/400/800) - 2026/01/20 20:09:57 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (25390, 2.50€ bounty)
+Seat 2: jesusito33 (30780, 2.50€ bounty)
+Seat 3: Crustan13 (13828, 2.50€ bounty)
+Seat 4: tarzakerva17 (47248, 3€ bounty)
+Seat 5: JaLu1607 (35409, 3.75€ bounty)
+Seat 6: noe_chicha (31233, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+noe_chicha posts ante 100
+tarzakerva17 posts small blind 400
+JaLu1607 posts big blind 800
+Dealt to jesusito33 [6h Jd]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 calls 800
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 calls 400
+JaLu1607 checks
+*** FLOP *** [8d 6s 6c]
+tarzakerva17 checks
+JaLu1607 bets 1050
+MUSTANG7474 folds
+tarzakerva17 calls 1050
+*** TURN *** [8d 6s 6c][9h]
+tarzakerva17 checks
+JaLu1607 checks
+*** RIVER *** [8d 6s 6c 9h][9s]
+tarzakerva17 checks
+JaLu1607 checks
+*** SHOW DOWN ***
+tarzakerva17 shows [4s 7s] (Two pairs : 9 and 6)
+JaLu1607 shows [8h Ah] (Two pairs : 9 and 8)
+JaLu1607 collected 5100 from pot
+*** SUMMARY ***
+Total pot 5100 | No rake
+Board: [8d 6s 6c 9h 9s]
+Seat 4: tarzakerva17 (small blind) showed [4s 7s] and lost with Two pairs : 9 and 6
+Seat 5: JaLu1607 (big blind) showed [8h Ah] and won 5100 with Two pairs : 9 and 8
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-111-1768939836 - Holdem no limit (100/400/800) - 2026/01/20 20:10:36 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (24490, 2.50€ bounty)
+Seat 2: jesusito33 (30680, 2.50€ bounty)
+Seat 3: Crustan13 (13728, 2.50€ bounty)
+Seat 4: tarzakerva17 (45298, 3€ bounty)
+Seat 5: JaLu1607 (38559, 3.75€ bounty)
+Seat 6: noe_chicha (31133, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts small blind 400
+noe_chicha posts big blind 800
+Dealt to jesusito33 [2d 5h]
+*** PRE-FLOP *** 
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 raises 12828 to 13628 and is all-in
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+Crustan13 collected 15428 from pot
+*** SUMMARY ***
+Total pot 15428 | No rake
+Seat 3: Crustan13 won 15428
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-112-1768939844 - Holdem no limit (100/400/800) - 2026/01/20 20:10:44 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (24390, 2.50€ bounty)
+Seat 2: jesusito33 (30580, 2.50€ bounty)
+Seat 3: Crustan13 (15428, 2.50€ bounty)
+Seat 4: tarzakerva17 (45198, 3€ bounty)
+Seat 5: JaLu1607 (38059, 3.75€ bounty)
+Seat 6: noe_chicha (30233, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts small blind 400
+MUSTANG7474 posts big blind 800
+Dealt to jesusito33 [2s 7c]
+*** PRE-FLOP *** 
+jesusito33 folds
+Crustan13 calls 800
+tarzakerva17 folds
+JaLu1607 calls 800
+noe_chicha calls 400
+MUSTANG7474 checks
+*** FLOP *** [Kd Qc Qh]
+noe_chicha checks
+MUSTANG7474 checks
+Crustan13 checks
+JaLu1607 checks
+*** TURN *** [Kd Qc Qh][3h]
+noe_chicha checks
+MUSTANG7474 bets 800
+Crustan13 folds
+JaLu1607 folds
+noe_chicha calls 800
+*** RIVER *** [Kd Qc Qh 3h][2h]
+noe_chicha checks
+MUSTANG7474 bets 1890
+noe_chicha calls 1890
+*** SHOW DOWN ***
+noe_chicha shows [7d Kh] (Two pairs : Kings and Queens)
+MUSTANG7474 shows [5c Qd] (Trips of Queens)
+MUSTANG7474 collected 9180 from pot
+*** SUMMARY ***
+Total pot 9180 | No rake
+Board: [Kd Qc Qh 3h 2h]
+Seat 1: MUSTANG7474 (big blind) showed [5c Qd] and won 9180 with Trips of Queens
+Seat 6: noe_chicha (small blind) showed [7d Kh] and lost with Two pairs : Kings and Queens
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-113-1768939896 - Holdem no limit (100/400/800) - 2026/01/20 20:11:36 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (29980, 2.50€ bounty)
+Seat 2: jesusito33 (30480, 2.50€ bounty)
+Seat 3: Crustan13 (14528, 2.50€ bounty)
+Seat 4: tarzakerva17 (45098, 3€ bounty)
+Seat 5: JaLu1607 (37159, 3.75€ bounty)
+Seat 6: noe_chicha (26643, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+MUSTANG7474 posts small blind 400
+jesusito33 posts big blind 800
+Dealt to jesusito33 [4d 3h]
+*** PRE-FLOP *** 
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 calls 800
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 checks
+*** FLOP *** [7h Ks 6s]
+jesusito33 checks
+JaLu1607 checks
+*** TURN *** [7h Ks 6s][9d]
+jesusito33 checks
+JaLu1607 checks
+*** RIVER *** [7h Ks 6s 9d][3c]
+jesusito33 bets 1600
+JaLu1607 folds
+jesusito33 collected 4200 from pot
+*** SUMMARY ***
+Total pot 4200 | No rake
+Board: [7h Ks 6s 9d 3c]
+Seat 2: jesusito33 (big blind) won 4200
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-114-1768939921 - Holdem no limit (100/400/800) - 2026/01/20 20:12:01 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (29480, 2.50€ bounty)
+Seat 2: jesusito33 (32180, 2.50€ bounty)
+Seat 3: Crustan13 (14428, 2.50€ bounty)
+Seat 4: tarzakerva17 (44998, 3€ bounty)
+Seat 5: JaLu1607 (36259, 3.75€ bounty)
+Seat 6: noe_chicha (26543, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+MUSTANG7474 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+jesusito33 posts small blind 400
+Crustan13 posts big blind 800
+Dealt to jesusito33 [7s 5s]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha raises 1600 to 2400
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 folds
+noe_chicha collected 4200 from pot
+*** SUMMARY ***
+Total pot 4200 | No rake
+Seat 6: noe_chicha won 4200
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-115-1768939956 - Holdem no limit (100/400/800) - 2026/01/20 20:12:36 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (29380, 2.50€ bounty)
+Seat 2: jesusito33 (31680, 2.50€ bounty)
+Seat 3: Crustan13 (13528, 2.50€ bounty)
+Seat 4: tarzakerva17 (44898, 3€ bounty)
+Seat 5: JaLu1607 (36159, 3.75€ bounty)
+Seat 6: noe_chicha (28243, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+Crustan13 posts small blind 400
+tarzakerva17 posts big blind 800
+Dealt to jesusito33 [6c Js]
+*** PRE-FLOP *** 
+JaLu1607 calls 800
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 checks
+*** FLOP *** [Qs 9c 5d]
+tarzakerva17 checks
+JaLu1607 checks
+*** TURN *** [Qs 9c 5d][7d]
+tarzakerva17 checks
+JaLu1607 checks
+*** RIVER *** [Qs 9c 5d 7d][Ac]
+tarzakerva17 checks
+JaLu1607 bets 1690
+tarzakerva17 folds
+JaLu1607 collected 4290 from pot
+*** SUMMARY ***
+Total pot 4290 | No rake
+Board: [Qs 9c 5d 7d Ac]
+Seat 5: JaLu1607 won 4290
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-116-1768939984 - Holdem no limit (100/400/800) - 2026/01/20 20:13:04 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (29280, 2.50€ bounty)
+Seat 2: jesusito33 (31580, 2.50€ bounty)
+Seat 3: Crustan13 (13028, 2.50€ bounty)
+Seat 4: tarzakerva17 (43998, 3€ bounty)
+Seat 5: JaLu1607 (37859, 3.75€ bounty)
+Seat 6: noe_chicha (28143, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+noe_chicha posts ante 100
+tarzakerva17 posts small blind 400
+JaLu1607 posts big blind 800
+Dealt to jesusito33 [Th 3c]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 collected 1800 from pot
+*** SUMMARY ***
+Total pot 1800 | No rake
+Seat 5: JaLu1607 (big blind) won 1800
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-117-1768939994 - Holdem no limit (100/400/800) - 2026/01/20 20:13:14 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (29180, 2.50€ bounty)
+Seat 2: jesusito33 (31480, 2.50€ bounty)
+Seat 3: Crustan13 (12928, 2.50€ bounty)
+Seat 4: tarzakerva17 (43498, 3€ bounty)
+Seat 5: JaLu1607 (38759, 3.75€ bounty)
+Seat 6: noe_chicha (28043, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts small blind 400
+noe_chicha posts big blind 800
+Dealt to jesusito33 [9h As]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 800
+jesusito33 raises 800 to 1600
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha calls 800
+MUSTANG7474 calls 800
+*** FLOP *** [Kd 5s Ac]
+noe_chicha checks
+MUSTANG7474 checks
+jesusito33 bets 2030
+noe_chicha folds
+MUSTANG7474 calls 2030
+*** TURN *** [Kd 5s Ac][Kh]
+MUSTANG7474 checks
+jesusito33 checks
+*** RIVER *** [Kd 5s Ac Kh][3h]
+MUSTANG7474 bets 3451
+jesusito33 calls 3451
+*** SHOW DOWN ***
+jesusito33 shows [9h As] (Two pairs : Aces and Kings)
+MUSTANG7474 shows [Ks 9c] (Trips of Kings)
+MUSTANG7474 collected 16762 from pot
+*** SUMMARY ***
+Total pot 16762 | No rake
+Board: [Kd 5s Ac Kh 3h]
+Seat 1: MUSTANG7474 showed [Ks 9c] and won 16762 with Trips of Kings
+Seat 2: jesusito33 showed [9h As] and lost with Two pairs : Aces and Kings
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-118-1768940046 - Holdem no limit (100/400/800) - 2026/01/20 20:14:06 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (38761, 2.50€ bounty)
+Seat 2: jesusito33 (24299, 2.50€ bounty)
+Seat 3: Crustan13 (12828, 2.50€ bounty)
+Seat 4: tarzakerva17 (43398, 3€ bounty)
+Seat 5: JaLu1607 (38259, 3.75€ bounty)
+Seat 6: noe_chicha (26343, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 100
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts small blind 400
+MUSTANG7474 posts big blind 800
+Dealt to jesusito33 [3h 9h]
+*** PRE-FLOP *** 
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha calls 400
+MUSTANG7474 checks
+*** FLOP *** [3d Qd Jd]
+noe_chicha checks
+MUSTANG7474 checks
+*** TURN *** [3d Qd Jd][5s]
+noe_chicha checks
+MUSTANG7474 checks
+*** RIVER *** [3d Qd Jd 5s][4h]
+noe_chicha checks
+MUSTANG7474 checks
+*** SHOW DOWN ***
+MUSTANG7474 shows [8c 2h] (High card : Queen)
+noe_chicha shows [Js 9c] (One pair : Jacks)
+noe_chicha collected 2200 from pot
+*** SUMMARY ***
+Total pot 2200 | No rake
+Board: [3d Qd Jd 5s 4h]
+Seat 1: MUSTANG7474 (big blind) showed [8c 2h] and lost with High card : Queen
+Seat 6: noe_chicha (small blind) showed [Js 9c] and won 2200 with One pair : Jacks
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-119-1768940085 - Holdem no limit (100/400/800) - 2026/01/20 20:14:45 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (37861, 2.50€ bounty)
+Seat 2: jesusito33 (24199, 2.50€ bounty)
+Seat 3: Crustan13 (12728, 2.50€ bounty)
+Seat 4: tarzakerva17 (43298, 3€ bounty)
+Seat 5: JaLu1607 (38159, 3.75€ bounty)
+Seat 6: noe_chicha (27643, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 100
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+MUSTANG7474 posts small blind 400
+jesusito33 posts big blind 800
+Dealt to jesusito33 [Ad Jd]
+*** PRE-FLOP *** 
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 raises 800 to 1600
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 calls 800
+*** FLOP *** [Qd Qc 6h]
+jesusito33 checks
+JaLu1607 bets 2730
+jesusito33 folds
+JaLu1607 collected 6930 from pot
+*** SUMMARY ***
+Total pot 6930 | No rake
+Board: [Qd Qc 6h]
+Seat 5: JaLu1607 won 6930
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 9 - HandId: #4446486702751481892-120-1768940116 - Holdem no limit (100/400/800) - 2026/01/20 20:15:16 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (37361, 2.50€ bounty)
+Seat 2: jesusito33 (22499, 2.50€ bounty)
+Seat 3: Crustan13 (12628, 2.50€ bounty)
+Seat 4: tarzakerva17 (43198, 3€ bounty)
+Seat 5: JaLu1607 (40659, 3.75€ bounty)
+Seat 6: noe_chicha (27543, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 100
+Crustan13 posts ante 100
+MUSTANG7474 posts ante 100
+tarzakerva17 posts ante 100
+JaLu1607 posts ante 100
+noe_chicha posts ante 100
+jesusito33 posts small blind 400
+Crustan13 posts big blind 800
+Dealt to jesusito33 [9d Ah]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 calls 800
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 1200 to 2000
+Crustan13 folds
+JaLu1607 calls 1200
+*** FLOP *** [3s Qs Tc]
+jesusito33 checks
+JaLu1607 bets 1890
+jesusito33 folds
+JaLu1607 collected 7290 from pot
+*** SUMMARY ***
+Total pot 7290 | No rake
+Board: [3s Qs Tc]
+Seat 5: JaLu1607 won 7290
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-121-1768940181 - Holdem no limit (120/500/1000) - 2026/01/20 20:16:21 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (37261, 2.50€ bounty)
+Seat 2: jesusito33 (20399, 2.50€ bounty)
+Seat 3: Crustan13 (11728, 2.50€ bounty)
+Seat 4: tarzakerva17 (43098, 3€ bounty)
+Seat 5: JaLu1607 (43959, 3.75€ bounty)
+Seat 6: noe_chicha (27443, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Crustan13 posts ante 120
+tarzakerva17 posts ante 120
+MUSTANG7474 posts ante 120
+jesusito33 posts ante 120
+JaLu1607 posts ante 120
+noe_chicha posts ante 120
+Crustan13 posts small blind 500
+tarzakerva17 posts big blind 1000
+Dealt to jesusito33 [9c 8c]
+*** PRE-FLOP *** 
+JaLu1607 folds
+noe_chicha calls 1000
+MUSTANG7474 calls 1000
+jesusito33 raises 1000 to 2000
+Crustan13 raises 9608 to 11608 and is all-in
+tarzakerva17 folds
+noe_chicha folds
+MUSTANG7474 calls 10608
+jesusito33 folds
+*** FLOP *** [4s Js Tc]
+*** TURN *** [4s Js Tc][Ad]
+*** RIVER *** [4s Js Tc Ad][7s]
+*** SHOW DOWN ***
+MUSTANG7474 shows [Qc Qs] (One pair : Queens)
+Crustan13 shows [Jd Jc] (Trips of Jacks)
+Crustan13 collected 27936 from pot
+*** SUMMARY ***
+Total pot 27936 | No rake
+Board: [4s Js Tc Ad 7s]
+Seat 1: MUSTANG7474 showed [Qc Qs] and lost with One pair : Queens
+Seat 3: Crustan13 (small blind) showed [Jd Jc] and won 27936 with Trips of Jacks
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-122-1768940210 - Holdem no limit (120/500/1000) - 2026/01/20 20:16:50 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (25533, 2.50€ bounty)
+Seat 2: jesusito33 (18279, 2.50€ bounty)
+Seat 3: Crustan13 (27936, 2.50€ bounty)
+Seat 4: tarzakerva17 (41978, 3€ bounty)
+Seat 5: JaLu1607 (43839, 3.75€ bounty)
+Seat 6: noe_chicha (26323, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 120
+JaLu1607 posts ante 120
+MUSTANG7474 posts ante 120
+jesusito33 posts ante 120
+Crustan13 posts ante 120
+noe_chicha posts ante 120
+tarzakerva17 posts small blind 500
+JaLu1607 posts big blind 1000
+Dealt to jesusito33 [2c 5d]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 raises 1000 to 2000
+tarzakerva17 folds
+JaLu1607 calls 1000
+*** FLOP *** [5h Qh 4d]
+JaLu1607 checks
+Crustan13 checks
+*** TURN *** [5h Qh 4d][Jc]
+JaLu1607 checks
+Crustan13 bets 1827
+JaLu1607 calls 1827
+*** RIVER *** [5h Qh 4d Jc][3d]
+JaLu1607 checks
+Crustan13 checks
+*** SHOW DOWN ***
+JaLu1607 shows [Td Kc] (High card : King)
+Crustan13 shows [Ad Js] (One pair : Jacks)
+Crustan13 collected 8874 from pot
+*** SUMMARY ***
+Total pot 8874 | No rake
+Board: [5h Qh 4d Jc 3d]
+Seat 3: Crustan13 (button) showed [Ad Js] and won 8874 with One pair : Jacks
+Seat 5: JaLu1607 (big blind) showed [Td Kc] and lost with High card : King
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-123-1768940249 - Holdem no limit (120/500/1000) - 2026/01/20 20:17:29 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (25413, 2.50€ bounty)
+Seat 2: jesusito33 (18159, 2.50€ bounty)
+Seat 3: Crustan13 (32863, 2.50€ bounty)
+Seat 4: tarzakerva17 (41358, 3€ bounty)
+Seat 5: JaLu1607 (39892, 3.75€ bounty)
+Seat 6: noe_chicha (26203, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 120
+noe_chicha posts ante 120
+MUSTANG7474 posts ante 120
+jesusito33 posts ante 120
+Crustan13 posts ante 120
+tarzakerva17 posts ante 120
+JaLu1607 posts small blind 500
+noe_chicha posts big blind 1000
+Dealt to jesusito33 [As 4c]
+*** PRE-FLOP *** 
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha collected 2220 from pot
+*** SUMMARY ***
+Total pot 2220 | No rake
+Seat 6: noe_chicha (big blind) won 2220
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-124-1768940277 - Holdem no limit (120/500/1000) - 2026/01/20 20:17:57 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (25293, 2.50€ bounty)
+Seat 2: jesusito33 (18039, 2.50€ bounty)
+Seat 3: Crustan13 (32743, 2.50€ bounty)
+Seat 4: tarzakerva17 (41238, 3€ bounty)
+Seat 5: JaLu1607 (39272, 3.75€ bounty)
+Seat 6: noe_chicha (27303, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 120
+MUSTANG7474 posts ante 120
+jesusito33 posts ante 120
+Crustan13 posts ante 120
+tarzakerva17 posts ante 120
+JaLu1607 posts ante 120
+noe_chicha posts small blind 500
+MUSTANG7474 posts big blind 1000
+Dealt to jesusito33 [Qc Th]
+*** PRE-FLOP *** 
+jesusito33 folds
+Crustan13 raises 1000 to 2000
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha calls 1500
+MUSTANG7474 folds
+*** FLOP *** [7h 4h 7c]
+noe_chicha checks
+Crustan13 checks
+*** TURN *** [7h 4h 7c][6c]
+noe_chicha checks
+Crustan13 bets 1000
+noe_chicha calls 1000
+*** RIVER *** [7h 4h 7c 6c][4s]
+noe_chicha checks
+Crustan13 checks
+*** SHOW DOWN ***
+Crustan13 shows [9c Jc] (Two pairs : 7 and 4)
+noe_chicha shows [8s Ad] (Two pairs : 7 and 4)
+noe_chicha collected 7720 from pot
+*** SUMMARY ***
+Total pot 7720 | No rake
+Board: [7h 4h 7c 6c 4s]
+Seat 3: Crustan13 showed [9c Jc] and lost with Two pairs : 7 and 4
+Seat 6: noe_chicha (small blind) showed [8s Ad] and won 7720 with Two pairs : 7 and 4
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-125-1768940338 - Holdem no limit (120/500/1000) - 2026/01/20 20:18:58 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (24173, 2.50€ bounty)
+Seat 2: jesusito33 (17919, 2.50€ bounty)
+Seat 3: Crustan13 (29623, 2.50€ bounty)
+Seat 4: tarzakerva17 (41118, 3€ bounty)
+Seat 5: JaLu1607 (39152, 3.75€ bounty)
+Seat 6: noe_chicha (31903, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 120
+jesusito33 posts ante 120
+Crustan13 posts ante 120
+tarzakerva17 posts ante 120
+JaLu1607 posts ante 120
+noe_chicha posts ante 120
+MUSTANG7474 posts small blind 500
+jesusito33 posts big blind 1000
+Dealt to jesusito33 [2h 6h]
+*** PRE-FLOP *** 
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 raises 2000 to 3000
+jesusito33 folds
+MUSTANG7474 collected 4720 from pot
+*** SUMMARY ***
+Total pot 4720 | No rake
+Seat 1: MUSTANG7474 (small blind) won 4720
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-126-1768940360 - Holdem no limit (120/500/1000) - 2026/01/20 20:19:20 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (25773, 2.50€ bounty)
+Seat 2: jesusito33 (16799, 2.50€ bounty)
+Seat 3: Crustan13 (29503, 2.50€ bounty)
+Seat 4: tarzakerva17 (40998, 3€ bounty)
+Seat 5: JaLu1607 (39032, 3.75€ bounty)
+Seat 6: noe_chicha (31783, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 120
+Crustan13 posts ante 120
+MUSTANG7474 posts ante 120
+tarzakerva17 posts ante 120
+JaLu1607 posts ante 120
+noe_chicha posts ante 120
+jesusito33 posts small blind 500
+Crustan13 posts big blind 1000
+Dealt to jesusito33 [8s Td]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 1000 to 2000
+Crustan13 calls 1000
+*** FLOP *** [3c Tc 5h]
+jesusito33 bets 1652
+Crustan13 folds
+jesusito33 collected 6372 from pot
+*** SUMMARY ***
+Total pot 6372 | No rake
+Board: [3c Tc 5h]
+Seat 2: jesusito33 (small blind) won 6372
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-127-1768940411 - Holdem no limit (120/500/1000) - 2026/01/20 20:20:11 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #2 is the button
+Seat 1: MUSTANG7474 (25653, 2.50€ bounty)
+Seat 2: jesusito33 (19399, 2.50€ bounty)
+Seat 3: Crustan13 (27383, 2.50€ bounty)
+Seat 4: tarzakerva17 (40878, 3€ bounty)
+Seat 5: JaLu1607 (38912, 3.75€ bounty)
+Seat 6: noe_chicha (31663, 2.50€ bounty)
+*** ANTE/BLINDS ***
+Crustan13 posts ante 120
+tarzakerva17 posts ante 120
+MUSTANG7474 posts ante 120
+jesusito33 posts ante 120
+JaLu1607 posts ante 120
+noe_chicha posts ante 120
+Crustan13 posts small blind 500
+tarzakerva17 posts big blind 1000
+Dealt to jesusito33 [3s Td]
+*** PRE-FLOP *** 
+JaLu1607 folds
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 calls 500
+tarzakerva17 checks
+*** FLOP *** [5c Ks Ts]
+Crustan13 checks
+tarzakerva17 checks
+*** TURN *** [5c Ks Ts][Ad]
+Crustan13 checks
+tarzakerva17 bets 2000
+Crustan13 folds
+tarzakerva17 collected 4720 from pot
+*** SUMMARY ***
+Total pot 4720 | No rake
+Board: [5c Ks Ts Ad]
+Seat 4: tarzakerva17 (big blind) won 4720
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 10 - HandId: #4446486702751481892-128-1768940473 - Holdem no limit (120/500/1000) - 2026/01/20 20:21:13 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #3 is the button
+Seat 1: MUSTANG7474 (25533, 2.50€ bounty)
+Seat 2: jesusito33 (19279, 2.50€ bounty)
+Seat 3: Crustan13 (26263, 2.50€ bounty)
+Seat 4: tarzakerva17 (42478, 3€ bounty)
+Seat 5: JaLu1607 (38792, 3.75€ bounty)
+Seat 6: noe_chicha (31543, 2.50€ bounty)
+*** ANTE/BLINDS ***
+tarzakerva17 posts ante 120
+JaLu1607 posts ante 120
+MUSTANG7474 posts ante 120
+jesusito33 posts ante 120
+Crustan13 posts ante 120
+noe_chicha posts ante 120
+tarzakerva17 posts small blind 500
+JaLu1607 posts big blind 1000
+Dealt to jesusito33 [Js Td]
+*** PRE-FLOP *** 
+noe_chicha folds
+MUSTANG7474 calls 1000
+jesusito33 raises 1000 to 2000
+Crustan13 raises 24143 to 26143 and is all-in
+tarzakerva17 folds
+JaLu1607 folds
+MUSTANG7474 folds
+jesusito33 folds
+Crustan13 collected 31363 from pot
+*** SUMMARY ***
+Total pot 31363 | No rake
+Seat 3: Crustan13 (button) won 31363
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 11 - HandId: #4446486702751481892-129-1768940507 - Holdem no limit (140/600/1200) - 2026/01/20 20:21:47 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #4 is the button
+Seat 1: MUSTANG7474 (24413, 2.50€ bounty)
+Seat 2: jesusito33 (17159, 2.50€ bounty)
+Seat 3: Crustan13 (31363, 2.50€ bounty)
+Seat 4: tarzakerva17 (41858, 3€ bounty)
+Seat 5: JaLu1607 (37672, 3.75€ bounty)
+Seat 6: noe_chicha (31423, 2.50€ bounty)
+*** ANTE/BLINDS ***
+JaLu1607 posts ante 140
+noe_chicha posts ante 140
+MUSTANG7474 posts ante 140
+jesusito33 posts ante 140
+Crustan13 posts ante 140
+tarzakerva17 posts ante 140
+JaLu1607 posts small blind 600
+noe_chicha posts big blind 1200
+Dealt to jesusito33 [Tc 7c]
+*** PRE-FLOP *** 
+MUSTANG7474 calls 1200
+jesusito33 folds
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 folds
+noe_chicha checks
+*** FLOP *** [Kh 5s Ad]
+noe_chicha checks
+MUSTANG7474 checks
+*** TURN *** [Kh 5s Ad][Ks]
+noe_chicha checks
+MUSTANG7474 bets 1344
+noe_chicha folds
+MUSTANG7474 collected 5184 from pot
+*** SUMMARY ***
+Total pot 5184 | No rake
+Board: [Kh 5s Ad Ks]
+Seat 1: MUSTANG7474 won 5184
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 11 - HandId: #4446486702751481892-130-1768940531 - Holdem no limit (140/600/1200) - 2026/01/20 20:22:11 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #5 is the button
+Seat 1: MUSTANG7474 (26913, 2.50€ bounty)
+Seat 2: jesusito33 (17019, 2.50€ bounty)
+Seat 3: Crustan13 (31223, 2.50€ bounty)
+Seat 4: tarzakerva17 (41718, 3€ bounty)
+Seat 5: JaLu1607 (36932, 3.75€ bounty)
+Seat 6: noe_chicha (30083, 2.50€ bounty)
+*** ANTE/BLINDS ***
+noe_chicha posts ante 140
+MUSTANG7474 posts ante 140
+jesusito33 posts ante 140
+Crustan13 posts ante 140
+tarzakerva17 posts ante 140
+JaLu1607 posts ante 140
+noe_chicha posts small blind 600
+MUSTANG7474 posts big blind 1200
+Dealt to jesusito33 [2d Kh]
+*** PRE-FLOP *** 
+jesusito33 folds
+Crustan13 calls 1200
+tarzakerva17 folds
+JaLu1607 calls 1200
+noe_chicha calls 600
+MUSTANG7474 checks
+*** FLOP *** [3h Ah Td]
+noe_chicha checks
+MUSTANG7474 checks
+Crustan13 checks
+JaLu1607 bets 3666
+noe_chicha folds
+MUSTANG7474 folds
+Crustan13 folds
+JaLu1607 collected 9306 from pot
+*** SUMMARY ***
+Total pot 9306 | No rake
+Board: [3h Ah Td]
+Seat 5: JaLu1607 (button) won 9306
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 11 - HandId: #4446486702751481892-131-1768940658 - Holdem no limit (140/600/1200) - 2026/01/20 20:24:18 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #6 is the button
+Seat 1: MUSTANG7474 (25573, 2.50€ bounty)
+Seat 2: jesusito33 (16879, 2.50€ bounty)
+Seat 3: Crustan13 (29883, 2.50€ bounty)
+Seat 4: tarzakerva17 (41578, 3€ bounty)
+Seat 5: JaLu1607 (41232, 3.75€ bounty)
+Seat 6: noe_chicha (28743, 2.50€ bounty)
+*** ANTE/BLINDS ***
+MUSTANG7474 posts ante 140
+jesusito33 posts ante 140
+Crustan13 posts ante 140
+tarzakerva17 posts ante 140
+JaLu1607 posts ante 140
+noe_chicha posts ante 140
+MUSTANG7474 posts small blind 600
+jesusito33 posts big blind 1200
+Dealt to jesusito33 [4h Kh]
+*** PRE-FLOP *** 
+Crustan13 folds
+tarzakerva17 folds
+JaLu1607 calls 1200
+noe_chicha folds
+MUSTANG7474 calls 600
+jesusito33 raises 2400 to 3600
+JaLu1607 calls 2400
+MUSTANG7474 calls 2400
+*** FLOP *** [8h Ad Ts]
+MUSTANG7474 checks
+jesusito33 bets 2910
+JaLu1607 calls 2910
+MUSTANG7474 calls 2910
+*** TURN *** [8h Ad Ts][3s]
+MUSTANG7474 checks
+jesusito33 checks
+JaLu1607 checks
+*** RIVER *** [8h Ad Ts 3s][Tc]
+MUSTANG7474 bets 3600
+jesusito33 folds
+JaLu1607 folds
+MUSTANG7474 collected 23970 from pot
+*** SUMMARY ***
+Total pot 23970 | No rake
+Board: [8h Ad Ts 3s Tc]
+Seat 1: MUSTANG7474 (small blind) won 23970
+
+
+Winamax Poker - Tournament "ATOM" buyIn: 4.50€ + 0.50€ level: 11 - HandId: #4446486702751481892-132-1768940750 - Holdem no limit (140/600/1200) - 2026/01/20 20:25:50 UTC
+Table: 'ATOM(1035278361)#0035' 6-max (real money) Seat #1 is the button
+Seat 1: MUSTANG7474 (39293, 2.50€ bounty)
+Seat 2: jesusito33 (10229, 2.50€ bounty)
+Seat 3: Crustan13 (29743, 2.50€ bounty)
+Seat 4: tarzakerva17 (41438, 3€ bounty)
+Seat 5: JaLu1607 (34582, 3.75€ bounty)
+Seat 6: noe_chicha (28603, 2.50€ bounty)
+*** ANTE/BLINDS ***
+jesusito33 posts ante 140
+Crustan13 posts ante 140
+MUSTANG7474 posts ante 140
+tarzakerva17 posts ante 140
+JaLu1607 posts ante 140
+noe_chicha posts ante 140
+jesusito33 posts small blind 600
+Crustan13 posts big blind 1200
+Dealt to jesusito33 [Ts Td]
+*** PRE-FLOP *** 
+tarzakerva17 folds
+JaLu1607 calls 1200
+noe_chicha folds
+MUSTANG7474 folds
+jesusito33 raises 8889 to 10089 and is all-in
+Crustan13 folds
+JaLu1607 calls 8889
+*** FLOP *** [8h 7c 2s]
+*** TURN *** [8h 7c 2s][5h]
+*** RIVER *** [8h 7c 2s 5h][9h]
+*** SHOW DOWN ***
+jesusito33 shows [Ts Td] (One pair : Tens)
+JaLu1607 shows [7h Kh] (Flush King high)
+JaLu1607 collected 22218 from pot
+*** SUMMARY ***
+Total pot 22218 | No rake
+Board: [8h 7c 2s 5h 9h]
+Seat 2: jesusito33 (small blind) showed [Ts Td] and lost with One pair : Tens
+Seat 5: JaLu1607 showed [7h Kh] and won 22218 with Flush King high
+
+

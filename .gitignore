@@ -1,0 +1,12 @@
+
+preferences.toml
+
+__pycache__/
+tasks/
+scripts/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.venv/
+*.egg-info/
+*.lock
