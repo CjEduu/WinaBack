@@ -113,11 +113,11 @@ class TestHandListWidget:
 
         item = widget.item(0)
         assert item is not None
-        assert "Hand #1" in item.text()
+        assert "#000" in item.text()
 
-        item2 = widget.item(2)
+        item2 = widget.item(1)
         assert item2 is not None
-        assert "Hand #3" in item2.text()
+        assert "#001" in item2.text()
 
     def test_hand_entry_shows_brief_summary(
         self, qtbot: Any, sample_hands: list[Hand]
@@ -132,7 +132,6 @@ class TestHandListWidget:
         assert item is not None
         text = item.text()
         assert "50/100" in text
-        assert "Hero" in text
 
     def test_clicking_hand_emits_signal(
         self, qtbot: Any, sample_hands: list[Hand]

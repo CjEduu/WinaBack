@@ -36,6 +36,7 @@ class TableWidget(QWidget):
     CHIP_RED = QColor("#a12d2d")
     CHIP_BORDER_COLOR = QColor("#1a1a1a")
     CHIP_AMOUNT_COLOR = QColor("#ffd700")
+    HERO_STACK_HIGHLIGHT_COLOR = QColor(255, 215, 0, 60)
 
     PLAYER_BOX_WIDTH = 120
     PLAYER_BOX_HEIGHT = 50
@@ -57,6 +58,10 @@ class TableWidget(QWidget):
         self._bet_opacity: float = 1.0
         self._bet_animation_timer: QTimer = QTimer(self)
         self._bet_animation_timer.timeout.connect(self._animate_bet_opacity)
+        self._hero_stack_highlight: bool = False
+        self._hero_highlight_timer: QTimer = QTimer(self)
+        self._hero_highlight_timer.timeout.connect(self._end_hero_highlight)
+        self._hero_highlight_timer.setSingleShot(True)
         self.setMinimumSize(400, 300)
         self.setMouseTracking(True)
 
@@ -97,6 +102,17 @@ class TableWidget(QWidget):
         if self._bet_opacity >= 1.0:
             self._bet_opacity = 1.0
             self._bet_animation_timer.stop()
+        self.update()
+
+    def _trigger_hero_highlight(self) -> None:
+        """Trigger brief highlight flash on hero stack click."""
+        self._hero_stack_highlight = True
+        self._hero_highlight_timer.start(150)
+        self.update()
+
+    def _end_hero_highlight(self) -> None:
+        """End hero stack highlight after timer expires."""
+        self._hero_stack_highlight = False
         self.update()
 
     def clear(self) -> None:
@@ -325,6 +341,13 @@ class TableWidget(QWidget):
             box_rect.width() - 10,
             20,
         )
+
+        if player.is_hero and self._hero_stack_highlight:
+            painter.setBrush(QBrush(self.HERO_STACK_HIGHLIGHT_COLOR))
+            painter.setPen(Qt.PenStyle.NoPen)
+            painter.drawRoundedRect(stack_rect, 3, 3)
+            painter.setPen(self.STACK_COLOR)
+
         painter.drawText(stack_rect, Qt.AlignmentFlag.AlignCenter, stack_text)
 
         if player.is_hero:
@@ -521,7 +544,7 @@ class TableWidget(QWidget):
 
         if self._hero_stack_rect and self._hero_stack_rect.contains(event.position()):
             self._show_bb = not self._show_bb
-            self.update()
+            self._trigger_hero_highlight()
             return
 
         super().mousePressEvent(event)

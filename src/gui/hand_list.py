@@ -82,7 +82,7 @@ class HandListWidget(QListWidget):
             i+=1
         
         current_hand = hands[i]
-        full_display = "Last Hand"
+        full_display = "<span style='color: #ffffff;'> Last Hand </span>"
         item = QListWidgetItem()
         item.setText(full_display)
         # Store the Hand object in UserRole (256)
