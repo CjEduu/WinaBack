@@ -7,12 +7,10 @@ from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
 
 from src.parser.models import Card, Hand, Player
-from src.replayer.state import PlayerState, ReplayState
-
+from src.replayer.state import PlayerState, ReplayState, ActionType
 
 class TableWidget(QWidget):
     """Widget that displays the poker table with player positions."""
-
     TABLE_COLOR = QColor("#1a5f2a")
     TABLE_BORDER_COLOR = QColor("#8b4513")
     PLAYER_BG_COLOR = QColor("#2d2d2d")
@@ -163,7 +161,6 @@ class TableWidget(QWidget):
             offset = (i - hero_idx) % num_players
 
             angle = math.pi / 2 + (2 * math.pi * offset) / num_players
-
             x = center_x + oval_rx * math.cos(angle) * 1.1
             y = center_y + oval_ry * math.sin(angle) * 1.1
 
@@ -226,7 +223,7 @@ class TableWidget(QWidget):
         painter.setFont(amount_font)
         painter.setPen(self.CHIP_AMOUNT_COLOR)
         
-        amount_text = self._format_stack(amount)
+        amount_text = self._format_stack_or_bb(amount)
         amount_rect = QRectF(x - 30, y + chip_height / 2 + 2, 60, 14)
         painter.drawText(amount_rect, Qt.AlignmentFlag.AlignCenter, amount_text)
         
@@ -259,9 +256,10 @@ class TableWidget(QWidget):
         """Draw the player's current bet with chip sprites."""
         if player.name not in player_states:
             return
-
+        
         current_bet = player_states[player.name].current_bet
-        if current_bet <= 0:
+        small_blind = self._hand.small_blind if self._hand and self._hand.small_blind > 0 else 1.0
+        if current_bet <= small_blind / 4:
             return
 
         bet_pos = self._get_bet_position(center)
