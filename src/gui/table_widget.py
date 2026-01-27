@@ -2,7 +2,7 @@
 import math
 
 from PyQt6.QtCore import QPointF, QRectF, Qt
-from PyQt6.QtGui import QBrush, QColor, QFont, QPainter, QPen
+from PyQt6.QtGui import QBrush, QColor, QFont, QMouseEvent, QPainter, QPen
 from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
 
@@ -295,7 +295,10 @@ class TableWidget(QWidget):
         else:
             stack = player.stack
 
-        stack_text = self._format_stack(stack)
+        if player.is_hero:
+            stack_text = self._format_stack_or_bb(stack)
+        else:
+            stack_text = self._format_stack(stack)
         stack_rect = QRectF(
             box_rect.left() + 5,
             box_rect.top() + 25,
@@ -489,3 +492,16 @@ class TableWidget(QWidget):
         painter.setFont(suit_font)
         suit_rect = QRectF(x, y + 24, self.CARD_WIDTH, 24)
         painter.drawText(suit_rect, Qt.AlignmentFlag.AlignCenter, suit_symbol)
+
+    @override
+    def mousePressEvent(self, event: QMouseEvent | None) -> None:
+        """Handle mouse press events to toggle hero stack display."""
+        if event is None:
+            return
+
+        if self._hero_stack_rect and self._hero_stack_rect.contains(event.position()):
+            self._show_bb = not self._show_bb
+            self.update()
+            return
+
+        super().mousePressEvent(event)
