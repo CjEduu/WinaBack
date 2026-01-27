@@ -1,7 +1,7 @@
 """Poker table widget for rendering game state."""
 import math
 
-from PyQt6.QtCore import QPointF, QRectF, Qt
+from PyQt6.QtCore import QPointF, QRectF, Qt, QTimer
 from PyQt6.QtGui import QBrush, QColor, QCursor, QFont, QMouseEvent, QPainter, QPen
 from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
@@ -56,6 +56,9 @@ class TableWidget(QWidget):
         self._hand: Hand | None = None
         self._hero_stack_rect: QRectF | None = None
         self._show_bb: bool = False
+        self._bet_opacity: float = 1.0
+        self._bet_animation_timer: QTimer = QTimer(self)
+        self._bet_animation_timer.timeout.connect(self._animate_bet_opacity)
         self.setMinimumSize(400, 300)
         self.setMouseTracking(True)
 
@@ -80,6 +83,23 @@ class TableWidget(QWidget):
     def hand(self) -> Hand | None:
         """Get current hand."""
         return self._hand
+
+    def trigger_bet_animation(self) -> None:
+        """Trigger fade-in animation for bet chips.
+        
+        Call this when a new bet is made (after next_action()).
+        """
+        self._bet_opacity = 0.0
+        self._bet_animation_timer.start(50)
+        self.update()
+
+    def _animate_bet_opacity(self) -> None:
+        """Animation step: increment bet opacity until fully visible."""
+        self._bet_opacity += 0.25
+        if self._bet_opacity >= 1.0:
+            self._bet_opacity = 1.0
+            self._bet_animation_timer.stop()
+        self.update()
 
     def clear(self) -> None:
         """Clear the table display."""
@@ -179,6 +199,8 @@ class TableWidget(QWidget):
             chip_count: Number of chips to stack (1-3).
             amount: The bet amount to display below the chips.
         """
+        painter.setOpacity(self._bet_opacity)
+        
         chip_width = 24
         chip_height = 20
         vertical_offset = 4
@@ -207,6 +229,8 @@ class TableWidget(QWidget):
         amount_text = self._format_stack(amount)
         amount_rect = QRectF(x - 30, y + chip_height / 2 + 2, 60, 14)
         painter.drawText(amount_rect, Qt.AlignmentFlag.AlignCenter, amount_text)
+        
+        painter.setOpacity(1.0)
 
     def _draw_players(self, painter: QPainter) -> None:
         """Draw all players at their positions."""

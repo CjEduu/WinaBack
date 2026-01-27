@@ -19,7 +19,7 @@ from src.gui.folder_loader import FolderLoader
 from src.gui.hand_list import HandListWidget
 from src.gui.table_widget import TableWidget
 from src.gui.tournament_list import TournamentListWidget
-from src.parser.models import Hand, Tournament
+from src.parser.models import ActionType, Hand, Tournament
 from src.preferences import Preferences
 
 DARK_THEME_STYLESHEET = """
@@ -262,7 +262,21 @@ class MainWindow(QMainWindow):
 
     def _on_action_changed(self) -> None:
         """Handle replay navigation, update table and action log."""
-        self._table_widget.update()
+        replay_state = self._replay_controls.replay_state
+        if replay_state:
+            current_action = replay_state.current_action
+            if current_action and current_action.action_type in (
+                ActionType.POST,
+                ActionType.BET,
+                ActionType.CALL,
+                ActionType.RAISE,
+                ActionType.ALL_IN,
+            ):
+                self._table_widget.trigger_bet_animation()
+            else:
+                self._table_widget.update()
+        else:
+            self._table_widget.update()
         self._action_log.refresh()
 
     def _on_next_hand_requested(self) -> None:
