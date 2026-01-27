@@ -2,7 +2,7 @@
 import math
 
 from PyQt6.QtCore import QPointF, QRectF, Qt
-from PyQt6.QtGui import QBrush, QColor, QFont, QMouseEvent, QPainter, QPen
+from PyQt6.QtGui import QBrush, QColor, QCursor, QFont, QMouseEvent, QPainter, QPen
 from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
 
@@ -57,6 +57,7 @@ class TableWidget(QWidget):
         self._hero_stack_rect: QRectF | None = None
         self._show_bb: bool = False
         self.setMinimumSize(400, 300)
+        self.setMouseTracking(True)
 
     def set_hand(self, hand: Hand) -> None:
         """Set the hand to display and create replay state."""
@@ -295,10 +296,7 @@ class TableWidget(QWidget):
         else:
             stack = player.stack
 
-        if player.is_hero:
-            stack_text = self._format_stack_or_bb(stack)
-        else:
-            stack_text = self._format_stack(stack)
+        stack_text = self._format_stack_or_bb(stack)
         stack_rect = QRectF(
             box_rect.left() + 5,
             box_rect.top() + 25,
@@ -433,7 +431,7 @@ class TableWidget(QWidget):
         center_x = self.width() / 2
         center_y = self.height() / 2
 
-        pot_text = f"Pot: {self._format_stack(pot)}"
+        pot_text = f"Pot: {self._format_stack_or_bb(pot)}"
         pot_rect = QRectF(center_x - 60, center_y - 65, 120, 24)
 
         painter.setPen(QPen(self.PLAYER_BORDER_COLOR, 1))
@@ -505,3 +503,16 @@ class TableWidget(QWidget):
             return
 
         super().mousePressEvent(event)
+
+    @override
+    def mouseMoveEvent(self, event: QMouseEvent | None) -> None:
+        """Handle mouse move events to change cursor when hovering hero stack."""
+        if event is None:
+            return
+
+        if self._hero_stack_rect and self._hero_stack_rect.contains(event.position()):
+            self.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
+        else:
+            self.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
+
+        super().mouseMoveEvent(event)
