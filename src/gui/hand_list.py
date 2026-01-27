@@ -1,11 +1,11 @@
 """Hand list widget for displaying hands in a selected tournament."""
-import PyQt6
 
-from PyQt6.QtCore import pyqtSignal,Qt
-from PyQt6.QtWidgets import QListWidget, QListWidgetItem,QStyledItemDelegate,QStyle
-from PyQt6.QtGui import QTextDocument, QPalette
+from PyQt6.QtCore import Qt, pyqtSignal
+from PyQt6.QtGui import QTextDocument
+from PyQt6.QtWidgets import QListWidget, QListWidgetItem, QStyle, QStyledItemDelegate
 
 from src.parser.models import Hand, Street
+
 
 class RichTextDelegate(QStyledItemDelegate):
     def paint(self, painter, option, index):

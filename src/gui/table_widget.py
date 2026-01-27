@@ -7,7 +7,8 @@ from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
 
 from src.parser.models import Card, Hand, Player
-from src.replayer.state import PlayerState, ReplayState, ActionType
+from src.replayer.state import PlayerState, ReplayState
+
 
 class TableWidget(QWidget):
     """Widget that displays the poker table with player positions."""

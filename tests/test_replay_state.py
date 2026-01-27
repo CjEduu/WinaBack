@@ -335,3 +335,53 @@ class TestUtilityMethods:
         state = ReplayState(hand=sample_hand)
         result = state.goto_position(100)
         assert result is False
+
+
+class TestBetsResetPerStreet:
+    """Verify that player bets reset at the start of each new street."""
+
+    def test_bets_zero_at_start_of_hand(self, sample_hand: Hand) -> None:
+        """At position 0, no bets have been made yet."""
+        state = ReplayState(hand=sample_hand)
+        player_states = state.get_player_states()
+        for player_state in player_states.values():
+            assert player_state.current_bet == 0.0
+
+    def test_bets_zero_at_start_of_flop(self, sample_hand: Hand) -> None:
+        """When going to FLOP, bets from PREFLOP should be cleared before any flop action."""
+        state = ReplayState(hand=sample_hand)
+        # PREFLOP has 5 actions, go to end of preflop
+        for _ in range(5):
+            state.next_action()
+        # Villain2 called 200, so current_bet should be 300 (100 post + 200 call)
+        player_states = state.get_player_states()
+        assert player_states["Villain2"].current_bet == 300.0
+
+        # Now advance to first action of FLOP (check by Villain2)
+        state.next_action()
+        # At the start of FLOP, bets should be reset
+        player_states = state.get_player_states()
+        assert player_states["Villain2"].current_bet == 0.0
+        assert player_states["Hero"].current_bet == 0.0
+
+    def test_bets_accumulate_within_street(self, sample_hand: Hand) -> None:
+        """Bets should accumulate within the same street."""
+        state = ReplayState(hand=sample_hand)
+        # Go to FLOP: 5 preflop + 1 check + 1 bet + 1 call = 8 actions
+        for _ in range(8):
+            state.next_action()
+        player_states = state.get_player_states()
+        # Hero bet 400, Villain2 called 400
+        assert player_states["Hero"].current_bet == 400.0
+        assert player_states["Villain2"].current_bet == 400.0
+
+    def test_bets_zero_at_start_of_turn(self, sample_hand: Hand) -> None:
+        """When going to TURN, bets from FLOP should be cleared."""
+        state = ReplayState(hand=sample_hand)
+        # Go to first action of TURN: 5 preflop + 3 flop + 1 = 9 actions
+        for _ in range(9):
+            state.next_action()
+        player_states = state.get_player_states()
+        # First action on turn is CHECK, so bets should be 0
+        assert player_states["Hero"].current_bet == 0.0
+        assert player_states["Villain2"].current_bet == 0.0

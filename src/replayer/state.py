@@ -160,9 +160,17 @@ class ReplayState:
                 current_street_bets[action.player_name] = (
                     current_street_bets.get(action.player_name, 0.0) + action.amount
                 )
-                states[action.player_name].current_bet = current_street_bets[
-                    action.player_name
-                ]
+
+        # Determine if current street differs from last processed action's street
+        # If so, bets should be reset (we're at the start of a new street)
+        current = self.current_street
+        if last_street is not None and current != last_street:
+            current_street_bets = {}
+
+        # Apply current street bets to player states
+        for player_name, bet_amount in current_street_bets.items():
+            if player_name in states:
+                states[player_name].current_bet = bet_amount
 
         return states
 
