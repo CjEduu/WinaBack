@@ -177,7 +177,7 @@ class TableWidget(QWidget):
             amount: The bet amount to display below the chips.
         """
         chip_width = 24
-        chip_height = 8
+        chip_height = 20
         vertical_offset = 4
         
         chip_colors = [self.CHIP_GREEN, self.CHIP_BLUE, self.CHIP_RED]
