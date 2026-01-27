@@ -55,6 +55,7 @@ class TableWidget(QWidget):
         self._replay_state: ReplayState | None = None
         self._hand: Hand | None = None
         self._hero_stack_rect: QRectF | None = None
+        self._show_bb: bool = False
         self.setMinimumSize(400, 300)
 
     def set_hand(self, hand: Hand) -> None:
@@ -314,6 +315,17 @@ class TableWidget(QWidget):
             return f"{stack / 1_000:.1f}K"
         else:
             return f"{stack:.0f}"
+
+    def _format_stack_or_bb(self, stack: float) -> str:
+        """Format stack as chips or BB depending on _show_bb flag.
+        
+        When _show_bb is True, returns format 'X.X BB' using big_blind.
+        When _show_bb is False or big_blind == 0, returns chip format.
+        """
+        if self._show_bb and self._hand and self._hand.big_blind > 0:
+            bb_amount = stack / self._hand.big_blind
+            return f"{bb_amount:.1f} BB"
+        return self._format_stack(stack)
 
     def _draw_button_indicator(self, painter: QPainter, player_pos: QPointF) -> None:
         """Draw the dealer button indicator near the player."""
