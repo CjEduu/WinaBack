@@ -39,16 +39,19 @@ class TableWidget(QWidget):
     CHIP_AMOUNT_COLOR = QColor("#ffd700")
     HERO_STACK_HIGHLIGHT_COLOR = QColor(255, 215, 0, 60)
 
-    PLAYER_BOX_WIDTH = 120
-    PLAYER_BOX_HEIGHT = 50
-    HOLE_CARD_WIDTH = 32
-    HOLE_CARD_HEIGHT = 45
-    HOLE_CARD_SPACING = 4
-    HOLE_CARD_OVERLAP = 4
-    BUTTON_DIAMETER = 24
-    CARD_WIDTH = 40
-    CARD_HEIGHT = 56
-    CARD_SPACING = 4
+    BASE_PLAYER_BOX_WIDTH = 120
+    BASE_PLAYER_BOX_HEIGHT = 50
+    BASE_HOLE_CARD_WIDTH = 32
+    BASE_HOLE_CARD_HEIGHT = 45
+    BASE_HOLE_CARD_SPACING = 4
+    BASE_HOLE_CARD_OVERLAP = 4
+    BASE_BUTTON_DIAMETER = 24
+    BASE_CARD_WIDTH = 40
+    BASE_CARD_HEIGHT = 56
+    BASE_CARD_SPACING = 4
+    BASE_WIDTH = 800
+    BASE_HEIGHT = 600
+    MIN_SCALE_FACTOR = 0.5
     
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(parent)
@@ -65,6 +68,64 @@ class TableWidget(QWidget):
         self._hero_highlight_timer.setSingleShot(True)
         self.setMinimumSize(400, 300)
         self.setMouseTracking(True)
+
+    def _get_scale_factor(self) -> float:
+        """Calculate scale factor based on widget size relative to base size.
+        
+        Returns the minimum of width and height scale factors to maintain
+        aspect ratio, with a minimum of MIN_SCALE_FACTOR for readability.
+        """
+        width_scale = self.width() / self.BASE_WIDTH
+        height_scale = self.height() / self.BASE_HEIGHT
+        scale = min(width_scale, height_scale)
+        return max(scale, self.MIN_SCALE_FACTOR)
+
+    @property
+    def PLAYER_BOX_WIDTH(self) -> float:
+        return self.BASE_PLAYER_BOX_WIDTH * self._get_scale_factor()
+
+    @property
+    def PLAYER_BOX_HEIGHT(self) -> float:
+        return self.BASE_PLAYER_BOX_HEIGHT * self._get_scale_factor()
+
+    @property
+    def HOLE_CARD_WIDTH(self) -> float:
+        return self.BASE_HOLE_CARD_WIDTH * self._get_scale_factor()
+
+    @property
+    def HOLE_CARD_HEIGHT(self) -> float:
+        return self.BASE_HOLE_CARD_HEIGHT * self._get_scale_factor()
+
+    @property
+    def HOLE_CARD_SPACING(self) -> float:
+        return self.BASE_HOLE_CARD_SPACING * self._get_scale_factor()
+
+    @property
+    def HOLE_CARD_OVERLAP(self) -> float:
+        return self.BASE_HOLE_CARD_OVERLAP * self._get_scale_factor()
+
+    @property
+    def BUTTON_DIAMETER(self) -> float:
+        return self.BASE_BUTTON_DIAMETER * self._get_scale_factor()
+
+    @property
+    def CARD_WIDTH(self) -> float:
+        return self.BASE_CARD_WIDTH * self._get_scale_factor()
+
+    @property
+    def CARD_HEIGHT(self) -> float:
+        return self.BASE_CARD_HEIGHT * self._get_scale_factor()
+
+    @property
+    def CARD_SPACING(self) -> float:
+        return self.BASE_CARD_SPACING * self._get_scale_factor()
+
+    def _scaled_font(
+        self, base_size: int, weight: QFont.Weight = QFont.Weight.Normal
+    ) -> QFont:
+        """Create a font scaled by the current scale factor."""
+        scaled_size = max(6, int(base_size * self._get_scale_factor()))
+        return QFont("Arial", scaled_size, weight)
 
     def set_hand(self, hand: Hand) -> None:
         """Set the hand to display and create replay state."""
@@ -142,10 +203,11 @@ class TableWidget(QWidget):
         width = self.width()
         height = self.height()
 
-        margin = 80
+        scale = self._get_scale_factor()
+        margin = 80 * scale
         table_rect = QRectF(margin, margin, width - 2 * margin, height - 2 * margin)
 
-        painter.setPen(QPen(self.TABLE_BORDER_COLOR, 8))
+        painter.setPen(QPen(self.TABLE_BORDER_COLOR, max(2, int(8 * scale))))
         painter.setBrush(QBrush(self.TABLE_COLOR))
         painter.drawEllipse(table_rect)
 
@@ -166,10 +228,12 @@ class TableWidget(QWidget):
         width = self.width()
         height = self.height()
         center_x = width / 2
-        center_y = (height - 5) / 2 
+        center_y = (height - 5) / 2
 
-        oval_rx = (width - 160) / 2 - self.PLAYER_BOX_WIDTH / 2
-        oval_ry = (height - 160) / 2 - self.PLAYER_BOX_HEIGHT / 2
+        scale = self._get_scale_factor()
+        margin = 80 * scale
+        oval_rx = (width - 2 * margin) / 2 - self.PLAYER_BOX_WIDTH / 2
+        oval_ry = (height - 2 * margin) / 2 - self.PLAYER_BOX_HEIGHT / 2
 
         num_players = len(players)
         positions: list[tuple[Player, QPointF]] = []
@@ -215,9 +279,10 @@ class TableWidget(QWidget):
         """
         painter.setOpacity(self._bet_opacity)
         
-        chip_width = 24
-        chip_height = 20
-        vertical_offset = 4
+        scale = self._get_scale_factor()
+        chip_width = 24 * scale
+        chip_height = 20 * scale
+        vertical_offset = 4 * scale
         
         chip_colors = [self.CHIP_GREEN, self.CHIP_BLUE, self.CHIP_RED]
         
@@ -236,12 +301,14 @@ class TableWidget(QWidget):
             painter.setBrush(QBrush(chip_color))
             painter.drawEllipse(chip_rect)
         
-        amount_font = QFont("Arial", 8, QFont.Weight.Bold)
-        painter.setFont(amount_font)
+        painter.setFont(self._scaled_font(8, QFont.Weight.Bold))
         painter.setPen(self.CHIP_AMOUNT_COLOR)
         
         amount_text = self._format_stack_or_bb(amount)
-        amount_rect = QRectF(x - 30, y + chip_height / 2 + 2, 60, 14)
+        scale = self._get_scale_factor()
+        amount_rect = QRectF(
+            x - 30 * scale, y + chip_height / 2 + 2, 60 * scale, 14 * scale
+        )
         painter.drawText(amount_rect, Qt.AlignmentFlag.AlignCenter, amount_text)
         
         painter.setOpacity(1.0)
@@ -308,26 +375,25 @@ class TableWidget(QWidget):
             self.PLAYER_BOX_HEIGHT,
         )
 
+        scale = self._get_scale_factor()
         border_color = self.HERO_BORDER_COLOR if player.is_hero else self.PLAYER_BORDER_COLOR
         painter.setPen(QPen(border_color, 2))
         painter.setBrush(QBrush(self.PLAYER_BG_COLOR))
         painter.drawRoundedRect(box_rect, 5, 5)
 
-        name_font = QFont("Arial", 10, QFont.Weight.Bold)
-        painter.setFont(name_font)
+        painter.setFont(self._scaled_font(10, QFont.Weight.Bold))
         painter.setPen(self.TEXT_COLOR)
 
         name_rect = QRectF(
-            box_rect.left() + 5,
-            box_rect.top() + 5,
-            box_rect.width() - 10,
-            20,
+            box_rect.left() + 5 * scale,
+            box_rect.top() + 5 * scale,
+            box_rect.width() - 10 * scale,
+            20 * scale,
         )
         display_name = player.name[:12] + "..." if len(player.name) > 15 else player.name
         painter.drawText(name_rect, Qt.AlignmentFlag.AlignCenter, display_name)
 
-        stack_font = QFont("Arial", 9)
-        painter.setFont(stack_font)
+        painter.setFont(self._scaled_font(9))
         painter.setPen(self.STACK_COLOR)
 
         if self._replay_state and player.name in player_states:
@@ -337,10 +403,10 @@ class TableWidget(QWidget):
 
         stack_text = self._format_stack_or_bb(stack)
         stack_rect = QRectF(
-            box_rect.left() + 5,
-            box_rect.top() + 25,
-            box_rect.width() - 10,
-            20,
+            box_rect.left() + 5 * scale,
+            box_rect.top() + 25 * scale,
+            box_rect.width() - 10 * scale,
+            20 * scale,
         )
 
         if player.is_hero and self._hero_stack_highlight:
@@ -390,8 +456,7 @@ class TableWidget(QWidget):
         painter.setBrush(QBrush(self.BUTTON_BG_COLOR))
         painter.drawEllipse(button_rect)
 
-        button_font = QFont("Arial", 10, QFont.Weight.Bold)
-        painter.setFont(button_font)
+        painter.setFont(self._scaled_font(10, QFont.Weight.Bold))
         painter.setPen(self.BUTTON_TEXT_COLOR)
         painter.drawText(button_rect, Qt.AlignmentFlag.AlignCenter, "D")
 
@@ -438,14 +503,13 @@ class TableWidget(QWidget):
         text_color = self.CARD_RED_COLOR if is_red else self.CARD_BLACK_COLOR
         painter.setPen(text_color)
 
-        rank_font = QFont("Arial", 10, QFont.Weight.Bold)
-        painter.setFont(rank_font)
-        rank_rect = QRectF(x, y + 2, self.HOLE_CARD_WIDTH, 16)
+        scale = self._get_scale_factor()
+        painter.setFont(self._scaled_font(10, QFont.Weight.Bold))
+        rank_rect = QRectF(x, y + 2 * scale, self.HOLE_CARD_WIDTH, 16 * scale)
         painter.drawText(rank_rect, Qt.AlignmentFlag.AlignCenter, card.rank)
 
-        suit_font = QFont("Arial", 12)
-        painter.setFont(suit_font)
-        suit_rect = QRectF(x, y + 16, self.HOLE_CARD_WIDTH, 20)
+        painter.setFont(self._scaled_font(12))
+        suit_rect = QRectF(x, y + 16 * scale, self.HOLE_CARD_WIDTH, 20 * scale)
         painter.drawText(suit_rect, Qt.AlignmentFlag.AlignCenter, suit_symbol)
 
     def _draw_card_back(self, painter: QPainter, x: float, y: float) -> None:
@@ -457,7 +521,7 @@ class TableWidget(QWidget):
         painter.drawRoundedRect(card_rect, 3, 3)
 
         painter.setPen(QPen(self.CARD_BACK_PATTERN_COLOR, 1))
-        margin = 4
+        margin = 4 * self._get_scale_factor()
         inner_rect = QRectF(
             x + margin, y + margin,
             self.HOLE_CARD_WIDTH - 2 * margin,
@@ -477,15 +541,17 @@ class TableWidget(QWidget):
         center_x = self.width() / 2
         center_y = self.height() / 2
 
+        scale = self._get_scale_factor()
         pot_text = f"Pot: {self._format_stack_or_bb(pot)}"
-        pot_rect = QRectF(center_x - 60, center_y - 65, 120, 24)
+        pot_rect = QRectF(
+            center_x - 60 * scale, center_y - 65 * scale, 120 * scale, 24 * scale
+        )
 
         painter.setPen(QPen(self.PLAYER_BORDER_COLOR, 1))
         painter.setBrush(QBrush(self.POT_BG_COLOR))
         painter.drawRoundedRect(pot_rect, 4, 4)
 
-        pot_font = QFont("Arial", 11, QFont.Weight.Bold)
-        painter.setFont(pot_font)
+        painter.setFont(self._scaled_font(11, QFont.Weight.Bold))
         painter.setPen(self.POT_TEXT_COLOR)
         painter.drawText(pot_rect, Qt.AlignmentFlag.AlignCenter, pot_text)
 
@@ -527,14 +593,13 @@ class TableWidget(QWidget):
         text_color = self.CARD_RED_COLOR if is_red else self.CARD_BLACK_COLOR
         painter.setPen(text_color)
 
-        rank_font = QFont("Arial", 14, QFont.Weight.Bold)
-        painter.setFont(rank_font)
-        rank_rect = QRectF(x, y + 4, self.CARD_WIDTH, 20)
+        scale = self._get_scale_factor()
+        painter.setFont(self._scaled_font(14, QFont.Weight.Bold))
+        rank_rect = QRectF(x, y + 4 * scale, self.CARD_WIDTH, 20 * scale)
         painter.drawText(rank_rect, Qt.AlignmentFlag.AlignCenter, card.rank)
 
-        suit_font = QFont("Arial", 16)
-        painter.setFont(suit_font)
-        suit_rect = QRectF(x, y + 24, self.CARD_WIDTH, 24)
+        painter.setFont(self._scaled_font(16))
+        suit_rect = QRectF(x, y + 24 * scale, self.CARD_WIDTH, 24 * scale)
         painter.drawText(suit_rect, Qt.AlignmentFlag.AlignCenter, suit_symbol)
 
     @override
