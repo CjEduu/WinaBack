@@ -66,6 +66,7 @@ class TableWidget(QWidget):
         self._hero_highlight_timer: QTimer = QTimer(self)
         self._hero_highlight_timer.timeout.connect(self._end_hero_highlight)
         self._hero_highlight_timer.setSingleShot(True)
+        self._ui_scale: float = 1.0
         self.setMinimumSize(400, 300)
         self.setMouseTracking(True)
 
@@ -74,11 +75,22 @@ class TableWidget(QWidget):
         
         Returns the minimum of width and height scale factors to maintain
         aspect ratio, with a minimum of MIN_SCALE_FACTOR for readability.
+        The result is multiplied by the user's ui_scale preference.
         """
         width_scale = self.width() / self.BASE_WIDTH
         height_scale = self.height() / self.BASE_HEIGHT
         scale = min(width_scale, height_scale)
-        return max(scale, self.MIN_SCALE_FACTOR)
+        base_scale = max(scale, self.MIN_SCALE_FACTOR)
+        return base_scale * self._ui_scale
+
+    def set_ui_scale(self, ui_scale: float) -> None:
+        """Set the UI scale preference and trigger repaint.
+        
+        Args:
+            ui_scale: The scale factor from preferences (e.g., 0.75, 1.0, 1.5, 2.0).
+        """
+        self._ui_scale = ui_scale
+        self.update()
 
     @property
     def PLAYER_BOX_WIDTH(self) -> float:

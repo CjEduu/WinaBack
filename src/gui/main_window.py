@@ -179,6 +179,7 @@ class MainWindow(QMainWindow):
         table_layout = QVBoxLayout(self._table_area)
         table_layout.setContentsMargins(5, 5, 5, 5)
         self._table_widget = TableWidget()
+        self._table_widget.set_ui_scale(self._preferences.ui_scale)
         table_layout.addWidget(self._table_widget, stretch=1)
 
         action_log_label = QLabel("Action History")

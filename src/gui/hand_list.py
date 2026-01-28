@@ -89,11 +89,11 @@ class HandListWidget(QListWidget):
         item.setData(256, current_hand)
         self.addItem(item)    
 
-    def _get_hand_summary(self, hand: Hand) -> tuple[str,int]:
+    def _get_hand_summary(self, hand: Hand) -> tuple[str,float]:
         """Generate a brief summary of the hand."""
 
         hero = next((p for p in hand.players if p.is_hero), None)
-        hero_stack = hero.stack if hero else 0
+        hero_stack = hero.stack if hero else 0.0
         blinds = f"{int(hand.small_blind)}/{int(hand.big_blind)}"
 
         return f"{blinds}",hero_stack
