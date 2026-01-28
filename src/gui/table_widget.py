@@ -1,5 +1,6 @@
 """Poker table widget for rendering game state."""
 import math
+from enum import Enum, auto
 
 from PyQt6.QtCore import QPointF, QRectF, Qt, QTimer
 from PyQt6.QtGui import QBrush, QColor, QCursor, QFont, QMouseEvent, QPainter, QPen
@@ -8,6 +9,15 @@ from typing_extensions import override
 
 from src.parser.models import Card, Hand, Player
 from src.replayer.state import PlayerState, ReplayState
+
+
+class PlayerZone(Enum):
+    """Zone indicating where a player is positioned around the table."""
+
+    TOP = auto()
+    BOTTOM = auto()
+    LEFT = auto()
+    RIGHT = auto()
 
 
 class TableWidget(QWidget):
@@ -91,6 +101,33 @@ class TableWidget(QWidget):
         """
         self._ui_scale = ui_scale
         self.update()
+
+    def _get_player_zone(self, angle: float) -> PlayerZone:
+        """Determine which zone a player is in based on their angle.
+
+        The angle is in radians, measured counter-clockwise from positive x-axis.
+        In our coordinate system (Y increases downward):
+        - BOTTOM: angles near π/2 (90°), roughly 45° to 135° → π/4 to 3π/4
+        - LEFT: angles near π (180°), roughly 135° to 225° → 3π/4 to 5π/4
+        - TOP: angles near 3π/2 (270°), roughly 225° to 315° → 5π/4 to 7π/4
+        - RIGHT: angles near 0°/360°, roughly 315° to 45° → 7π/4 to π/4
+
+        Args:
+            angle: The angle in radians (0 to 2π range).
+
+        Returns:
+            The PlayerZone indicating the player's position.
+        """
+        normalized = angle % (2 * math.pi)
+
+        if math.pi / 4 <= normalized < 3 * math.pi / 4:
+            return PlayerZone.BOTTOM
+        elif 3 * math.pi / 4 <= normalized < 5 * math.pi / 4:
+            return PlayerZone.LEFT
+        elif 5 * math.pi / 4 <= normalized < 7 * math.pi / 4:
+            return PlayerZone.TOP
+        else:
+            return PlayerZone.RIGHT
 
     @property
     def PLAYER_BOX_WIDTH(self) -> float:

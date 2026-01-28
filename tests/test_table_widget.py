@@ -1,9 +1,9 @@
 """Tests for TableWidget - poker table rendering."""
-
+import math
 from datetime import datetime
 from typing import Any
 
-from src.gui.table_widget import TableWidget
+from src.gui.table_widget import PlayerZone, TableWidget
 from src.parser.models import Action, ActionType, Card, Hand, Player, Street
 from src.replayer.state import ReplayState
 
@@ -639,3 +639,84 @@ class TestCommunityCards:
         widget.replay_state.goto_street(Street.RIVER)
         widget.update()
         assert len(widget.replay_state.get_visible_board()) == 5
+
+
+class TestPlayerZone:
+    """Test player zone determination based on angle."""
+
+    def test_bottom_zone_at_90_degrees(self, qtbot: Any) -> None:
+        """Angle near π/2 (90°) returns BOTTOM zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(math.pi / 2) == PlayerZone.BOTTOM
+
+    def test_left_zone_at_180_degrees(self, qtbot: Any) -> None:
+        """Angle near π (180°) returns LEFT zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(math.pi) == PlayerZone.LEFT
+
+    def test_top_zone_at_270_degrees(self, qtbot: Any) -> None:
+        """Angle near 3π/2 (270°) returns TOP zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(3 * math.pi / 2) == PlayerZone.TOP
+
+    def test_right_zone_at_0_degrees(self, qtbot: Any) -> None:
+        """Angle near 0 returns RIGHT zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(0) == PlayerZone.RIGHT
+
+    def test_right_zone_at_360_degrees(self, qtbot: Any) -> None:
+        """Angle near 2π (360°) returns RIGHT zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(2 * math.pi) == PlayerZone.RIGHT
+
+    def test_boundary_bottom_left(self, qtbot: Any) -> None:
+        """Boundary at 3π/4 (135°) falls in LEFT zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(3 * math.pi / 4) == PlayerZone.LEFT
+
+    def test_boundary_left_top(self, qtbot: Any) -> None:
+        """Boundary at 5π/4 (225°) falls in TOP zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(5 * math.pi / 4) == PlayerZone.TOP
+
+    def test_boundary_top_right(self, qtbot: Any) -> None:
+        """Boundary at 7π/4 (315°) falls in RIGHT zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(7 * math.pi / 4) == PlayerZone.RIGHT
+
+    def test_boundary_right_bottom(self, qtbot: Any) -> None:
+        """Boundary at π/4 (45°) falls in BOTTOM zone."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(math.pi / 4) == PlayerZone.BOTTOM
+
+    def test_negative_angle_normalized(self, qtbot: Any) -> None:
+        """Negative angles are normalized correctly."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(-math.pi / 2) == PlayerZone.TOP
+
+    def test_large_angle_normalized(self, qtbot: Any) -> None:
+        """Angles > 2π are normalized correctly."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        assert widget._get_player_zone(5 * math.pi / 2) == PlayerZone.BOTTOM
