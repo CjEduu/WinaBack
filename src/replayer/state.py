@@ -167,6 +167,10 @@ class ReplayState:
                 states[action.player_name].is_folded = True
             elif action.action_type == ActionType.POST:
                 # Posts (blinds/antes) go directly to pot, not shown as chips
+                if self._is_blind_post(action):
+                    current_street_bets[action.player_name] = (
+                        current_street_bets.get(action.player_name,0.0) + action.amount
+                    )
                 pass
             elif action.action_type in (
                 ActionType.BET,

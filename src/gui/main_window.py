@@ -34,6 +34,12 @@ QMenuBar {
 QMenuBar::item:selected {
     background-color: #3e3e3e;
 }
+QLabel#helpBar {
+    background-color: #2d2d2d;
+    color: #808080;
+    padding: 2px 8px;
+    font-size: 11px;
+}
 QMenu {
     background-color: #2d2d2d;
     color: #d4d4d4;
@@ -136,6 +142,10 @@ class MainWindow(QMainWindow):
         exit_action.setShortcut("Ctrl+Q")
         exit_action.triggered.connect(self.close)
         file_menu.addAction(exit_action)
+
+        help_bar = QLabel("h/l: action  j/k: hand  g/G: start/end")
+        help_bar.setObjectName("helpBar")
+        menu_bar.setCornerWidget(help_bar, Qt.Corner.TopRightCorner)
 
     def _setup_layout(self) -> None:
         central_widget = QWidget()
@@ -384,6 +394,11 @@ class MainWindow(QMainWindow):
                 self._replay_controls.prev_hand_button.click()
             case Qt.Key.Key_Down | Qt.Key.Key_J:
                 self._replay_controls.next_hand_button.click()
+            case Qt.Key.Key_G:
+                if event.modifiers() & Qt.KeyboardModifier.ShiftModifier:
+                    self._replay_controls.go_to_end()
+                else:
+                    self._replay_controls.go_to_start()
             case _:
                 super().keyPressEvent(event)
                 

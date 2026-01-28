@@ -365,9 +365,19 @@ class TestBetsResetPerStreet:
         state = ReplayState(hand=sample_hand)
         # Posts don't count as current_bet, so all bets should be 0
         player_states = state.get_player_states()
+        bb_found = False
+        sb_found = False
         for player_state in player_states.values():
+            if player_state.current_bet == sample_hand.small_blind:
+                sb_found = True
+                continue
+            if player_state.current_bet == sample_hand.big_blind:
+                bb_found = True
+                continue
             assert player_state.current_bet == 0.0
 
+        assert bb_found and sb_found
+        
     def test_bets_at_end_of_preflop(self, sample_hand: Hand) -> None:
         """Bets accumulate during preflop (excluding posts)."""
         state = ReplayState(hand=sample_hand)
@@ -377,7 +387,7 @@ class TestBetsResetPerStreet:
             state.next_action()
         player_states = state.get_player_states()
         assert player_states["Hero"].current_bet == 300.0
-        assert player_states["Villain2"].current_bet == 200.0
+        assert player_states["Villain2"].current_bet == 300.0
 
     def test_bets_zero_at_start_of_flop(self, sample_hand: Hand) -> None:
         """When going to FLOP, bets from PREFLOP should be cleared."""
