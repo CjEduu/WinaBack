@@ -372,9 +372,17 @@ class TableWidget(QWidget):
             player_states = self._replay_state.get_player_states()
             visible_hole_cards = self._replay_state.get_visible_hole_cards()
 
-        for player, pos in positions:
+        for i, (player, pos) in enumerate(positions):
             self._draw_player_box(painter, player, pos, player_states)
-            self._draw_hole_cards(painter, player, pos, player_states, visible_hole_cards)
+            # Calculate angle for this player's zone
+            players = self._hand.players if self._hand else []
+            hero_idx = next(
+                (idx for idx, p in enumerate(players) if p.is_hero),
+                0,
+            )
+            offset = (i - hero_idx) % len(players) if players else 0
+            angle = math.pi / 2 + (2 * math.pi * offset) / len(players) if players else 0
+            self._draw_hole_cards(painter, player, pos, player_states, visible_hole_cards, angle)
             if self._hand and player.seat == self._hand.button_seat:
                 self._draw_button_indicator(painter, pos)
             self._draw_player_bet(painter, player, pos, player_states)
@@ -516,23 +524,39 @@ class TableWidget(QWidget):
         center: QPointF,
         player_states: dict[str, PlayerState],
         visible_hole_cards: dict[str, list[Card]],
+        angle: float,
     ) -> None:
-        """Draw player's hole cards below their info box."""
+        """Draw player's hole cards next to their info box, oriented toward table center.
+        
+        Cards are positioned based on player zone:
+        - TOP/BOTTOM/LEFT players: cards to the right of player box
+        - RIGHT players: cards to the left of player box (toward center)
+        """
         if player.name in player_states and player_states[player.name].is_folded:
             return
 
-        cards_y = center.y() + self.PLAYER_BOX_HEIGHT / 2 + 5
+        zone = self._get_player_zone(angle)
         total_width = 2 * self.HOLE_CARD_WIDTH - self.HOLE_CARD_OVERLAP
-        start_x = center.x() - total_width / 2
+        card_spacing = self.HOLE_CARD_WIDTH - self.HOLE_CARD_OVERLAP
+        
+        # Position cards based on zone
+        if zone == PlayerZone.RIGHT:
+            # Cards to the left of player box (toward center)
+            start_x = center.x() - self.PLAYER_BOX_WIDTH / 2 - total_width - self.HOLE_CARD_SPACING
+            cards_y = center.y() - self.HOLE_CARD_HEIGHT / 2
+        else:
+            # TOP/BOTTOM/LEFT: cards to the right of player box
+            start_x = center.x() + self.PLAYER_BOX_WIDTH / 2 + self.HOLE_CARD_SPACING
+            cards_y = center.y() - self.HOLE_CARD_HEIGHT / 2
 
         if player.name in visible_hole_cards:
             cards = visible_hole_cards[player.name]
             for i, card in enumerate(cards[:2]):
-                x = start_x + i * (self.HOLE_CARD_WIDTH - self.HOLE_CARD_OVERLAP)
+                x = start_x + i * card_spacing
                 self._draw_hole_card(painter, card, x, cards_y)
         else:
             for i in range(2):
-                x = start_x + i * (self.HOLE_CARD_WIDTH - self.HOLE_CARD_OVERLAP)
+                x = start_x + i * card_spacing
                 self._draw_card_back(painter, x, cards_y)
 
     def _draw_hole_card(
