@@ -143,9 +143,11 @@ class TestReplayControlsIntegration:
         hand = make_test_hand()
         main_window.table_widget.set_hand(hand)
         main_window.replay_controls.set_replay_state(main_window.table_widget.replay_state)
-        main_window.replay_controls.next_button.click()
         assert main_window.table_widget.replay_state is not None
-        assert main_window.table_widget.replay_state.current_position == 1
+        # Initial position is 2 (after 2 POSTs skipped)
+        initial_pos = main_window.table_widget.replay_state.current_position
+        main_window.replay_controls.next_button.click()
+        assert main_window.table_widget.replay_state.current_position == initial_pos + 1
 
     def test_replay_controls_updates_action_log(self, main_window: MainWindow) -> None:
         """Navigating updates action log."""
@@ -192,14 +194,15 @@ class TestKeyboardShortcuts:
         hand = make_test_hand()
         main_window._on_hand_selected(hand)
         assert main_window.replay_controls.replay_state is not None
+        # Starts at 2 (after 2 POSTs), advance once
+        initial_pos = main_window.replay_controls.replay_state.current_position
         main_window.replay_controls.next_button.click()
-        main_window.replay_controls.next_button.click()
-        assert main_window.replay_controls.replay_state.current_position == 2
+        assert main_window.replay_controls.replay_state.current_position == initial_pos + 1
 
         event = QKeyEvent(QKeyEvent.Type.KeyPress, Qt.Key.Key_Left, Qt.KeyboardModifier.NoModifier)
         main_window.keyPressEvent(event)
 
-        assert main_window.replay_controls.replay_state.current_position == 1
+        assert main_window.replay_controls.replay_state.current_position == initial_pos
 
     def test_l_key_advances_action(self, main_window: MainWindow) -> None:
         """L key advances to next action."""
@@ -218,14 +221,15 @@ class TestKeyboardShortcuts:
         hand = make_test_hand()
         main_window._on_hand_selected(hand)
         assert main_window.replay_controls.replay_state is not None
+        # Starts at 2 (after 2 POSTs), advance once
+        initial_pos = main_window.replay_controls.replay_state.current_position
         main_window.replay_controls.next_button.click()
-        main_window.replay_controls.next_button.click()
-        assert main_window.replay_controls.replay_state.current_position == 2
+        assert main_window.replay_controls.replay_state.current_position == initial_pos + 1
 
         event = QKeyEvent(QKeyEvent.Type.KeyPress, Qt.Key.Key_H, Qt.KeyboardModifier.NoModifier)
         main_window.keyPressEvent(event)
 
-        assert main_window.replay_controls.replay_state.current_position == 1
+        assert main_window.replay_controls.replay_state.current_position == initial_pos
 
     def test_shortcuts_do_nothing_without_hand(self, main_window: MainWindow) -> None:
         """Keyboard shortcuts don't crash when no hand is loaded."""

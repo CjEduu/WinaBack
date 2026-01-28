@@ -102,13 +102,15 @@ class TestReplayControlsNavigation:
         controls.set_replay_state(state)
         assert controls.next_button.isEnabled()
 
-    def test_prev_button_disabled_at_start(self, qtbot: Any) -> None:
+    def test_prev_button_enabled_at_initial_position(self, qtbot: Any) -> None:
+        """Prev button is enabled since we can navigate back to posts."""
         controls = ReplayControls()
         qtbot.addWidget(controls)
         hand = make_test_hand()
         state = ReplayState(hand=hand)
         controls.set_replay_state(state)
-        assert not controls.prev_button.isEnabled()
+        # Initial position is 2 (after 2 POSTs), so prev is enabled
+        assert controls.prev_button.isEnabled()
 
     def test_next_button_advances_position(self, qtbot: Any) -> None:
         controls = ReplayControls()
@@ -116,8 +118,9 @@ class TestReplayControlsNavigation:
         hand = make_test_hand()
         state = ReplayState(hand=hand)
         controls.set_replay_state(state)
+        initial_pos = state.current_position
         controls.next_button.click()
-        assert state.current_position == 1
+        assert state.current_position == initial_pos + 1
 
     def test_prev_button_goes_back(self, qtbot: Any) -> None:
         controls = ReplayControls()
@@ -176,8 +179,10 @@ class TestReplayControlsUpdates:
         hand = make_test_hand()
         state = ReplayState(hand=hand)
         controls.set_replay_state(state)
-        assert not controls.prev_button.isEnabled()
+        # prev is already enabled (can go back to posts)
+        assert controls.prev_button.isEnabled()
         controls.next_button.click()
+        # Still enabled after advancing
         assert controls.prev_button.isEnabled()
 
     def test_button_states_update_after_prev(self, qtbot: Any) -> None:

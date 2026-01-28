@@ -29,6 +29,7 @@ class ReplayState:
     def __post_init__(self) -> None:
         self._build_action_sequence()
         self._initial_stacks = {p.name: p.stack for p in self.hand.players}
+        self._skip_to_first_non_post()
 
     def _build_action_sequence(self) -> None:
         self._action_sequence = []
@@ -43,6 +44,20 @@ class ReplayState:
             actions = self.hand.actions.get(street, [])
             for i, action in enumerate(actions):
                 self._action_sequence.append((street, i, action))
+
+    def _skip_to_first_non_post(self) -> None:
+        """Skip past initial POST actions (antes/blinds) to start at first real action."""
+        for i, (_, _, action) in enumerate(self._action_sequence):
+            if action.action_type != ActionType.POST:
+                self._current_position = i
+                return
+        self._current_position = len(self._action_sequence)
+
+    def _is_blind_post(self, action: Action) -> bool:
+        """Check if a POST action is a blind (SB or BB) rather than an ante."""
+        if action.action_type != ActionType.POST:
+            return False
+        return action.amount in (self.hand.small_blind, self.hand.big_blind)
 
     @property
     def total_actions(self) -> int:
@@ -150,8 +165,10 @@ class ReplayState:
 
             if action.action_type == ActionType.FOLD:
                 states[action.player_name].is_folded = True
+            elif action.action_type == ActionType.POST:
+                # Posts (blinds/antes) go directly to pot, not shown as chips
+                pass
             elif action.action_type in (
-                ActionType.POST,
                 ActionType.BET,
                 ActionType.CALL,
                 ActionType.RAISE,

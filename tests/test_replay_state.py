@@ -115,17 +115,23 @@ def showdown_hand() -> Hand:
 
 
 class TestReplayStateBasics:
-    def test_initial_position_is_zero(self, sample_hand: Hand) -> None:
+    def test_initial_position_skips_posts(self, sample_hand: Hand) -> None:
+        """Position starts at first non-POST action (skipping blinds/antes)."""
         state = ReplayState(hand=sample_hand)
-        assert state.current_position == 0
+        # sample_hand has 2 POSTs at start, so we skip to position 2
+        assert state.current_position == 2
 
     def test_total_actions_count(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
         assert state.total_actions == 11
 
-    def test_current_action_none_at_start(self, sample_hand: Hand) -> None:
+    def test_current_action_is_first_non_post_at_start(self, sample_hand: Hand) -> None:
+        """At initial position, current action is the POST at position-1 (last skipped)."""
         state = ReplayState(hand=sample_hand)
-        assert state.current_action is None
+        # Position is 2, so current_action is at index 1 (Villain2 POST)
+        action = state.current_action
+        assert action is not None
+        assert action.action_type == ActionType.POST
 
     def test_current_street_preflop_at_start(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
@@ -135,13 +141,15 @@ class TestReplayStateBasics:
 class TestNextPrevAction:
     def test_next_action_advances_position(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
+        # Starts at 2 (after 2 POSTs)
         result = state.next_action()
         assert result is True
-        assert state.current_position == 1
+        assert state.current_position == 3
 
     def test_next_action_returns_false_at_end(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
-        for _ in range(11):
+        # Starts at 2, need to advance 9 more times to reach end (11 total)
+        for _ in range(9):
             state.next_action()
         result = state.next_action()
         assert result is False
@@ -149,25 +157,29 @@ class TestNextPrevAction:
 
     def test_prev_action_decreases_position(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
+        # Starts at 2, advance twice to 4, then go back
         state.next_action()
         state.next_action()
         result = state.prev_action()
         assert result is True
-        assert state.current_position == 1
+        assert state.current_position == 3
 
-    def test_prev_action_returns_false_at_start(self, sample_hand: Hand) -> None:
+    def test_prev_action_allowed_back_to_posts(self, sample_hand: Hand) -> None:
+        """Can navigate back into POST actions from initial position."""
         state = ReplayState(hand=sample_hand)
+        # Starts at 2, can go back to 1
         result = state.prev_action()
-        assert result is False
-        assert state.current_position == 0
+        assert result is True
+        assert state.current_position == 1
 
     def test_current_action_after_next(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
+        # Starts at 2, next() goes to 3, which is Hero RAISE
         state.next_action()
         action = state.current_action
         assert action is not None
-        assert action.player_name == "Villain1"
-        assert action.action_type == ActionType.POST
+        assert action.player_name == "Hero"
+        assert action.action_type == ActionType.RAISE
 
 
 class TestGotoStreet:
@@ -197,15 +209,18 @@ class TestGotoStreet:
 
 
 class TestPotCalculation:
-    def test_pot_zero_at_start(self, sample_hand: Hand) -> None:
+    def test_pot_includes_blinds_at_start(self, sample_hand: Hand) -> None:
+        """Pot includes blind posts even at initial position (after skip)."""
         state = ReplayState(hand=sample_hand)
-        assert state.calculate_pot() == 0.0
-
-    def test_pot_after_blinds(self, sample_hand: Hand) -> None:
-        state = ReplayState(hand=sample_hand)
-        state.next_action()
-        state.next_action()
+        # Starts at position 2, so pot includes 2 POSTs (50+100)
         assert state.calculate_pot() == 150.0
+
+    def test_pot_after_raise(self, sample_hand: Hand) -> None:
+        state = ReplayState(hand=sample_hand)
+        # Position 2 -> 3 (Hero RAISE 300)
+        state.next_action()
+        # Pot = 150 (posts) + 300 (raise) = 450
+        assert state.calculate_pot() == 450.0
 
     def test_pot_after_preflop(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
@@ -219,18 +234,21 @@ class TestPotCalculation:
 
 
 class TestStackCalculation:
-    def test_initial_stacks(self, sample_hand: Hand) -> None:
+    def test_stacks_reflect_blinds_at_start(self, sample_hand: Hand) -> None:
+        """Stacks already reflect blind posts at initial position."""
         state = ReplayState(hand=sample_hand)
         stacks = state.calculate_player_stacks()
-        assert stacks["Hero"] == 1000.0
-        assert stacks["Villain1"] == 1500.0
-        assert stacks["Villain2"] == 800.0
+        # Position 2 means POSTs already deducted
+        assert stacks["Hero"] == 1000.0  # No bet yet
+        assert stacks["Villain1"] == 1450.0  # Posted 50
+        assert stacks["Villain2"] == 700.0  # Posted 100
 
-    def test_stacks_after_blinds(self, sample_hand: Hand) -> None:
+    def test_stacks_after_raise(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
-        state.next_action()
+        # Position 2 -> 3 (Hero RAISE 300)
         state.next_action()
         stacks = state.calculate_player_stacks()
+        assert stacks["Hero"] == 700.0
         assert stacks["Villain1"] == 1450.0
         assert stacks["Villain2"] == 700.0
 
@@ -310,12 +328,14 @@ class TestShowdown:
 class TestUtilityMethods:
     def test_get_actions_up_to_current(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
-        for _ in range(3):
-            state.next_action()
+        # Starts at 2, advance 1 more to position 3
+        state.next_action()
         actions = state.get_actions_up_to_current()
+        # Should include all 3 actions: 2 POSTs + 1 RAISE
         assert len(actions) == 3
         assert actions[0][0] == Street.PREFLOP
         assert actions[0][1].action_type == ActionType.POST
+        assert actions[2][1].action_type == ActionType.RAISE
 
     def test_get_available_streets(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
@@ -340,26 +360,29 @@ class TestUtilityMethods:
 class TestBetsResetPerStreet:
     """Verify that player bets reset at the start of each new street."""
 
-    def test_bets_zero_at_start_of_hand(self, sample_hand: Hand) -> None:
-        """At position 0, no bets have been made yet."""
+    def test_bets_zero_at_initial_position(self, sample_hand: Hand) -> None:
+        """At initial position (after posts skipped), no betting chips shown."""
         state = ReplayState(hand=sample_hand)
+        # Posts don't count as current_bet, so all bets should be 0
         player_states = state.get_player_states()
         for player_state in player_states.values():
             assert player_state.current_bet == 0.0
 
-    def test_bets_zero_at_start_of_flop(self, sample_hand: Hand) -> None:
-        """When going to FLOP, bets from PREFLOP should be cleared before any flop action."""
+    def test_bets_at_end_of_preflop(self, sample_hand: Hand) -> None:
+        """Bets accumulate during preflop (excluding posts)."""
         state = ReplayState(hand=sample_hand)
-        # PREFLOP has 5 actions, go to end of preflop
-        for _ in range(5):
+        # Starts at 2, advance 3 more to reach end of preflop (pos 5)
+        # Actions: RAISE(300), FOLD, CALL(200)
+        for _ in range(3):
             state.next_action()
-        # Villain2 called 200, so current_bet should be 300 (100 post + 200 call)
         player_states = state.get_player_states()
-        assert player_states["Villain2"].current_bet == 300.0
+        assert player_states["Hero"].current_bet == 300.0
+        assert player_states["Villain2"].current_bet == 200.0
 
-        # Now advance to first action of FLOP (check by Villain2)
-        state.next_action()
-        # At the start of FLOP, bets should be reset
+    def test_bets_zero_at_start_of_flop(self, sample_hand: Hand) -> None:
+        """When going to FLOP, bets from PREFLOP should be cleared."""
+        state = ReplayState(hand=sample_hand)
+        state.goto_street(Street.FLOP)
         player_states = state.get_player_states()
         assert player_states["Villain2"].current_bet == 0.0
         assert player_states["Hero"].current_bet == 0.0
@@ -367,20 +390,19 @@ class TestBetsResetPerStreet:
     def test_bets_accumulate_within_street(self, sample_hand: Hand) -> None:
         """Bets should accumulate within the same street."""
         state = ReplayState(hand=sample_hand)
-        # Go to FLOP: 5 preflop + 1 check + 1 bet + 1 call = 8 actions
-        for _ in range(8):
-            state.next_action()
+        # Go to end of FLOP: goto_street puts at pos 6 (first flop action done)
+        # Then advance 2 more: CHECK + BET + CALL
+        state.goto_street(Street.FLOP)
+        state.next_action()  # Hero BET 400
+        state.next_action()  # Villain2 CALL 400
         player_states = state.get_player_states()
-        # Hero bet 400, Villain2 called 400
         assert player_states["Hero"].current_bet == 400.0
         assert player_states["Villain2"].current_bet == 400.0
 
     def test_bets_zero_at_start_of_turn(self, sample_hand: Hand) -> None:
         """When going to TURN, bets from FLOP should be cleared."""
         state = ReplayState(hand=sample_hand)
-        # Go to first action of TURN: 5 preflop + 3 flop + 1 = 9 actions
-        for _ in range(9):
-            state.next_action()
+        state.goto_street(Street.TURN)
         player_states = state.get_player_states()
         # First action on turn is CHECK, so bets should be 0
         assert player_states["Hero"].current_bet == 0.0

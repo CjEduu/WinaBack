@@ -246,11 +246,10 @@ class TestPotDisplay:
         widget.set_hand(hand)
 
         assert widget.replay_state is not None
-        assert widget.replay_state.calculate_pot() == 0
-
-        widget.replay_state.goto_position(2)
+        # Initial position is after 2 POSTs (50+100=150)
         assert widget.replay_state.calculate_pot() == 150
 
+        # Position 4: 2 POSTs + FOLD + CALL(50) = 200
         widget.replay_state.goto_position(4)
         assert widget.replay_state.calculate_pot() == 200
 
