@@ -20,7 +20,7 @@ from src.gui.hand_list import HandListWidget
 from src.gui.table_widget import TableWidget
 from src.gui.tournament_list import TournamentListWidget
 from src.parser.models import ActionType, Hand, Tournament
-from src.preferences import Preferences
+from src.preferences import VALID_UI_SCALES, Preferences
 
 DARK_THEME_STYLESHEET = """
 QMainWindow, QWidget {
@@ -400,6 +400,25 @@ class MainWindow(QMainWindow):
                     self._replay_controls.go_to_end()
                 else:
                     self._replay_controls.go_to_start()
+            case Qt.Key.Key_Plus | Qt.Key.Key_Equal:
+                self._adjust_ui_scale(0.25)
+            case Qt.Key.Key_Minus:
+                self._adjust_ui_scale(-0.25)
+            case Qt.Key.Key_0:
+                self._set_ui_scale(1.0)
             case _:
                 super().keyPressEvent(event)
+
+    def _adjust_ui_scale(self, delta: float) -> None:
+        """Adjust UI scale by delta, clamped to valid values."""
+        new_scale = self._preferences.ui_scale + delta
+        new_scale = max(VALID_UI_SCALES[0], min(VALID_UI_SCALES[-1], new_scale))
+        self._set_ui_scale(new_scale)
+
+    def _set_ui_scale(self, scale: float) -> None:
+        """Set UI scale to specific value, save, and update table."""
+        if scale != self._preferences.ui_scale:
+            self._preferences.ui_scale = scale
+            self._preferences.save()
+            self._table_widget.set_ui_scale(scale)
                 
