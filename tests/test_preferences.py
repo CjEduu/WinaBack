@@ -6,7 +6,7 @@ from typing import Any
 import toml
 
 from src.gui.main_window import MainWindow
-from src.preferences import Preferences
+from src.preferences import VALID_UI_SCALES, Preferences
 
 
 class TestPreferences:
@@ -23,6 +23,7 @@ class TestPreferences:
         assert prefs.window_width == 1200
         assert prefs.window_height == 800
         assert prefs.window_maximized is False
+        assert prefs.ui_scale == 1.0
 
     def test_save_creates_file(self, tmp_path: Path) -> None:
         """Saving preferences creates the TOML file."""
@@ -87,6 +88,32 @@ class TestPreferences:
         prefs = Preferences.load(config_path)
         assert prefs.last_folder_path == ""
         assert prefs.window_width == 1200
+
+    def test_ui_scale_saves_and_loads(self, tmp_path: Path) -> None:
+        """ui_scale persists to preferences.toml."""
+        config_path = tmp_path / "prefs.toml"
+        prefs = Preferences.load(config_path)
+        prefs.ui_scale = 1.5
+        prefs.save()
+
+        data = toml.load(config_path)
+        assert data["gui"]["ui_scale"] == 1.5
+
+        prefs2 = Preferences.load(config_path)
+        assert prefs2.ui_scale == 1.5
+
+    def test_ui_scale_valid_values(self) -> None:
+        """VALID_UI_SCALES contains expected values."""
+        assert VALID_UI_SCALES == (0.75, 1.0, 1.25, 1.5, 1.75, 2.0)
+
+    def test_ui_scale_invalid_value_ignored(self, tmp_path: Path) -> None:
+        """Invalid ui_scale values fall back to default."""
+        config_path = tmp_path / "prefs.toml"
+        with open(config_path, "w") as f:
+            toml.dump({"gui": {"ui_scale": 0.5}}, f)
+
+        prefs = Preferences.load(config_path)
+        assert prefs.ui_scale == 1.0
 
 
 class TestMainWindowPreferences:
