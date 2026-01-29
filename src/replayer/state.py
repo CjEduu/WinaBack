@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field
 from typing import NamedTuple
 
+from src.equity.calculator import calculate_equity
 from src.parser.models import Action, ActionType, Card, Hand, Street
 
 
@@ -18,6 +19,39 @@ class PlayerState:
 
 
 @dataclass
+class ShowdownEquity:
+    """Stores pre-calculated equity percentages for each street at showdown."""
+
+    player_names: list[str]
+    preflop: list[float] = field(default_factory=list)
+    flop: list[float] = field(default_factory=list)
+    turn: list[float] = field(default_factory=list)
+    river: list[float] = field(default_factory=list)
+
+    def get_equity_for_street(self, street: Street) -> list[float]:
+        """Get equity list for the given street."""
+        if street == Street.PREFLOP:
+            return self.preflop
+        elif street == Street.FLOP:
+            return self.flop
+        elif street == Street.TURN:
+            return self.turn
+        elif street in (Street.RIVER, Street.SHOWDOWN):
+            return self.river
+        return []
+
+    def get_player_equity(self, player_name: str, street: Street) -> float | None:
+        """Get equity for a specific player at a specific street."""
+        if player_name not in self.player_names:
+            return None
+        idx = self.player_names.index(player_name)
+        equities = self.get_equity_for_street(street)
+        if idx < len(equities):
+            return equities[idx]
+        return None
+
+
+@dataclass
 class ReplayState:
     hand: Hand
     _action_sequence: list[tuple[Street, int, Action]] = field(
@@ -25,6 +59,7 @@ class ReplayState:
     )
     _current_position: int = field(default=0, init=False)
     _initial_stacks: dict[str, float] = field(default_factory=dict, init=False)
+    _showdown_equity: ShowdownEquity | None = field(default=None, init=False)
 
     def __post_init__(self) -> None:
         self._build_action_sequence()
@@ -248,3 +283,65 @@ class ReplayState:
         if self.is_at_end():
             return self.hand.winners
         return []
+
+    def _get_showdown_players(self) -> list[str]:
+        """Get list of player names who reached showdown (not folded, have cards)."""
+        player_states = self.get_player_states()
+        showdown_players: list[str] = []
+        for player in self.hand.players:
+            if player_states[player.name].is_folded:
+                continue
+            if player.name in self.hand.showdown_hands:
+                showdown_players.append(player.name)
+        return showdown_players
+
+    def _calculate_showdown_equity(self) -> ShowdownEquity | None:
+        """Calculate equity for all streets for players who reached showdown."""
+        showdown_players = self._get_showdown_players()
+        if len(showdown_players) < 2:
+            return None
+
+        players_cards: list[tuple[Card, Card]] = []
+        for name in showdown_players:
+            cards = self.hand.showdown_hands[name]
+            if len(cards) >= 2:
+                players_cards.append((cards[0], cards[1]))
+            else:
+                return None
+
+        board = self.hand.board
+
+        iters = 10000
+        preflop_eq = calculate_equity(players_cards, [], iterations=iters)
+        flop_eq = (
+            calculate_equity(players_cards, board[:3], iterations=iters)
+            if len(board) >= 3 else []
+        )
+        turn_eq = (
+            calculate_equity(players_cards, board[:4], iterations=iters)
+            if len(board) >= 4 else []
+        )
+        river_eq = (
+            calculate_equity(players_cards, board[:5], iterations=iters)
+            if len(board) >= 5 else []
+        )
+
+        return ShowdownEquity(
+            player_names=showdown_players,
+            preflop=preflop_eq,
+            flop=flop_eq,
+            turn=turn_eq,
+            river=river_eq,
+        )
+
+    def get_showdown_equity(self) -> ShowdownEquity | None:
+        """Get showdown equity, calculating and caching if needed."""
+        if not self.hand.showdown_hands:
+            return None
+        if self._showdown_equity is None:
+            self._showdown_equity = self._calculate_showdown_equity()
+        return self._showdown_equity
+
+    def has_showdown(self) -> bool:
+        """Check if this hand has a showdown."""
+        return bool(self.hand.showdown_hands)

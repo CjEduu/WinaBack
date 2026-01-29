@@ -1,3 +1,3 @@
-from src.replayer.state import ReplayState
+from src.replayer.state import ReplayState, ShowdownEquity
 
-__all__ = ["ReplayState"]
+__all__ = ["ReplayState", "ShowdownEquity"]

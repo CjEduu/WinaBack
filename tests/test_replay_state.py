@@ -3,7 +3,7 @@ from datetime import datetime
 import pytest
 
 from src.parser.models import Action, ActionType, Card, Hand, Player, Street
-from src.replayer.state import ReplayState
+from src.replayer.state import ReplayState, ShowdownEquity
 
 
 @pytest.fixture
@@ -467,3 +467,131 @@ class TestWinnerDisplay:
             pass
         assert state.is_at_end()
         assert state.get_winners() == ["Hero"]
+
+
+class TestShowdownEquity:
+    """Tests for showdown equity calculation."""
+
+    @pytest.fixture
+    def showdown_hand_with_equity(self) -> Hand:
+        """Hand with two players reaching showdown."""
+        players = [
+            Player(name="Hero", seat=1, stack=1000.0, is_hero=True, hole_cards=[
+                Card(rank="A", suit="s"), Card(rank="A", suit="h")
+            ]),
+            Player(name="Villain", seat=2, stack=1000.0),
+        ]
+
+        actions: dict[Street, list[Action]] = {
+            Street.PREFLOP: [
+                Action(player_name="Hero", action_type=ActionType.POST, amount=50.0),
+                Action(player_name="Villain", action_type=ActionType.POST, amount=100.0),
+                Action(player_name="Hero", action_type=ActionType.RAISE, amount=200.0),
+                Action(player_name="Villain", action_type=ActionType.CALL, amount=100.0),
+            ],
+            Street.FLOP: [
+                Action(player_name="Hero", action_type=ActionType.BET, amount=200.0),
+                Action(player_name="Villain", action_type=ActionType.CALL, amount=200.0),
+            ],
+            Street.TURN: [
+                Action(player_name="Hero", action_type=ActionType.CHECK),
+                Action(player_name="Villain", action_type=ActionType.CHECK),
+            ],
+            Street.RIVER: [
+                Action(player_name="Hero", action_type=ActionType.CHECK),
+                Action(player_name="Villain", action_type=ActionType.CHECK),
+            ],
+            Street.SHOWDOWN: [],
+        }
+
+        board = [
+            Card(rank="2", suit="h"),
+            Card(rank="7", suit="d"),
+            Card(rank="T", suit="s"),
+            Card(rank="3", suit="c"),
+            Card(rank="5", suit="h"),
+        ]
+
+        showdown_hands = {
+            "Hero": [Card(rank="A", suit="s"), Card(rank="A", suit="h")],
+            "Villain": [Card(rank="K", suit="s"), Card(rank="K", suit="h")],
+        }
+
+        return Hand(
+            hand_id="equity_test",
+            timestamp=datetime.now(),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=1,
+            players=players,
+            actions=actions,
+            board=board,
+            showdown_hands=showdown_hands,
+            winners=["Hero"],
+        )
+
+    def test_has_showdown_true(self, showdown_hand_with_equity: Hand) -> None:
+        state = ReplayState(hand=showdown_hand_with_equity)
+        assert state.has_showdown() is True
+
+    def test_has_showdown_false(self, sample_hand: Hand) -> None:
+        state = ReplayState(hand=sample_hand)
+        assert state.has_showdown() is False
+
+    def test_get_showdown_equity_returns_equity(self, showdown_hand_with_equity: Hand) -> None:
+        state = ReplayState(hand=showdown_hand_with_equity)
+        while state.next_action():
+            pass
+        equity = state.get_showdown_equity()
+        assert equity is not None
+        assert len(equity.player_names) == 2
+        assert "Hero" in equity.player_names
+        assert "Villain" in equity.player_names
+
+    def test_showdown_equity_preflop(self, showdown_hand_with_equity: Hand) -> None:
+        state = ReplayState(hand=showdown_hand_with_equity)
+        while state.next_action():
+            pass
+        equity = state.get_showdown_equity()
+        assert equity is not None
+        # AA vs KK preflop - AA should be ~80% favorite
+        hero_eq = equity.get_player_equity("Hero", Street.PREFLOP)
+        assert hero_eq is not None
+        assert hero_eq > 0.75
+
+    def test_showdown_equity_cached(self, showdown_hand_with_equity: Hand) -> None:
+        state = ReplayState(hand=showdown_hand_with_equity)
+        while state.next_action():
+            pass
+        eq1 = state.get_showdown_equity()
+        eq2 = state.get_showdown_equity()
+        assert eq1 is eq2  # Same object (cached)
+
+    def test_no_showdown_returns_none(self, sample_hand: Hand) -> None:
+        state = ReplayState(hand=sample_hand)
+        assert state.get_showdown_equity() is None
+
+    def test_showdown_equity_for_street(self) -> None:
+        equity = ShowdownEquity(
+            player_names=["A", "B"],
+            preflop=[0.5, 0.5],
+            flop=[0.6, 0.4],
+            turn=[0.7, 0.3],
+            river=[0.8, 0.2],
+        )
+        assert equity.get_equity_for_street(Street.PREFLOP) == [0.5, 0.5]
+        assert equity.get_equity_for_street(Street.FLOP) == [0.6, 0.4]
+        assert equity.get_equity_for_street(Street.TURN) == [0.7, 0.3]
+        assert equity.get_equity_for_street(Street.RIVER) == [0.8, 0.2]
+        assert equity.get_equity_for_street(Street.SHOWDOWN) == [0.8, 0.2]
+
+    def test_showdown_equity_get_player_equity(self) -> None:
+        equity = ShowdownEquity(
+            player_names=["A", "B"],
+            preflop=[0.5, 0.5],
+            flop=[0.6, 0.4],
+        )
+        assert equity.get_player_equity("A", Street.PREFLOP) == 0.5
+        assert equity.get_player_equity("B", Street.FLOP) == 0.4
+        assert equity.get_player_equity("Unknown", Street.PREFLOP) is None
