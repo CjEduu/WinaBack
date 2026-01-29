@@ -7,8 +7,8 @@ from PyQt6.QtGui import QBrush, QColor, QCursor, QFont, QMouseEvent, QPainter, Q
 from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
 
-from src.parser.models import Card, Hand, Player
-from src.replayer.state import PlayerState, ReplayState
+from src.parser.models import Card, Hand, Player, Street
+from src.replayer.state import PlayerState, ReplayState, ShowdownEquity
 
 
 class PlayerZone(Enum):
@@ -272,7 +272,7 @@ class TableWidget(QWidget):
         if not self._hand:
             return []
 
-        players = [p for p in self._hand.players]
+        players = list(self._hand.players)
         if not players:
             return []
 
@@ -369,43 +369,81 @@ class TableWidget(QWidget):
         
         painter.setOpacity(1.0)
 
+    def _get_replay_context(self) -> tuple[
+        dict[str, PlayerState],
+        dict[str, list[Card]],
+        list[str],
+        ShowdownEquity | None,
+        Street | None,
+    ]:
+        """Get current replay state context for drawing."""
+        if not self._replay_state:
+            return {}, {}, [], None, None
+        
+        showdown_equity = None
+        if self._replay_state.has_showdown():
+            showdown_equity = self._replay_state.get_showdown_equity()
+        
+        return (
+            self._replay_state.get_player_states(),
+            self._replay_state.get_visible_hole_cards(),
+            self._replay_state.get_winners(),
+            showdown_equity,
+            self._replay_state.current_street,
+        )
+
+    def _calculate_player_angle(self, player_index: int, hero_idx: int, num_players: int) -> float:
+        """Calculate the angle for a player's position around the table."""
+        if num_players == 0:
+            return 0.0
+        offset = (player_index - hero_idx) % num_players
+        return math.pi / 2 + (2 * math.pi * offset) / num_players
+
     def _draw_players(self, painter: QPainter) -> None:
         """Draw all players at their positions."""
         positions = self._get_player_positions()
+        player_states, visible_hole_cards, winners, showdown_equity, current_street = (
+            self._get_replay_context()
+        )
 
-        player_states: dict[str, PlayerState] = {}
-        visible_hole_cards: dict[str, list[Card]] = {}
-        winners: list[str] = []
-        showdown_equity = None
-        if self._replay_state:
-            player_states = self._replay_state.get_player_states()
-            visible_hole_cards = self._replay_state.get_visible_hole_cards()
-            winners = self._replay_state.get_winners()
-            if self._replay_state.has_showdown():
-                showdown_equity = self._replay_state.get_showdown_equity()
-
-        current_street = self._replay_state.current_street if self._replay_state else None
+        players = self._hand.players if self._hand else []
+        hero_idx = next((idx for idx, p in enumerate(players) if p.is_hero), 0)
+        num_players = len(players)
 
         for i, (player, pos) in enumerate(positions):
-            is_winner = player.name in winners
-            self._draw_player_box(painter, player, pos, player_states, is_winner)
-            # Calculate angle for this player's zone
-            players = self._hand.players if self._hand else []
-            hero_idx = next(
-                (idx for idx, p in enumerate(players) if p.is_hero),
-                0,
+            angle = self._calculate_player_angle(i, hero_idx, num_players)
+            self._draw_single_player(
+                painter, player, pos, i, angle, player_states, visible_hole_cards,
+                winners, showdown_equity, current_street
             )
-            offset = (i - hero_idx) % len(players) if players else 0
-            angle = math.pi / 2 + (2 * math.pi * offset) / len(players) if players else 0
-            self._draw_hole_cards(painter, player, pos, player_states, visible_hole_cards, angle)
-            if self._hand and player.seat == self._hand.button_seat:
-                self._draw_button_indicator(painter, pos)
-            self._draw_player_bet(painter, player, pos, player_states)
 
-            if showdown_equity and current_street:
-                equity = showdown_equity.get_player_equity(player.name, current_street)
-                if equity is not None:
-                    self._draw_equity_label(painter, pos, equity, angle)
+    def _draw_single_player(
+        self,
+        painter: QPainter,
+        player: Player,
+        pos: QPointF,
+        index: int,
+        angle: float,
+        player_states: dict[str, PlayerState],
+        visible_hole_cards: dict[str, list[Card]],
+        winners: list[str],
+        showdown_equity: ShowdownEquity | None,
+        current_street: Street | None,
+    ) -> None:
+        """Draw a single player with all their elements."""
+        is_winner = player.name in winners
+        self._draw_player_box(painter, player, pos, player_states, is_winner)
+        self._draw_hole_cards(painter, player, pos, player_states, visible_hole_cards, angle)
+        
+        if self._hand and player.seat == self._hand.button_seat:
+            self._draw_button_indicator(painter, pos)
+        
+        self._draw_player_bet(painter, player, pos, player_states)
+
+        if showdown_equity and current_street:
+            equity = showdown_equity.get_player_equity(player.name, current_street)
+            if equity is not None:
+                self._draw_equity_label(painter, pos, equity, angle)
 
     def _draw_player_bet(
         self,

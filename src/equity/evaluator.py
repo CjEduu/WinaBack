@@ -44,7 +44,7 @@ def _is_straight(ranks: list[int]) -> tuple[bool, int]:
         if unique[i] - unique[i + 4] == 4:
             return True, unique[i]
 
-    if set([12, 0, 1, 2, 3]).issubset(set(ranks)):
+    if {12, 0, 1, 2, 3}.issubset(set(ranks)):
         return True, 3
 
     return False, 0

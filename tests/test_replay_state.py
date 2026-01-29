@@ -6,6 +6,12 @@ from src.parser.models import Action, ActionType, Card, Hand, Player, Street
 from src.replayer.state import ReplayState, ShowdownEquity
 
 
+def advance_to_end(state: ReplayState) -> None:
+    """Advance the replay state to the end of the hand."""
+    while state.next_action():
+        continue
+
+
 @pytest.fixture
 def sample_hand() -> Hand:
     players = [
@@ -428,8 +434,7 @@ class TestWinnerDisplay:
 
     def test_is_at_end_returns_true_at_end(self, sample_hand: Hand) -> None:
         state = ReplayState(hand=sample_hand)
-        while state.next_action():
-            pass
+        advance_to_end(state)
         assert state.is_at_end()
 
     def test_get_winners_empty_when_not_at_end(self, sample_hand: Hand) -> None:
@@ -463,8 +468,7 @@ class TestWinnerDisplay:
             winners=["Hero"],
         )
         state = ReplayState(hand=hand)
-        while state.next_action():
-            pass
+        advance_to_end(state)
         assert state.is_at_end()
         assert state.get_winners() == ["Hero"]
 
@@ -541,8 +545,7 @@ class TestShowdownEquity:
 
     def test_get_showdown_equity_returns_equity(self, showdown_hand_with_equity: Hand) -> None:
         state = ReplayState(hand=showdown_hand_with_equity)
-        while state.next_action():
-            pass
+        advance_to_end(state)
         equity = state.get_showdown_equity()
         assert equity is not None
         assert len(equity.player_names) == 2
@@ -551,8 +554,7 @@ class TestShowdownEquity:
 
     def test_showdown_equity_preflop(self, showdown_hand_with_equity: Hand) -> None:
         state = ReplayState(hand=showdown_hand_with_equity)
-        while state.next_action():
-            pass
+        advance_to_end(state)
         equity = state.get_showdown_equity()
         assert equity is not None
         # AA vs KK preflop - AA should be ~80% favorite
@@ -562,8 +564,7 @@ class TestShowdownEquity:
 
     def test_showdown_equity_cached(self, showdown_hand_with_equity: Hand) -> None:
         state = ReplayState(hand=showdown_hand_with_equity)
-        while state.next_action():
-            pass
+        advance_to_end(state)
         eq1 = state.get_showdown_equity()
         eq2 = state.get_showdown_equity()
         assert eq1 is eq2  # Same object (cached)

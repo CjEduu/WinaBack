@@ -180,14 +180,28 @@ class ReplayState:
 
     def get_player_states(self) -> dict[str, PlayerState]:
         stacks = self.calculate_player_stacks()
-        states: dict[str, PlayerState] = {}
+        states = self._init_player_states(stacks)
+        current_street_bets, last_street = self._process_actions_for_states(states)
+        current_street_bets = self._reset_bets_if_street_changed(
+            current_street_bets, last_street
+        )
+        self._apply_current_bets(states, current_street_bets)
+        return states
 
-        for player in self.hand.players:
-            states[player.name] = PlayerState(
+    def _init_player_states(self, stacks: dict[str, float]) -> dict[str, PlayerState]:
+        """Initialize player states with stack values."""
+        return {
+            player.name: PlayerState(
                 name=player.name,
                 stack=stacks.get(player.name, player.stack),
             )
+            for player in self.hand.players
+        }
 
+    def _process_actions_for_states(
+        self, states: dict[str, PlayerState]
+    ) -> tuple[dict[str, float], Street | None]:
+        """Process actions to update fold status and track bets."""
         current_street_bets: dict[str, float] = {}
         last_street: Street | None = None
 
@@ -198,37 +212,49 @@ class ReplayState:
                 current_street_bets = {}
             last_street = street
 
-            if action.action_type == ActionType.FOLD:
-                states[action.player_name].is_folded = True
-            elif action.action_type == ActionType.POST:
-                # Posts (blinds/antes) go directly to pot, not shown as chips
-                if self._is_blind_post(action):
-                    current_street_bets[action.player_name] = (
-                        current_street_bets.get(action.player_name,0.0) + action.amount
-                    )
-                pass
-            elif action.action_type in (
-                ActionType.BET,
-                ActionType.CALL,
-                ActionType.RAISE,
-                ActionType.ALL_IN,
-            ):
+            self._apply_action_to_states(action, states, current_street_bets)
+
+        return current_street_bets, last_street
+
+    def _apply_action_to_states(
+        self,
+        action: Action,
+        states: dict[str, PlayerState],
+        current_street_bets: dict[str, float],
+    ) -> None:
+        """Apply a single action to update states and bets."""
+        if action.action_type == ActionType.FOLD:
+            states[action.player_name].is_folded = True
+        elif action.action_type == ActionType.POST:
+            if self._is_blind_post(action):
                 current_street_bets[action.player_name] = (
                     current_street_bets.get(action.player_name, 0.0) + action.amount
                 )
+        elif action.action_type in (
+            ActionType.BET,
+            ActionType.CALL,
+            ActionType.RAISE,
+            ActionType.ALL_IN,
+        ):
+            current_street_bets[action.player_name] = (
+                current_street_bets.get(action.player_name, 0.0) + action.amount
+            )
 
-        # Determine if current street differs from last processed action's street
-        # If so, bets should be reset (we're at the start of a new street)
-        current = self.current_street
-        if last_street is not None and current != last_street:
-            current_street_bets = {}
+    def _reset_bets_if_street_changed(
+        self, current_street_bets: dict[str, float], last_street: Street | None
+    ) -> dict[str, float]:
+        """Reset bets if we've moved to a new street."""
+        if last_street is not None and self.current_street != last_street:
+            return {}
+        return current_street_bets
 
-        # Apply current street bets to player states
+    def _apply_current_bets(
+        self, states: dict[str, PlayerState], current_street_bets: dict[str, float]
+    ) -> None:
+        """Apply current street bets to player states."""
         for player_name, bet_amount in current_street_bets.items():
             if player_name in states:
                 states[player_name].current_bet = bet_amount
-
-        return states
 
     def get_visible_board(self) -> list[Card]:
         current = self.current_street

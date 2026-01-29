@@ -20,6 +20,7 @@ class ActionLogWidget(QListWidget):
     }
 
     HIGHLIGHT_BG_COLOR = "#094771"
+    ALL_IN_SUFFIX = " (all-in)"
 
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(parent)
@@ -80,13 +81,13 @@ class ActionLogWidget(QListWidget):
         elif action_type == ActionType.CHECK:
             return f"{name} checks"
         elif action_type == ActionType.CALL:
-            suffix = " (all-in)" if action.is_all_in else ""
+            suffix = self.ALL_IN_SUFFIX if action.is_all_in else ""
             return f"{name} calls {action.amount:.0f}{suffix}"
         elif action_type == ActionType.BET:
-            suffix = " (all-in)" if action.is_all_in else ""
+            suffix = self.ALL_IN_SUFFIX if action.is_all_in else ""
             return f"{name} bets {action.amount:.0f}{suffix}"
         elif action_type == ActionType.RAISE:
-            suffix = " (all-in)" if action.is_all_in else ""
+            suffix = self.ALL_IN_SUFFIX if action.is_all_in else ""
             return f"{name} raises to {action.amount:.0f}{suffix}"
         elif action_type == ActionType.ALL_IN:
             return f"{name} all-in {action.amount:.0f}"

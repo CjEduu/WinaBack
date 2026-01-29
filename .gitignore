@@ -6,6 +6,9 @@ tasks/
 scripts/
 .mypy_cache/
 .ruff_cache/
+.coverage
+.scannerwork/
+tests/coverage_reports/
 .pytest_cache/
 .venv/
 *.egg-info/

@@ -251,23 +251,11 @@ class WinamaxParser(Parser):
 
         for line in hand_text.split("\n"):
             line = line.strip()
-            if not line:
+            if not line or line.startswith("***"):
+                current_street = self._detect_street_change(line, actions, current_street)
                 continue
-
-            for street, pattern in STREET_PATTERNS.items():
-                if pattern.match(line):
-                    current_street = street
-                    if street not in actions:
-                        actions[street] = []
-                    break
 
             if current_street is None:
-                if "*** ANTE/BLINDS ***" in line:
-                    current_street = Street.PREFLOP
-                    actions[Street.PREFLOP] = []
-                continue
-
-            if line.startswith("***"):
                 continue
 
             action = self._parse_action_line(line)
@@ -275,6 +263,25 @@ class WinamaxParser(Parser):
                 actions[current_street].append(action)
 
         return actions
+
+    def _detect_street_change(
+        self, line: str, actions: dict[Street, list[Action]], current_street: Street | None
+    ) -> Street | None:
+        """Detect and handle street transitions, returning the new current street."""
+        if not line:
+            return current_street
+
+        for street, pattern in STREET_PATTERNS.items():
+            if pattern.match(line):
+                if street not in actions:
+                    actions[street] = []
+                return street
+
+        if "*** ANTE/BLINDS ***" in line:
+            actions[Street.PREFLOP] = []
+            return Street.PREFLOP
+
+        return current_street
 
     def _parse_action_line(self, line: str) -> Action | None:
         """Parse a single action line into an Action object."""

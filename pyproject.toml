@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
     "toml>=0.10.2",
     "PyQt6>=6.6.0",
+    "pytest-cov>=7.0.0",
 ]
 
 [tool.mypy]

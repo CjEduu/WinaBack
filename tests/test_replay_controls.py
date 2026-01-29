@@ -62,7 +62,7 @@ class TestReplayControlsBasics:
     def test_widget_created(self, qtbot: Any) -> None:
         controls = ReplayControls()
         qtbot.addWidget(controls)
-        assert controls is not None
+        assert isinstance(controls, ReplayControls)
 
     def test_has_prev_button(self, qtbot: Any) -> None:
         controls = ReplayControls()

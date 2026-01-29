@@ -89,7 +89,7 @@ class TestHandListWidget:
         """Test widget can be created."""
         widget = HandListWidget()
         qtbot.addWidget(widget)
-        assert widget is not None
+        assert isinstance(widget, HandListWidget)
 
     def test_set_hands_populates_list(
         self, qtbot: Any, sample_hands: list[Hand]

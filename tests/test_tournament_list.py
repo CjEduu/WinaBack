@@ -41,7 +41,7 @@ class TestTournamentListWidget:
         """Test widget can be created."""
         widget = TournamentListWidget()
         qtbot.addWidget(widget)
-        assert widget is not None
+        assert isinstance(widget, TournamentListWidget)
 
     def test_set_tournaments_populates_list(
         self, qtbot: Any, sample_tournaments: list[Tournament]
