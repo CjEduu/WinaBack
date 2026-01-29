@@ -60,6 +60,7 @@ class Hand:
     actions: dict[Street, list[Action]] = field(default_factory=dict)
     board: list[Card] = field(default_factory=list)
     showdown_hands: dict[str, list[Card]] = field(default_factory=dict)
+    winners: list[str] = field(default_factory=list)
 
 
 @dataclass

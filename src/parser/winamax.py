@@ -74,6 +74,8 @@ ACTION_PATTERNS: list[tuple[re.Pattern[str], ActionType, bool]] = [
 
 SHOWDOWN_PATTERN = re.compile(r"^(?P<name>.+?) shows \[(?P<cards>[^\]]+)\]")
 
+WINNER_PATTERN = re.compile(r"^(?P<name>.+?) collected (?P<amount>\d+) from pot$")
+
 
 class WinamaxParser(Parser):
     """Parser for Winamax hand history files."""
@@ -185,6 +187,7 @@ class WinamaxParser(Parser):
         actions = self._parse_actions(hand_text)
         board = self._parse_board(hand_text)
         showdown_hands = self._parse_showdown_hands(hand_text)
+        winners = self._parse_winners(hand_text)
 
         return Hand(
             hand_id=hand_id,
@@ -197,6 +200,7 @@ class WinamaxParser(Parser):
             actions=actions,
             board=board,
             showdown_hands=showdown_hands,
+            winners=winners,
         )
 
     def _parse_players(self, hand_text: str) -> list[Player]:
@@ -324,3 +328,16 @@ class WinamaxParser(Parser):
                     showdown_hands[name] = cards
 
         return showdown_hands
+
+    def _parse_winners(self, hand_text: str) -> list[str]:
+        """Parse winner(s) from collected pot lines."""
+        winners: list[str] = []
+
+        for line in hand_text.split("\n"):
+            match = WINNER_PATTERN.match(line.strip())
+            if match:
+                name = match.group("name")
+                if name not in winners:
+                    winners.append(name)
+
+        return winners

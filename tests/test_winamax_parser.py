@@ -474,3 +474,22 @@ Villain folds
         check_actions = [a for a in flop if a.action_type == ActionType.CHECK]
         assert len(check_actions) == 1
         assert check_actions[0].player_name == "tarzakerva17"
+
+    def test_parses_winner_from_collected(
+        self, parser: WinamaxParser, tmp_path: Path
+    ) -> None:
+        file_path = tmp_path / "full.txt"
+        file_path.write_text(SAMPLE_FULL_HAND, encoding="utf-8")
+        tournament = parser.parse_file(file_path)
+        hand = tournament.hands[0]
+        assert len(hand.winners) == 1
+        assert "Win2Win21" in hand.winners
+
+    def test_parses_showdown_winner(
+        self, parser: WinamaxParser, tmp_path: Path
+    ) -> None:
+        file_path = tmp_path / "showdown.txt"
+        file_path.write_text(SAMPLE_SHOWDOWN_HAND, encoding="utf-8")
+        tournament = parser.parse_file(file_path)
+        hand = tournament.hands[0]
+        assert len(hand.winners) >= 1

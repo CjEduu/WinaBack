@@ -417,3 +417,53 @@ class TestBetsResetPerStreet:
         # First action on turn is CHECK, so bets should be 0
         assert player_states["Hero"].current_bet == 0.0
         assert player_states["Villain2"].current_bet == 0.0
+
+
+class TestWinnerDisplay:
+    """Tests for winner detection and display at hand end."""
+
+    def test_is_at_end_returns_false_at_start(self, sample_hand: Hand) -> None:
+        state = ReplayState(hand=sample_hand)
+        assert not state.is_at_end()
+
+    def test_is_at_end_returns_true_at_end(self, sample_hand: Hand) -> None:
+        state = ReplayState(hand=sample_hand)
+        while state.next_action():
+            pass
+        assert state.is_at_end()
+
+    def test_get_winners_empty_when_not_at_end(self, sample_hand: Hand) -> None:
+        state = ReplayState(hand=sample_hand)
+        assert state.get_winners() == []
+
+    def test_get_winners_returns_winners_at_end(self) -> None:
+        players = [
+            Player(name="Hero", seat=1, stack=1000.0, is_hero=True),
+            Player(name="Villain", seat=2, stack=1000.0),
+        ]
+        actions: dict[Street, list[Action]] = {
+            Street.PREFLOP: [
+                Action(player_name="Hero", action_type=ActionType.POST, amount=50.0),
+                Action(player_name="Villain", action_type=ActionType.POST, amount=100.0),
+                Action(player_name="Hero", action_type=ActionType.RAISE, amount=300.0),
+                Action(player_name="Villain", action_type=ActionType.FOLD),
+            ],
+        }
+        hand = Hand(
+            hand_id="test",
+            timestamp=datetime.now(),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=1,
+            players=players,
+            actions=actions,
+            board=[],
+            showdown_hands={},
+            winners=["Hero"],
+        )
+        state = ReplayState(hand=hand)
+        while state.next_action():
+            pass
+        assert state.is_at_end()
+        assert state.get_winners() == ["Hero"]

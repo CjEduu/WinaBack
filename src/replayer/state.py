@@ -238,3 +238,13 @@ class ReplayState:
 
     def get_available_streets(self) -> list[Street]:
         return [s for s in Street if s in self.hand.actions and self.hand.actions[s]]
+
+    def is_at_end(self) -> bool:
+        """Check if replay is at the end of the hand (winners should be displayed)."""
+        return self._current_position >= self.total_actions
+
+    def get_winners(self) -> list[str]:
+        """Get the list of winners when at end of hand."""
+        if self.is_at_end():
+            return self.hand.winners
+        return []

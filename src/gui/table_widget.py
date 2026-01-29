@@ -48,6 +48,9 @@ class TableWidget(QWidget):
     CHIP_BORDER_COLOR = QColor("#1a1a1a")
     CHIP_AMOUNT_COLOR = QColor("#ffd700")
     HERO_STACK_HIGHLIGHT_COLOR = QColor(255, 215, 0, 60)
+    WINNER_BORDER_COLOR = QColor("#ffd700")
+    WINNER_LABEL_BG_COLOR = QColor("#ffd700")
+    WINNER_LABEL_TEXT_COLOR = QColor("#000000")
 
     BASE_PLAYER_BOX_WIDTH = 120
     BASE_PLAYER_BOX_HEIGHT = 50
@@ -368,12 +371,15 @@ class TableWidget(QWidget):
 
         player_states: dict[str, PlayerState] = {}
         visible_hole_cards: dict[str, list[Card]] = {}
+        winners: list[str] = []
         if self._replay_state:
             player_states = self._replay_state.get_player_states()
             visible_hole_cards = self._replay_state.get_visible_hole_cards()
+            winners = self._replay_state.get_winners()
 
         for i, (player, pos) in enumerate(positions):
-            self._draw_player_box(painter, player, pos, player_states)
+            is_winner = player.name in winners
+            self._draw_player_box(painter, player, pos, player_states, is_winner)
             # Calculate angle for this player's zone
             players = self._hand.players if self._hand else []
             hero_idx = next(
@@ -423,6 +429,7 @@ class TableWidget(QWidget):
         player: Player,
         center: QPointF,
         player_states: dict[str, PlayerState],
+        is_winner: bool = False,
     ) -> None:
         """Draw a single player's info box."""
         box_rect = QRectF(
@@ -433,8 +440,14 @@ class TableWidget(QWidget):
         )
 
         scale = self._get_scale_factor()
-        border_color = self.HERO_BORDER_COLOR if player.is_hero else self.PLAYER_BORDER_COLOR
-        painter.setPen(QPen(border_color, 2))
+        if is_winner:
+            border_color = self.WINNER_BORDER_COLOR
+        elif player.is_hero:
+            border_color = self.HERO_BORDER_COLOR
+        else:
+            border_color = self.PLAYER_BORDER_COLOR
+        border_width = 3 if is_winner else 2
+        painter.setPen(QPen(border_color, border_width))
         painter.setBrush(QBrush(self.PLAYER_BG_COLOR))
         painter.drawRoundedRect(box_rect, 5, 5)
 
@@ -476,6 +489,30 @@ class TableWidget(QWidget):
 
         if player.is_hero:
             self._hero_stack_rect = stack_rect
+
+        if is_winner:
+            self._draw_winner_label(painter, box_rect, scale)
+
+    def _draw_winner_label(
+        self, painter: QPainter, box_rect: QRectF, scale: float
+    ) -> None:
+        """Draw WINNER label above player box."""
+        label_width = 50 * scale
+        label_height = 16 * scale
+        label_rect = QRectF(
+            box_rect.center().x() - label_width / 2,
+            box_rect.top() - label_height - 2 * scale,
+            label_width,
+            label_height,
+        )
+
+        painter.setPen(Qt.PenStyle.NoPen)
+        painter.setBrush(QBrush(self.WINNER_LABEL_BG_COLOR))
+        painter.drawRoundedRect(label_rect, 3, 3)
+
+        painter.setFont(self._scaled_font(8, QFont.Weight.Bold))
+        painter.setPen(self.WINNER_LABEL_TEXT_COLOR)
+        painter.drawText(label_rect, Qt.AlignmentFlag.AlignCenter, "WINNER")
 
     def _format_stack(self, stack: float) -> str:
         """Format stack size for display."""
