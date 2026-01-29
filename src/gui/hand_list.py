@@ -1,42 +1,52 @@
 """Hand list widget for displaying hands in a selected tournament."""
 
-from PyQt6.QtCore import Qt, pyqtSignal
-from PyQt6.QtGui import QTextDocument
-from PyQt6.QtWidgets import QListWidget, QListWidgetItem, QStyle, QStyledItemDelegate
+from typing import Any
+
+from PyQt6.QtCore import QModelIndex, QSize, Qt, pyqtSignal
+from PyQt6.QtGui import QPainter, QTextDocument
+from PyQt6.QtWidgets import (
+    QListWidget,
+    QListWidgetItem,
+    QStyle,
+    QStyledItemDelegate,
+    QStyleOptionViewItem,
+)
 
 from src.parser.models import Hand, Street
 
 
 class RichTextDelegate(QStyledItemDelegate):
-    def paint(self, painter, option, index):
-        # 1. Pull the EXACT string you built in set_hands
+    def paint(
+        self,
+        painter: QPainter | None,
+        option: QStyleOptionViewItem,
+        index: QModelIndex | Any,
+    ) -> None:
+        if painter is None:
+            return
         text = index.data(Qt.ItemDataRole.DisplayRole)
         if not text:
             return
 
         painter.save()
-        
-        # 2. Draw Selection/Hover Backgrounds
+
         if option.state & QStyle.StateFlag.State_Selected:
             painter.fillRect(option.rect, option.palette.highlight())
-        # 3. Render the HTML
         doc = QTextDocument()
         doc.setHtml(text)
-        
-        # Move to the item's position and clip to its size
+
         painter.translate(option.rect.x(), option.rect.y())
         doc.setTextWidth(option.rect.width())
-        
-        # This is what draws your summary, blinds, and diff
         doc.drawContents(painter)
-        
+
         painter.restore()
 
-    def sizeHint(self, option, index):
+    def sizeHint(
+        self, option: QStyleOptionViewItem, index: QModelIndex | Any
+    ) -> QSize:
         doc = QTextDocument()
         text = index.data(Qt.ItemDataRole.DisplayRole)
         doc.setHtml(text if text else "")
-        # Set a fixed width to calculate height correctly
         doc.setTextWidth(option.rect.width())
         return doc.size().toSize()
 

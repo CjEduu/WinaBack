@@ -51,6 +51,10 @@ class TableWidget(QWidget):
     WINNER_BORDER_COLOR = QColor("#ffd700")
     WINNER_LABEL_BG_COLOR = QColor("#ffd700")
     WINNER_LABEL_TEXT_COLOR = QColor("#000000")
+    EQUITY_HIGH_COLOR = QColor("#4caf50")  # Green for >50%
+    EQUITY_MID_COLOR = QColor("#ffeb3b")   # Yellow for 25-50%
+    EQUITY_LOW_COLOR = QColor("#f44336")   # Red for <25%
+    EQUITY_BG_COLOR = QColor(45, 45, 45, 200)
 
     BASE_PLAYER_BOX_WIDTH = 120
     BASE_PLAYER_BOX_HEIGHT = 50
@@ -372,10 +376,15 @@ class TableWidget(QWidget):
         player_states: dict[str, PlayerState] = {}
         visible_hole_cards: dict[str, list[Card]] = {}
         winners: list[str] = []
+        showdown_equity = None
         if self._replay_state:
             player_states = self._replay_state.get_player_states()
             visible_hole_cards = self._replay_state.get_visible_hole_cards()
             winners = self._replay_state.get_winners()
+            if self._replay_state.has_showdown():
+                showdown_equity = self._replay_state.get_showdown_equity()
+
+        current_street = self._replay_state.current_street if self._replay_state else None
 
         for i, (player, pos) in enumerate(positions):
             is_winner = player.name in winners
@@ -392,6 +401,11 @@ class TableWidget(QWidget):
             if self._hand and player.seat == self._hand.button_seat:
                 self._draw_button_indicator(painter, pos)
             self._draw_player_bet(painter, player, pos, player_states)
+
+            if showdown_equity and current_street:
+                equity = showdown_equity.get_player_equity(player.name, current_street)
+                if equity is not None:
+                    self._draw_equity_label(painter, pos, equity, angle)
 
     def _draw_player_bet(
         self,
@@ -513,6 +527,55 @@ class TableWidget(QWidget):
         painter.setFont(self._scaled_font(8, QFont.Weight.Bold))
         painter.setPen(self.WINNER_LABEL_TEXT_COLOR)
         painter.drawText(label_rect, Qt.AlignmentFlag.AlignCenter, "WINNER")
+
+    def _get_equity_color(self, equity: float) -> QColor:
+        """Get color for equity display based on value."""
+        if equity > 0.5:
+            return self.EQUITY_HIGH_COLOR
+        elif equity >= 0.25:
+            return self.EQUITY_MID_COLOR
+        else:
+            return self.EQUITY_LOW_COLOR
+
+    def _draw_equity_label(
+        self,
+        painter: QPainter,
+        center: QPointF,
+        equity: float,
+        angle: float,
+    ) -> None:
+        """Draw equity percentage label near player's cards."""
+        scale = self._get_scale_factor()
+        label_width = 45 * scale
+        label_height = 16 * scale
+
+        zone = self._get_player_zone(angle)
+        total_card_width = 2 * self.HOLE_CARD_WIDTH - self.BASE_HOLE_CARD_OVERLAP * scale
+
+        if zone == PlayerZone.RIGHT:
+            label_x = (
+                center.x() - self.PLAYER_BOX_WIDTH / 2
+                - total_card_width - self.HOLE_CARD_SPACING - label_width - 4 * scale
+            )
+        else:
+            label_x = (
+                center.x() + self.PLAYER_BOX_WIDTH / 2
+                + total_card_width + self.HOLE_CARD_SPACING + 4 * scale
+            )
+
+        label_y = center.y() - label_height / 2
+
+        label_rect = QRectF(label_x, label_y, label_width, label_height)
+
+        painter.setPen(Qt.PenStyle.NoPen)
+        painter.setBrush(QBrush(self.EQUITY_BG_COLOR))
+        painter.drawRoundedRect(label_rect, 3, 3)
+
+        equity_text = f"{equity * 100:.1f}%"
+        text_color = self._get_equity_color(equity)
+        painter.setFont(self._scaled_font(9, QFont.Weight.Bold))
+        painter.setPen(text_color)
+        painter.drawText(label_rect, Qt.AlignmentFlag.AlignCenter, equity_text)
 
     def _format_stack(self, stack: float) -> str:
         """Format stack size for display."""
