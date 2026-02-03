@@ -8,6 +8,7 @@ dependencies = [
     "toml>=0.10.2",
     "PyQt6>=6.6.0",
     "pytest-cov>=7.0.0",
+    "pyright>=1.1.408",
 ]
 
 [tool.mypy]

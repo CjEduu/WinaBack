@@ -368,6 +368,10 @@ class ReplayState:
             self._showdown_equity = self._calculate_showdown_equity()
         return self._showdown_equity
 
+    def get_cached_equity(self) -> ShowdownEquity | None:
+        """Get cached equity without triggering calculation."""
+        return self._showdown_equity
+
     def has_showdown(self) -> bool:
         """Check if this hand has a showdown."""
         return bool(self.hand.showdown_hands)

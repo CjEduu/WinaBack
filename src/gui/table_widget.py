@@ -379,16 +379,12 @@ class TableWidget(QWidget):
         """Get current replay state context for drawing."""
         if not self._replay_state:
             return {}, {}, [], None, None
-        
-        showdown_equity = None
-        if self._replay_state.has_showdown():
-            showdown_equity = self._replay_state.get_showdown_equity()
-        
+
         return (
             self._replay_state.get_player_states(),
             self._replay_state.get_visible_hole_cards(),
             self._replay_state.get_winners(),
-            showdown_equity,
+            self._replay_state.get_cached_equity(),
             self._replay_state.current_street,
         )
 
