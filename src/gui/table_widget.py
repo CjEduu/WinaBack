@@ -436,10 +436,15 @@ class TableWidget(QWidget):
         
         self._draw_player_bet(painter, player, pos, player_states)
 
-        if showdown_equity and current_street:
-            equity = showdown_equity.get_player_equity(player.name, current_street)
-            if equity is not None:
-                self._draw_equity_label(painter, pos, equity, angle)
+        if current_street and self._replay_state and self._replay_state.has_showdown():
+            if showdown_equity:
+                equity = showdown_equity.get_player_equity(player.name, current_street)
+                if equity is not None:
+                    self._draw_equity_label(painter, pos, equity, angle)
+            else:
+                showdown_players = self._replay_state._get_showdown_players()
+                if player.name in showdown_players:
+                    self._draw_equity_placeholder(painter, pos, angle)
 
     def _draw_player_bet(
         self,
@@ -610,6 +615,42 @@ class TableWidget(QWidget):
         painter.setFont(self._scaled_font(9, QFont.Weight.Bold))
         painter.setPen(text_color)
         painter.drawText(label_rect, Qt.AlignmentFlag.AlignCenter, equity_text)
+
+    def _draw_equity_placeholder(
+        self,
+        painter: QPainter,
+        center: QPointF,
+        angle: float,
+    ) -> None:
+        """Draw placeholder '—' when equity hasn't been calculated yet."""
+        scale = self._get_scale_factor()
+        label_width = 45 * scale
+        label_height = 16 * scale
+
+        zone = self._get_player_zone(angle)
+        total_card_width = 2 * self.HOLE_CARD_WIDTH - self.BASE_HOLE_CARD_OVERLAP * scale
+
+        if zone == PlayerZone.RIGHT:
+            label_x = (
+                center.x() - self.PLAYER_BOX_WIDTH / 2
+                - total_card_width - self.HOLE_CARD_SPACING - label_width - 4 * scale
+            )
+        else:
+            label_x = (
+                center.x() + self.PLAYER_BOX_WIDTH / 2
+                + total_card_width + self.HOLE_CARD_SPACING + 4 * scale
+            )
+
+        label_y = center.y() - label_height / 2
+        label_rect = QRectF(label_x, label_y, label_width, label_height)
+
+        painter.setPen(Qt.PenStyle.NoPen)
+        painter.setBrush(QBrush(self.EQUITY_BG_COLOR))
+        painter.drawRoundedRect(label_rect, 3, 3)
+
+        painter.setFont(self._scaled_font(9, QFont.Weight.Bold))
+        painter.setPen(QColor("#888888"))
+        painter.drawText(label_rect, Qt.AlignmentFlag.AlignCenter, "—")
 
     def _format_stack(self, stack: float) -> str:
         """Format stack size for display."""
