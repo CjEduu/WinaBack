@@ -243,6 +243,7 @@ class MainWindow(QMainWindow):
         self._replay_controls.action_changed.connect(self._on_action_changed)
         self._replay_controls.next_hand_requested.connect(self._on_next_hand_requested)
         self._replay_controls.prev_hand_requested.connect(self._on_prev_hand_requested)
+        self._replay_controls.equity_calculated.connect(self._on_equity_calculated)
 
     def _on_folder_open_requested(self) -> None:
         """Handle folder open request by showing dialog and loading folder."""
@@ -289,6 +290,10 @@ class MainWindow(QMainWindow):
         else:
             self._table_widget.update()
         self._action_log.refresh()
+
+    def _on_equity_calculated(self) -> None:
+        """Handle equity calculation completion, update table display."""
+        self._table_widget.update()
 
     def _on_next_hand_requested(self) -> None:
         """Handle next hand navigation request."""

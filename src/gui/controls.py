@@ -13,6 +13,7 @@ class ReplayControls(QWidget):
     action_changed = pyqtSignal()
     next_hand_requested = pyqtSignal()
     prev_hand_requested = pyqtSignal()
+    equity_calculated = pyqtSignal()
 
     def __init__(self, parent: QWidget | None = None) -> None:
         super().__init__(parent)
@@ -81,6 +82,18 @@ class ReplayControls(QWidget):
         hand_layout.addStretch()
         main_layout.addLayout(hand_layout)
 
+        equity_layout = QHBoxLayout()
+        equity_layout.setSpacing(8)
+        equity_layout.addStretch()
+
+        self._calc_equity_btn = QPushButton("Calculate Equity")
+        self._calc_equity_btn.setToolTip("Calculate showdown equity for all streets")
+        self._calc_equity_btn.clicked.connect(self._on_calc_equity_clicked)
+        equity_layout.addWidget(self._calc_equity_btn)
+
+        equity_layout.addStretch()
+        main_layout.addLayout(equity_layout)
+
     def set_replay_state(self, replay_state: ReplayState | None) -> None:
         """Set the replay state to control."""
         self._replay_state = replay_state
@@ -117,11 +130,20 @@ class ReplayControls(QWidget):
         """Handle next hand button click."""
         self.next_hand_requested.emit()
 
+    def _on_calc_equity_clicked(self) -> None:
+        """Handle calculate equity button click."""
+        if self._replay_state and self._replay_state.has_showdown():
+            self._replay_state.get_showdown_equity()
+            self._update_button_states()
+            self.equity_calculated.emit()
+
     def _update_button_states(self) -> None:
         """Update button enabled/disabled states based on current position."""
         if not self._replay_state:
             self._prev_btn.setEnabled(False)
             self._next_btn.setEnabled(False)
+            self._calc_equity_btn.setEnabled(False)
+            self._calc_equity_btn.setVisible(False)
             for btn in self._street_buttons.values():
                 btn.setEnabled(False)
             return
@@ -134,6 +156,11 @@ class ReplayControls(QWidget):
         available_streets = self._replay_state.get_available_streets()
         for street, btn in self._street_buttons.items():
             btn.setEnabled(street in available_streets)
+
+        has_showdown = self._replay_state.has_showdown()
+        equity_already_calculated = self._replay_state.get_cached_equity() is not None
+        self._calc_equity_btn.setVisible(has_showdown)
+        self._calc_equity_btn.setEnabled(has_showdown and not equity_already_calculated)
 
     @property
     def prev_button(self) -> QPushButton:
@@ -163,6 +190,11 @@ class ReplayControls(QWidget):
     def next_hand_button(self) -> QPushButton:
         """Get the next hand button."""
         return self._next_hand_btn
+
+    @property
+    def calc_equity_button(self) -> QPushButton:
+        """Get the calculate equity button."""
+        return self._calc_equity_btn
 
     def set_hand_navigation_enabled(
         self, prev_enabled: bool, next_enabled: bool
