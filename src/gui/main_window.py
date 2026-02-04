@@ -163,8 +163,6 @@ class MainWindow(QMainWindow):
         sidebar_layout = QVBoxLayout(self._sidebar)
         sidebar_layout.setContentsMargins(5, 5, 5, 5)
 
-        tournament_label = QLabel("Tournaments")
-        sidebar_layout.addWidget(tournament_label)
         self._tournament_list = TournamentListWidget()
         sidebar_layout.addWidget(self._tournament_list)
 

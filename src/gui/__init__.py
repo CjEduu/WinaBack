@@ -6,7 +6,7 @@ from src.gui.folder_loader import FolderLoader
 from src.gui.hand_list import HandListWidget
 from src.gui.main_window import MainWindow
 from src.gui.table_widget import TableWidget
-from src.gui.tournament_list import TournamentListWidget
+from src.gui.tournament_list import SortOrder, TournamentListWidget
 
 __all__ = [
     "ActionLogWidget",
@@ -14,6 +14,7 @@ __all__ = [
     "HandListWidget",
     "MainWindow",
     "ReplayControls",
+    "SortOrder",
     "TableWidget",
     "TournamentListWidget",
 ]

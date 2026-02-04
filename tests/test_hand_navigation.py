@@ -117,9 +117,9 @@ class TestMainWindowHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(0)
         item = window.hand_list.currentItem()
@@ -140,9 +140,9 @@ class TestMainWindowHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(2)
         item = window.hand_list.currentItem()
@@ -163,9 +163,9 @@ class TestMainWindowHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(1)
         item = window.hand_list.currentItem()
@@ -188,9 +188,9 @@ class TestMainWindowHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(0)
         item = window.hand_list.currentItem()
@@ -208,9 +208,9 @@ class TestMainWindowHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(4)  # Last hand (0-indexed)
         item = window.hand_list.currentItem()
@@ -228,9 +228,9 @@ class TestMainWindowHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(2)  # Middle hand
         item = window.hand_list.currentItem()
@@ -253,9 +253,9 @@ class TestKeyboardShortcutsHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(0)
         item = window.hand_list.currentItem()
@@ -278,9 +278,9 @@ class TestKeyboardShortcutsHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(2)
         item = window.hand_list.currentItem()
@@ -305,9 +305,9 @@ class TestKeyboardShortcutsHandNavigation:
 
         window._on_tournaments_loaded([sample_tournament])
         window.tournament_list.select_tournament_by_index(0)
-        item = window.tournament_list.currentItem()
+        item = window.tournament_list._list_widget.currentItem()
         assert item is not None
-        window.tournament_list.itemClicked.emit(item)
+        window.tournament_list._list_widget.itemClicked.emit(item)
 
         window.hand_list.select_hand_by_index(1)
         item = window.hand_list.currentItem()
