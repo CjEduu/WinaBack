@@ -385,3 +385,19 @@ class ReplayState:
     def has_showdown(self) -> bool:
         """Check if this hand has a showdown."""
         return bool(self.hand.showdown_hands)
+
+    def get_current_street_actions(self) -> dict[str, ActionType]:
+        """Get the last action type for each player in the current street.
+        
+        Returns a dict mapping player names to their most recent action type
+        in the current betting round. Used for displaying action badges.
+        """
+        current = self.current_street
+        player_actions: dict[str, ActionType] = {}
+        
+        for i in range(self._current_position):
+            street, _, action = self._action_sequence[i]
+            if street == current:
+                player_actions[action.player_name] = action.action_type
+        
+        return player_actions

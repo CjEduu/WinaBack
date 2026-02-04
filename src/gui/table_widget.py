@@ -7,7 +7,7 @@ from PyQt6.QtGui import QBrush, QColor, QCursor, QFont, QMouseEvent, QPainter, Q
 from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
 
-from src.parser.models import Card, Hand, Player, Street
+from src.parser.models import ActionType, Card, Hand, Player, Street
 from src.replayer.state import PlayerState, ReplayState, ShowdownEquity
 
 
@@ -56,6 +56,8 @@ class TableWidget(QWidget):
     EQUITY_LOW_COLOR = QColor("#f44336")   # Red for <25%
     EQUITY_BG_COLOR = QColor(45, 45, 45, 200)
     ACTIVE_PLAYER_GLOW_COLOR = QColor(255, 255, 150, 80)  # Light yellow glow
+    CHECK_BADGE_BG_COLOR = QColor(76, 175, 80, 220)  # Green badge
+    CHECK_BADGE_TEXT_COLOR = QColor("#ffffff")
 
     BASE_PLAYER_BOX_WIDTH = 120
     BASE_PLAYER_BOX_HEIGHT = 50
@@ -377,10 +379,11 @@ class TableWidget(QWidget):
         ShowdownEquity | None,
         Street | None,
         str | None,
+        dict[str, ActionType],
     ]:
         """Get current replay state context for drawing."""
         if not self._replay_state:
-            return {}, {}, [], None, None, None
+            return {}, {}, [], None, None, None, {}
 
         return (
             self._replay_state.get_player_states(),
@@ -389,6 +392,7 @@ class TableWidget(QWidget):
             self._replay_state.get_cached_equity(),
             self._replay_state.current_street,
             self._replay_state.get_active_player(),
+            self._replay_state.get_current_street_actions(),
         )
 
     def _calculate_player_angle(self, player_index: int, hero_idx: int, num_players: int) -> float:
@@ -403,7 +407,7 @@ class TableWidget(QWidget):
         positions = self._get_player_positions()
         (
             player_states, visible_hole_cards, winners,
-            showdown_equity, current_street, active_player
+            showdown_equity, current_street, active_player, street_actions
         ) = self._get_replay_context()
 
         players = self._hand.players if self._hand else []
@@ -414,7 +418,7 @@ class TableWidget(QWidget):
             angle = self._calculate_player_angle(i, hero_idx, num_players)
             self._draw_single_player(
                 painter, player, pos, i, angle, player_states, visible_hole_cards,
-                winners, showdown_equity, current_street, active_player
+                winners, showdown_equity, current_street, active_player, street_actions
             )
 
     def _draw_single_player(
@@ -430,6 +434,7 @@ class TableWidget(QWidget):
         showdown_equity: ShowdownEquity | None,
         current_street: Street | None,
         active_player: str | None,
+        street_actions: dict[str, ActionType],
     ) -> None:
         """Draw a single player with all their elements."""
         is_winner = player.name in winners
@@ -441,6 +446,9 @@ class TableWidget(QWidget):
             self._draw_button_indicator(painter, pos)
         
         self._draw_player_bet(painter, player, pos, player_states)
+        
+        if player.name in street_actions and street_actions[player.name] == ActionType.CHECK:
+            self._draw_check_badge(painter, pos)
 
         if current_street and self._replay_state and self._replay_state.has_showdown():
             if showdown_equity:
@@ -481,6 +489,24 @@ class TableWidget(QWidget):
             chip_count = 3
 
         self._draw_chip_stack(painter, bet_pos.x(), bet_pos.y(), chip_count, current_bet)
+
+    def _draw_check_badge(self, painter: QPainter, center: QPointF) -> None:
+        """Draw a 'CHECK' badge below the player box."""
+        scale = self._get_scale_factor()
+        badge_width = 42 * scale
+        badge_height = 14 * scale
+        
+        badge_x = center.x() - badge_width / 2
+        badge_y = center.y() + self.PLAYER_BOX_HEIGHT / 2 + 4 * scale
+        badge_rect = QRectF(badge_x, badge_y, badge_width, badge_height)
+        
+        painter.setPen(Qt.PenStyle.NoPen)
+        painter.setBrush(QBrush(self.CHECK_BADGE_BG_COLOR))
+        painter.drawRoundedRect(badge_rect, 3, 3)
+        
+        painter.setFont(self._scaled_font(8, QFont.Weight.Bold))
+        painter.setPen(self.CHECK_BADGE_TEXT_COLOR)
+        painter.drawText(badge_rect, Qt.AlignmentFlag.AlignCenter, "CHECK")
 
     def _draw_player_box(
         self,

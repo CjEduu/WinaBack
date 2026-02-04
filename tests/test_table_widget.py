@@ -1021,13 +1021,14 @@ class TestReplayContext:
         qtbot.addWidget(widget)
 
         result = widget._get_replay_context()
-        player_states, hole_cards, winners, equity, street, active_player = result
+        player_states, hole_cards, winners, equity, street, active_player, street_actions = result
         assert player_states == {}
         assert hole_cards == {}
         assert winners == []
         assert equity is None
         assert street is None
         assert active_player is None
+        assert street_actions == {}
 
     def test_get_replay_context_with_state(self, qtbot: Any) -> None:
         """Returns proper context with replay state."""
@@ -1038,9 +1039,10 @@ class TestReplayContext:
         widget.set_hand(hand)
 
         result = widget._get_replay_context()
-        player_states, hole_cards, winners, equity, street, active_player = result
+        player_states, hole_cards, winners, equity, street, active_player, street_actions = result
         assert len(player_states) == 6
         assert street == Street.PREFLOP
+        assert isinstance(street_actions, dict)
 
 
 class TestBetPositioning:
@@ -1530,3 +1532,100 @@ class TestMouseOutsideHeroStack:
         )
         widget.mousePressEvent(event)
         assert widget._show_bb is False
+
+
+class TestCheckBadge:
+    """Test check action badge display."""
+
+    def test_check_badge_renders(self, qtbot: Any) -> None:
+        """Check badge is displayed when player checks."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = Hand(
+            hand_id="check-test",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=2,
+            players=[
+                Player(name="Hero", seat=1, stack=1000, is_hero=True),
+                Player(name="Villain", seat=2, stack=1000),
+            ],
+            board=[Card(rank="A", suit="h"), Card(rank="K", suit="d"), Card(rank="Q", suit="c")],
+            actions={
+                Street.PREFLOP: [
+                    Action(player_name="Hero", action_type=ActionType.POST, amount=50),
+                    Action(player_name="Villain", action_type=ActionType.POST, amount=100),
+                    Action(player_name="Hero", action_type=ActionType.CALL, amount=50),
+                    Action(player_name="Villain", action_type=ActionType.CHECK),
+                ],
+                Street.FLOP: [
+                    Action(player_name="Hero", action_type=ActionType.CHECK),
+                    Action(player_name="Villain", action_type=ActionType.CHECK),
+                ],
+            },
+        )
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        widget.replay_state.goto_street(Street.FLOP)
+
+        street_actions = widget.replay_state.get_current_street_actions()
+        assert ActionType.CHECK in street_actions.values()
+
+        widget.show()
+        qtbot.waitExposed(widget)
+
+    def test_check_badge_clears_on_street_change(self, qtbot: Any) -> None:
+        """Check badge is not shown for previous street's checks."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = Hand(
+            hand_id="check-clear-test",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=2,
+            players=[
+                Player(name="Hero", seat=1, stack=1000, is_hero=True),
+                Player(name="Villain", seat=2, stack=1000),
+            ],
+            board=[
+                Card(rank="A", suit="h"),
+                Card(rank="K", suit="d"),
+                Card(rank="Q", suit="c"),
+                Card(rank="J", suit="s"),
+            ],
+            actions={
+                Street.PREFLOP: [
+                    Action(player_name="Hero", action_type=ActionType.POST, amount=50),
+                    Action(player_name="Villain", action_type=ActionType.POST, amount=100),
+                    Action(player_name="Hero", action_type=ActionType.CALL, amount=50),
+                    Action(player_name="Villain", action_type=ActionType.CHECK),
+                ],
+                Street.FLOP: [
+                    Action(player_name="Hero", action_type=ActionType.CHECK),
+                    Action(player_name="Villain", action_type=ActionType.CHECK),
+                ],
+                Street.TURN: [
+                    Action(player_name="Hero", action_type=ActionType.BET, amount=100),
+                ],
+            },
+        )
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        widget.replay_state.goto_street(Street.TURN)
+        widget.replay_state.next_action()
+
+        street_actions = widget.replay_state.get_current_street_actions()
+        assert ActionType.CHECK not in street_actions.values()
+
+        widget.show()
+        qtbot.waitExposed(widget)
