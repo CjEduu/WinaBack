@@ -5,7 +5,8 @@ from typing import Any
 
 import pytest
 
-from src.gui.hand_list import HandListWidget
+from src.gui.hand_list import EARNED_VALUE_ROLE, HandListWidget
+from src.gui.tournament_list import SortOrder
 from src.parser.models import Action, ActionType, Card, Hand, Player, Street
 
 
@@ -238,3 +239,196 @@ class TestHandListWidget:
         new_hands = [sample_hands[0]]
         widget.set_hands(new_hands)
         assert widget.count() == 1
+
+
+class TestHandListSorting:
+    """Tests for hand list sorting by earned value."""
+
+    def test_default_sort_order_on_creation(self, qtbot: Any) -> None:
+        """Test widget starts with default sort order."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        assert widget.sort_order == SortOrder.DEFAULT
+
+    def test_sort_button_shows_default_label(self, qtbot: Any) -> None:
+        """Test sort button shows default label initially."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        assert widget._sort_button.text() == "Sort: —"
+
+    def test_set_hands_resets_to_default_sort(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test set_hands resets sort order to default."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        # Cycle to ascending
+        widget._cycle_sort_order()
+        assert widget.sort_order == SortOrder.ASCENDING
+
+        # Set hands again
+        widget.set_hands(sample_hands)
+        assert widget.sort_order == SortOrder.DEFAULT
+        assert widget._sort_button.text() == "Sort: —"
+
+    def test_cycle_to_ascending(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test cycling from default to ascending."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        widget._cycle_sort_order()
+
+        assert widget.sort_order == SortOrder.ASCENDING
+        assert widget._sort_button.text() == "Sort: ↑"
+
+    def test_cycle_to_descending(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test cycling from ascending to descending."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        widget._cycle_sort_order()  # -> ASCENDING
+        widget._cycle_sort_order()  # -> DESCENDING
+
+        assert widget.sort_order == SortOrder.DESCENDING
+        assert widget._sort_button.text() == "Sort: ↓"
+
+    def test_cycle_back_to_default(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test cycling from descending back to default."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        widget._cycle_sort_order()  # -> ASCENDING
+        widget._cycle_sort_order()  # -> DESCENDING
+        widget._cycle_sort_order()  # -> DEFAULT
+
+        assert widget.sort_order == SortOrder.DEFAULT
+        assert widget._sort_button.text() == "Sort: —"
+
+    def test_ascending_sorts_lowest_first(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test ascending order sorts by lowest earned value first."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        # sample_hands earned values (lookahead):
+        # hand 0: 4900 - 5000 = -100
+        # hand 1: 5050 - 4900 = +150
+        # hand 2: 0 (last hand)
+
+        widget._cycle_sort_order()  # -> ASCENDING
+
+        hands = widget.hands
+        # Ascending: -100, 0, +150
+        assert hands[0].hand_id == "12345-1"  # -100
+        assert hands[1].hand_id == "12345-3"  # 0
+        assert hands[2].hand_id == "12345-2"  # +150
+
+    def test_descending_sorts_highest_first(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test descending order sorts by highest earned value first."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        widget._cycle_sort_order()  # -> ASCENDING
+        widget._cycle_sort_order()  # -> DESCENDING
+
+        hands = widget.hands
+        # Descending: +150, 0, -100
+        assert hands[0].hand_id == "12345-2"  # +150
+        assert hands[1].hand_id == "12345-3"  # 0
+        assert hands[2].hand_id == "12345-1"  # -100
+
+    def test_default_restores_original_order(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test default order restores original parse order."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        widget._cycle_sort_order()  # -> ASCENDING
+        widget._cycle_sort_order()  # -> DESCENDING
+        widget._cycle_sort_order()  # -> DEFAULT
+
+        hands = widget.hands
+        assert hands[0].hand_id == "12345-1"
+        assert hands[1].hand_id == "12345-2"
+        assert hands[2].hand_id == "12345-3"
+
+    def test_earned_value_stored_in_item_data(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test earned value is stored in item data."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        item0 = widget.item(0)
+        item1 = widget.item(1)
+        item2 = widget.item(2)
+
+        assert item0 is not None
+        assert item1 is not None
+        assert item2 is not None
+
+        # hand 0: -100, hand 1: +150, hand 2: 0 (last)
+        assert item0.data(EARNED_VALUE_ROLE) == -100.0
+        assert item1.data(EARNED_VALUE_ROLE) == 150.0
+        assert item2.data(EARNED_VALUE_ROLE) == 0.0
+
+    def test_sort_button_click_cycles_order(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test clicking sort button cycles through orders."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        widget._sort_button.click()
+        assert widget.sort_order == SortOrder.ASCENDING
+
+        widget._sort_button.click()
+        assert widget.sort_order == SortOrder.DESCENDING
+
+        widget._sort_button.click()
+        assert widget.sort_order == SortOrder.DEFAULT
+
+    def test_original_index_preserved_after_sort(
+        self, qtbot: Any, sample_hands: list[Hand]
+    ) -> None:
+        """Test original hand indices are preserved in display after sorting."""
+        widget = HandListWidget()
+        qtbot.addWidget(widget)
+        widget.set_hands(sample_hands)
+
+        widget._cycle_sort_order()  # -> ASCENDING
+        # Now sorted: hand_id 12345-1, 12345-3, 12345-2
+        # But display should still show #000, #002, #001 (original indices)
+
+        item0 = widget.item(0)
+        item1 = widget.item(1)
+
+        assert item0 is not None
+        assert item1 is not None
+
+        # First item is 12345-1 which was #000 originally
+        assert "#000" in item0.text()
+        # Third item is 12345-3 which was #002 originally (but last hand shown differently)
+        # Second slot has 12345-3 which is the last hand
+        # Actually: hand 0: -100 (12345-1), hand 2: 0 (12345-3), hand 1: +150 (12345-2)
+        # Second position is 12345-3 which is "Last Hand"

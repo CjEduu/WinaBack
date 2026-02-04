@@ -13,3 +13,4 @@ tests/coverage_reports/
 .venv/
 *.egg-info/
 *.lock
+*AGENTS.md

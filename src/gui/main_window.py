@@ -166,8 +166,6 @@ class MainWindow(QMainWindow):
         self._tournament_list = TournamentListWidget()
         sidebar_layout.addWidget(self._tournament_list)
 
-        hands_label = QLabel("Hands")
-        sidebar_layout.addWidget(hands_label)
         self._hand_list = HandListWidget()
         sidebar_layout.addWidget(self._hand_list)
 
