@@ -55,6 +55,7 @@ class TableWidget(QWidget):
     EQUITY_MID_COLOR = QColor("#ffeb3b")   # Yellow for 25-50%
     EQUITY_LOW_COLOR = QColor("#f44336")   # Red for <25%
     EQUITY_BG_COLOR = QColor(45, 45, 45, 200)
+    ACTIVE_PLAYER_GLOW_COLOR = QColor(255, 255, 150, 80)  # Light yellow glow
 
     BASE_PLAYER_BOX_WIDTH = 120
     BASE_PLAYER_BOX_HEIGHT = 50
@@ -375,10 +376,11 @@ class TableWidget(QWidget):
         list[str],
         ShowdownEquity | None,
         Street | None,
+        str | None,
     ]:
         """Get current replay state context for drawing."""
         if not self._replay_state:
-            return {}, {}, [], None, None
+            return {}, {}, [], None, None, None
 
         return (
             self._replay_state.get_player_states(),
@@ -386,6 +388,7 @@ class TableWidget(QWidget):
             self._replay_state.get_winners(),
             self._replay_state.get_cached_equity(),
             self._replay_state.current_street,
+            self._replay_state.get_active_player(),
         )
 
     def _calculate_player_angle(self, player_index: int, hero_idx: int, num_players: int) -> float:
@@ -398,9 +401,10 @@ class TableWidget(QWidget):
     def _draw_players(self, painter: QPainter) -> None:
         """Draw all players at their positions."""
         positions = self._get_player_positions()
-        player_states, visible_hole_cards, winners, showdown_equity, current_street = (
-            self._get_replay_context()
-        )
+        (
+            player_states, visible_hole_cards, winners,
+            showdown_equity, current_street, active_player
+        ) = self._get_replay_context()
 
         players = self._hand.players if self._hand else []
         hero_idx = next((idx for idx, p in enumerate(players) if p.is_hero), 0)
@@ -410,7 +414,7 @@ class TableWidget(QWidget):
             angle = self._calculate_player_angle(i, hero_idx, num_players)
             self._draw_single_player(
                 painter, player, pos, i, angle, player_states, visible_hole_cards,
-                winners, showdown_equity, current_street
+                winners, showdown_equity, current_street, active_player
             )
 
     def _draw_single_player(
@@ -425,10 +429,12 @@ class TableWidget(QWidget):
         winners: list[str],
         showdown_equity: ShowdownEquity | None,
         current_street: Street | None,
+        active_player: str | None,
     ) -> None:
         """Draw a single player with all their elements."""
         is_winner = player.name in winners
-        self._draw_player_box(painter, player, pos, player_states, is_winner)
+        is_active = player.name == active_player
+        self._draw_player_box(painter, player, pos, player_states, is_winner, is_active)
         self._draw_hole_cards(painter, player, pos, player_states, visible_hole_cards, angle)
         
         if self._hand and player.seat == self._hand.button_seat:
@@ -483,6 +489,7 @@ class TableWidget(QWidget):
         center: QPointF,
         player_states: dict[str, PlayerState],
         is_winner: bool = False,
+        is_active: bool = False,
     ) -> None:
         """Draw a single player's info box."""
         box_rect = QRectF(
@@ -493,6 +500,19 @@ class TableWidget(QWidget):
         )
 
         scale = self._get_scale_factor()
+
+        if is_active:
+            glow_margin = 6 * scale
+            glow_rect = QRectF(
+                box_rect.left() - glow_margin,
+                box_rect.top() - glow_margin,
+                box_rect.width() + 2 * glow_margin,
+                box_rect.height() + 2 * glow_margin,
+            )
+            painter.setPen(Qt.PenStyle.NoPen)
+            painter.setBrush(QBrush(self.ACTIVE_PLAYER_GLOW_COLOR))
+            painter.drawRoundedRect(glow_rect, 8, 8)
+
         if is_winner:
             border_color = self.WINNER_BORDER_COLOR
         elif player.is_hero:

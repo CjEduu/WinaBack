@@ -120,6 +120,16 @@ class ReplayState:
         pos = min(self._current_position - 1, len(self._action_sequence) - 1)
         return self._action_sequence[pos][2]
 
+    def get_active_player(self) -> str | None:
+        """Get the name of the player who just acted (current action's player).
+        
+        Returns None if no actions have been executed yet or at end of hand.
+        """
+        action = self.current_action
+        if action is None:
+            return None
+        return action.player_name
+
     def next_action(self) -> bool:
         if self._current_position >= self.total_actions:
             return False

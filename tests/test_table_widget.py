@@ -1020,12 +1020,14 @@ class TestReplayContext:
         widget = TableWidget()
         qtbot.addWidget(widget)
 
-        player_states, hole_cards, winners, equity, street = widget._get_replay_context()
+        result = widget._get_replay_context()
+        player_states, hole_cards, winners, equity, street, active_player = result
         assert player_states == {}
         assert hole_cards == {}
         assert winners == []
         assert equity is None
         assert street is None
+        assert active_player is None
 
     def test_get_replay_context_with_state(self, qtbot: Any) -> None:
         """Returns proper context with replay state."""
@@ -1035,7 +1037,8 @@ class TestReplayContext:
         hand = create_test_hand()
         widget.set_hand(hand)
 
-        player_states, hole_cards, winners, equity, street = widget._get_replay_context()
+        result = widget._get_replay_context()
+        player_states, hole_cards, winners, equity, street, active_player = result
         assert len(player_states) == 6
         assert street == Street.PREFLOP
 
