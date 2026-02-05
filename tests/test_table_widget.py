@@ -1935,3 +1935,178 @@ class TestCurrentStreetBetsVsPot:
 
         widget.show()
         qtbot.waitExposed(widget)
+
+
+class TestPotUpdatesOnStreetTransition:
+    """Tests verifying pot updates correctly when navigating between streets.
+    
+    When the user navigates to a new street:
+    1. The pot should increase to include the previous street's bets
+    2. Player current_bet displays should clear (reset to 0)
+    3. The pot should show the cumulative total from all completed streets
+    """
+
+    def create_multi_street_hand(self) -> Hand:
+        """Create a hand with betting on all streets for transition testing."""
+        players = [
+            Player(name="Hero", seat=1, stack=2000.0, is_hero=True),
+            Player(name="Villain", seat=2, stack=2000.0),
+        ]
+        return Hand(
+            hand_id="street-transition-test",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=1,
+            players=players,
+            board=[
+                Card(rank="A", suit="h"),
+                Card(rank="K", suit="d"),
+                Card(rank="Q", suit="c"),
+                Card(rank="J", suit="s"),
+                Card(rank="T", suit="h"),
+            ],
+            actions={
+                Street.PREFLOP: [
+                    Action(player_name="Hero", action_type=ActionType.POST, amount=50),
+                    Action(player_name="Villain", action_type=ActionType.POST, amount=100),
+                    Action(player_name="Hero", action_type=ActionType.CALL, amount=50),
+                    Action(player_name="Villain", action_type=ActionType.CHECK),
+                ],
+                Street.FLOP: [
+                    Action(player_name="Villain", action_type=ActionType.BET, amount=100),
+                    Action(player_name="Hero", action_type=ActionType.CALL, amount=100),
+                ],
+                Street.TURN: [
+                    Action(player_name="Villain", action_type=ActionType.BET, amount=200),
+                    Action(player_name="Hero", action_type=ActionType.CALL, amount=200),
+                ],
+                Street.RIVER: [
+                    Action(player_name="Villain", action_type=ActionType.BET, amount=400),
+                    Action(player_name="Hero", action_type=ActionType.CALL, amount=400),
+                ],
+            },
+        )
+
+    def test_pot_updates_at_flop_start(self, qtbot: Any) -> None:
+        """Pot includes preflop bets when navigating to flop."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_multi_street_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        
+        # Navigate to flop
+        widget.replay_state.goto_street(Street.FLOP)
+        
+        # Pot should be preflop bets: 50+50 (Hero) + 100 (Villain) = 200
+        pot = widget.replay_state.calculate_pot()
+        assert pot == 200.0
+
+    def test_pot_updates_at_turn_start(self, qtbot: Any) -> None:
+        """Pot includes preflop + flop bets when navigating to turn."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_multi_street_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        
+        # Navigate to turn
+        widget.replay_state.goto_street(Street.TURN)
+        
+        # Pot = preflop (200) + flop (200) = 400
+        pot = widget.replay_state.calculate_pot()
+        assert pot == 400.0
+
+    def test_pot_updates_at_river_start(self, qtbot: Any) -> None:
+        """Pot includes preflop + flop + turn bets when navigating to river."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_multi_street_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        
+        # Navigate to river
+        widget.replay_state.goto_street(Street.RIVER)
+        
+        # Pot = preflop (200) + flop (200) + turn (400) = 800
+        pot = widget.replay_state.calculate_pot()
+        assert pot == 800.0
+
+    def test_player_bets_clear_at_each_street(self, qtbot: Any) -> None:
+        """Player current_bet resets when navigating to any new street."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_multi_street_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        
+        # Check at flop start
+        widget.replay_state.goto_street(Street.FLOP)
+        states = widget.replay_state.get_player_states()
+        # After first flop action (BET 100), Villain has bet
+        assert states["Villain"].current_bet == 100.0
+        assert states["Hero"].current_bet == 0.0
+        
+        # Check at turn start
+        widget.replay_state.goto_street(Street.TURN)
+        states = widget.replay_state.get_player_states()
+        assert states["Villain"].current_bet == 200.0  # After first turn action
+        assert states["Hero"].current_bet == 0.0
+        
+        # Check at river start
+        widget.replay_state.goto_street(Street.RIVER)
+        states = widget.replay_state.get_player_states()
+        assert states["Villain"].current_bet == 400.0  # After first river action
+        assert states["Hero"].current_bet == 0.0
+
+    def test_pot_cumulative_across_all_streets(self, qtbot: Any) -> None:
+        """Final pot correctly sums all streets' contributions at showdown."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_multi_street_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        
+        # Navigate to end of river
+        widget.replay_state.goto_street(Street.RIVER)
+        widget.replay_state.next_action()  # After CALL, we're at SHOWDOWN
+        
+        # At SHOWDOWN, all previous streets' bets are in the pot:
+        # Preflop (200) + Flop (200) + Turn (400) + River (800) = 1600
+        pot = widget.replay_state.calculate_pot()
+        assert pot == 1600.0
+        assert widget.replay_state.current_street == Street.SHOWDOWN
+
+    def test_street_transition_widget_renders(self, qtbot: Any) -> None:
+        """Widget renders correctly during street transitions."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_multi_street_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        
+        # Test rendering at each street transition
+        for street in [Street.FLOP, Street.TURN, Street.RIVER]:
+            widget.replay_state.goto_street(street)
+            widget.show()
+            qtbot.waitExposed(widget)
