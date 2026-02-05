@@ -215,28 +215,53 @@ class TestGotoStreet:
 
 
 class TestPotCalculation:
-    def test_pot_includes_blinds_at_start(self, sample_hand: Hand) -> None:
-        """Pot includes blind posts even at initial position (after skip)."""
-        state = ReplayState(hand=sample_hand)
-        # Starts at position 2, so pot includes 2 POSTs (50+100)
-        assert state.calculate_pot() == 150.0
+    """Tests for street-based pot calculation.
+    
+    The pot only includes bets from COMPLETED streets. Current street bets
+    are tracked separately via player_state.current_bet.
+    """
 
-    def test_pot_after_raise(self, sample_hand: Hand) -> None:
+    def test_pot_is_zero_at_start_of_hand(self, sample_hand: Hand) -> None:
+        """Pot is 0 at start of hand (before any completed street)."""
         state = ReplayState(hand=sample_hand)
-        # Position 2 -> 3 (Hero RAISE 300)
-        state.next_action()
-        # Pot = 150 (posts) + 300 (raise) = 450
-        assert state.calculate_pot() == 450.0
+        # At preflop, no street is complete yet, so pot = 0
+        assert state.calculate_pot() == 0.0
 
-    def test_pot_after_preflop(self, sample_hand: Hand) -> None:
+    def test_pot_excludes_current_street_bets(self, sample_hand: Hand) -> None:
+        """Pot excludes current street's bets - they're shown as player bets."""
+        state = ReplayState(hand=sample_hand)
+        # Advance through preflop actions
+        state.next_action()  # Hero RAISE 300
+        state.next_action()  # Villain1 FOLD
+        state.next_action()  # Villain2 CALL 200
+        # Still on preflop, so pot should still be 0
+        assert state.current_street == Street.PREFLOP
+        assert state.calculate_pot() == 0.0
+
+    def test_pot_includes_previous_street_after_transition(self, sample_hand: Hand) -> None:
+        """Pot includes previous street's bets after street transition."""
         state = ReplayState(hand=sample_hand)
         state.goto_street(Street.FLOP)
+        # Now on flop: preflop bets (50+100+300+200=650) are in pot
+        assert state.current_street == Street.FLOP
         assert state.calculate_pot() == 650.0
 
-    def test_pot_after_flop_betting(self, sample_hand: Hand) -> None:
+    def test_pot_sums_all_completed_streets(self, sample_hand: Hand) -> None:
+        """Pot correctly sums all completed streets' bets."""
         state = ReplayState(hand=sample_hand)
         state.goto_street(Street.TURN)
+        # Turn: preflop (650) + flop (400+400=800) = 1450
+        assert state.current_street == Street.TURN
         assert state.calculate_pot() == 1450.0
+
+    def test_pot_during_flop_excludes_flop_bets(self, sample_hand: Hand) -> None:
+        """During flop betting, pot only shows preflop contributions."""
+        state = ReplayState(hand=sample_hand)
+        state.goto_street(Street.FLOP)
+        state.next_action()  # Hero BET 400
+        # Still on flop, bet not in pot yet
+        assert state.current_street == Street.FLOP
+        assert state.calculate_pot() == 650.0  # Only preflop
 
 
 class TestStackCalculation:

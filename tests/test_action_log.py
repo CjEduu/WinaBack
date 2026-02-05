@@ -237,7 +237,11 @@ class TestPotDisplay:
         assert widget.POT_TEXT_COLOR.isValid()
 
     def test_pot_updates_with_actions(self, qtbot: Any) -> None:
-        """Pot is calculated correctly based on actions."""
+        """Pot is calculated correctly based on street boundaries.
+        
+        Pot only includes completed streets' bets. Current street bets
+        are tracked separately via player_state.current_bet.
+        """
         widget = TableWidget()
         qtbot.addWidget(widget)
         widget.resize(800, 600)
@@ -246,11 +250,11 @@ class TestPotDisplay:
         widget.set_hand(hand)
 
         assert widget.replay_state is not None
-        # Initial position is after 2 POSTs (50+100=150)
-        assert widget.replay_state.calculate_pot() == 150
+        # During preflop, pot = 0 (no completed streets)
+        assert widget.replay_state.calculate_pot() == 0
 
-        # Position 4: 2 POSTs + FOLD + CALL(50) = 200
-        widget.replay_state.goto_position(4)
+        # Go to flop: preflop bets (50+100+50=200) now in pot
+        widget.replay_state.goto_street(Street.FLOP)
         assert widget.replay_state.calculate_pot() == 200
 
     def test_pot_display_at_various_positions(self, qtbot: Any) -> None:
