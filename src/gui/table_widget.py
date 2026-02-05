@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import QWidget
 from typing_extensions import override
 
 from src.parser.models import ActionType, Card, Hand, Player, Street
-from src.replayer.state import PlayerState, ReplayState, ShowdownEquity
+from src.replayer.state import PlayerState, ReplayState, ShowdownEquity, get_position_name
 
 
 class PlayerZone(Enum):
@@ -508,6 +508,19 @@ class TableWidget(QWidget):
         painter.setPen(self.CHECK_BADGE_TEXT_COLOR)
         painter.drawText(badge_rect, Qt.AlignmentFlag.AlignCenter, "CHECK")
 
+    def _get_position_label(self, player: Player) -> str:
+        """Get the position label for a player (BTN, SB, BB, etc.)."""
+        if not self._hand:
+            return ""
+        
+        seats = [p.seat for p in self._hand.players]
+        return get_position_name(
+            seat=player.seat,
+            button_seat=self._hand.button_seat,
+            num_players=len(self._hand.players),
+            seats=seats,
+        )
+
     def _draw_player_box(
         self,
         painter: QPainter,
@@ -550,6 +563,9 @@ class TableWidget(QWidget):
         painter.setBrush(QBrush(self.PLAYER_BG_COLOR))
         painter.drawRoundedRect(box_rect, 5, 5)
 
+        # Get position label for this player
+        position_label = self._get_position_label(player)
+
         painter.setFont(self._scaled_font(10, QFont.Weight.Bold))
         painter.setPen(self.TEXT_COLOR)
 
@@ -559,8 +575,25 @@ class TableWidget(QWidget):
             box_rect.width() - 10 * scale,
             20 * scale,
         )
+        
+        # Build display text with position label
         display_name = player.name[:12] + "..." if len(player.name) > 15 else player.name
-        painter.drawText(name_rect, Qt.AlignmentFlag.AlignCenter, display_name)
+        if position_label:
+            # Draw position label in muted color below name
+            painter.drawText(name_rect, Qt.AlignmentFlag.AlignCenter, display_name)
+            
+            # Draw position label underneath in smaller, muted font
+            painter.setFont(self._scaled_font(8))
+            painter.setPen(QColor("#888888"))
+            position_rect = QRectF(
+                box_rect.left() + 5 * scale,
+                box_rect.top() + 17 * scale,
+                box_rect.width() - 10 * scale,
+                12 * scale,
+            )
+            painter.drawText(position_rect, Qt.AlignmentFlag.AlignCenter, position_label)
+        else:
+            painter.drawText(name_rect, Qt.AlignmentFlag.AlignCenter, display_name)
 
         painter.setFont(self._scaled_font(9))
         painter.setPen(self.STACK_COLOR)

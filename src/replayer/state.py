@@ -10,6 +10,84 @@ class ActionIndex(NamedTuple):
     action_idx: int
 
 
+def get_position_name(seat: int, button_seat: int, num_players: int, seats: list[int]) -> str:
+    """Get position name for a player based on seat and button position.
+    
+    Args:
+        seat: The player's seat number.
+        button_seat: The dealer button seat number.
+        num_players: Total number of players at the table.
+        seats: List of all occupied seat numbers in order.
+    
+    Returns:
+        Position name (BTN, SB, BB, UTG, UTG+1, MP, HJ, CO, etc.)
+    """
+    if num_players < 2:
+        return ""
+    
+    # Sort seats and find positions relative to button
+    sorted_seats = sorted(seats)
+    button_idx = sorted_seats.index(button_seat) if button_seat in sorted_seats else 0
+    
+    # Reorder seats starting from button
+    ordered_seats = sorted_seats[button_idx:] + sorted_seats[:button_idx]
+    
+    if seat not in ordered_seats:
+        return ""
+    
+    position_from_button = ordered_seats.index(seat)
+    
+    # Standard position names based on distance from button
+    if position_from_button == 0:
+        return "BTN"
+    elif position_from_button == 1:
+        return "SB"
+    elif position_from_button == 2:
+        return "BB"
+    
+    # Remaining positions depend on table size
+    remaining = num_players - 3  # Positions after BB
+    position_after_bb = position_from_button - 3
+    
+    if remaining <= 0:
+        return ""
+    
+    if remaining == 1:
+        return "UTG"
+    elif remaining == 2:
+        if position_after_bb == 0:
+            return "UTG"
+        return "CO"
+    elif remaining == 3:
+        if position_after_bb == 0:
+            return "UTG"
+        elif position_after_bb == 1:
+            return "HJ"
+        return "CO"
+    elif remaining == 4:
+        if position_after_bb == 0:
+            return "UTG"
+        elif position_after_bb == 1:
+            return "MP"
+        elif position_after_bb == 2:
+            return "HJ"
+        return "CO"
+    else:
+        # 5+ remaining positions (8+ players)
+        if position_after_bb == 0:
+            return "UTG"
+        elif position_after_bb < remaining - 3:
+            return f"UTG+{position_after_bb}"
+        elif position_after_bb == remaining - 3:
+            return "MP"
+        elif position_after_bb == remaining - 2:
+            return "HJ"
+        elif position_after_bb == remaining - 1:
+            return "CO"
+    
+    return ""
+
+
 @dataclass
 class PlayerState:
     name: str
@@ -159,9 +237,16 @@ class ReplayState:
         return True
 
     def calculate_pot(self) -> float:
+        """Calculate pot including only completed streets' bets.
+        
+        Bets are added to the pot only after a street is complete.
+        The current street's bets are tracked separately and displayed as player bets.
+        """
         pot = 0.0
+        current = self.current_street
+        
         for i in range(self._current_position):
-            _, _, action = self._action_sequence[i]
+            street, _, action = self._action_sequence[i]
             if action.action_type in (
                 ActionType.POST,
                 ActionType.BET,
@@ -169,7 +254,9 @@ class ReplayState:
                 ActionType.RAISE,
                 ActionType.ALL_IN,
             ):
-                pot += action.amount
+                # Only add to pot if this action is from a completed street
+                if street != current:
+                    pot += action.amount
         return pot
 
     def calculate_player_stacks(self) -> dict[str, float]:

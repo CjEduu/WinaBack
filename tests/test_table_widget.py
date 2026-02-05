@@ -1629,3 +1629,122 @@ class TestCheckBadge:
 
         widget.show()
         qtbot.waitExposed(widget)
+
+
+class TestPositionLabels:
+    """Test position label display."""
+
+    def test_position_label_for_button(self, qtbot: Any) -> None:
+        """Button player gets BTN position label."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        hand = Hand(
+            hand_id="position-test",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=3,
+            players=[
+                Player(name="Hero", seat=1, stack=1000, is_hero=True),
+                Player(name="P2", seat=2, stack=1000),
+                Player(name="P3", seat=3, stack=1000),
+            ],
+        )
+        widget.set_hand(hand)
+
+        btn_player = hand.players[2]
+        assert widget._get_position_label(btn_player) == "BTN"
+
+    def test_position_label_for_blinds(self, qtbot: Any) -> None:
+        """SB and BB players get appropriate position labels."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        hand = Hand(
+            hand_id="blinds-test",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=1,
+            players=[
+                Player(name="BTN", seat=1, stack=1000, is_hero=True),
+                Player(name="SB", seat=2, stack=1000),
+                Player(name="BB", seat=3, stack=1000),
+            ],
+        )
+        widget.set_hand(hand)
+
+        assert widget._get_position_label(hand.players[0]) == "BTN"
+        assert widget._get_position_label(hand.players[1]) == "SB"
+        assert widget._get_position_label(hand.players[2]) == "BB"
+
+    def test_position_labels_6max(self, qtbot: Any) -> None:
+        """6-max table has correct position labels."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        hand = Hand(
+            hand_id="6max-test",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=1,
+            players=[
+                Player(name="P1", seat=1, stack=1000, is_hero=True),
+                Player(name="P2", seat=2, stack=1000),
+                Player(name="P3", seat=3, stack=1000),
+                Player(name="P4", seat=4, stack=1000),
+                Player(name="P5", seat=5, stack=1000),
+                Player(name="P6", seat=6, stack=1000),
+            ],
+        )
+        widget.set_hand(hand)
+
+        labels = [widget._get_position_label(p) for p in hand.players]
+        assert labels == ["BTN", "SB", "BB", "UTG", "HJ", "CO"]
+
+    def test_position_labels_heads_up(self, qtbot: Any) -> None:
+        """2-player (heads-up) shows BTN and BB."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        hand = Hand(
+            hand_id="hu-test",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=1,
+            players=[
+                Player(name="P1", seat=1, stack=1000, is_hero=True),
+                Player(name="P2", seat=2, stack=1000),
+            ],
+        )
+        widget.set_hand(hand)
+
+        assert widget._get_position_label(hand.players[0]) == "BTN"
+        assert widget._get_position_label(hand.players[1]) == "SB"
+
+    def test_position_label_no_hand(self, qtbot: Any) -> None:
+        """Returns empty string when no hand is set."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+
+        fake_player = Player(name="Test", seat=1, stack=1000)
+        assert widget._get_position_label(fake_player) == ""
+
+    def test_position_labels_render(self, qtbot: Any) -> None:
+        """Position labels are rendered in the table display."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = create_test_hand(num_players=6, hero_seat=1)
+        widget.set_hand(hand)
+
+        widget.show()
+        qtbot.waitExposed(widget)
