@@ -583,15 +583,15 @@ class TableWidget(QWidget):
             painter.drawText(name_rect, Qt.AlignmentFlag.AlignCenter, display_name)
             
             # Draw position label underneath in smaller, muted font
-            painter.setFont(self._scaled_font(8))
-            painter.setPen(QColor("#888888"))
+            painter.setFont(self._scaled_font(base_size=10, weight=QFont.Weight.Bold))
+            painter.setPen(QColor("#BBBBBB"))
             position_rect = QRectF(
-                box_rect.left() + 5 * scale,
-                box_rect.top() + 17 * scale,
+                box_rect.left() + 3 * scale,
+                box_rect.bottom() + 15 * scale,
                 box_rect.width() - 10 * scale,
                 12 * scale,
             )
-            painter.drawText(position_rect, Qt.AlignmentFlag.AlignCenter, position_label)
+            painter.drawText(position_rect, Qt.AlignmentFlag.AlignLeft, position_label)
         else:
             painter.drawText(name_rect, Qt.AlignmentFlag.AlignCenter, display_name)
 

@@ -1748,3 +1748,190 @@ class TestPositionLabels:
 
         widget.show()
         qtbot.waitExposed(widget)
+
+
+class TestCurrentStreetBetsVsPot:
+    """Tests verifying current street bets display separately from pot.
+    
+    The pot only shows completed streets' contributions.
+    Current street bets are shown as chip stacks near each player.
+    This creates a clear visual distinction between money 'at risk' and 'in the pot'.
+    """
+
+    def create_betting_hand(self) -> Hand:
+        """Create a hand with clear betting action to test pot vs bets separation."""
+        players = [
+            Player(name="Hero", seat=1, stack=1000.0, is_hero=True),
+            Player(name="Villain", seat=2, stack=1000.0),
+        ]
+        return Hand(
+            hand_id="pot-bet-separation",
+            timestamp=datetime(2024, 1, 15, 14, 30),
+            small_blind=50.0,
+            big_blind=100.0,
+            ante=0.0,
+            button_seat=1,
+            players=players,
+            board=[
+                Card(rank="A", suit="h"),
+                Card(rank="K", suit="d"),
+                Card(rank="Q", suit="c"),
+                Card(rank="J", suit="s"),
+            ],
+            actions={
+                Street.PREFLOP: [
+                    Action(player_name="Hero", action_type=ActionType.POST, amount=50),
+                    Action(player_name="Villain", action_type=ActionType.POST, amount=100),
+                    Action(player_name="Hero", action_type=ActionType.RAISE, amount=200),
+                    Action(player_name="Villain", action_type=ActionType.CALL, amount=100),
+                ],
+                Street.FLOP: [
+                    Action(player_name="Villain", action_type=ActionType.CHECK),
+                    Action(player_name="Hero", action_type=ActionType.BET, amount=150),
+                    Action(player_name="Villain", action_type=ActionType.CALL, amount=150),
+                ],
+                Street.TURN: [
+                    Action(player_name="Villain", action_type=ActionType.CHECK),
+                    Action(player_name="Hero", action_type=ActionType.BET, amount=300),
+                ],
+            },
+        )
+
+    def test_current_street_bets_shown_near_players(self, qtbot: Any) -> None:
+        """Current street bets are tracked in player states as current_bet."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_betting_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+
+        # goto_street(FLOP) puts us after the first flop action (CHECK)
+        # next_action() advances to after BET 150
+        widget.replay_state.goto_street(Street.FLOP)
+        widget.replay_state.next_action()  # Now after BET 150
+
+        player_states = widget.replay_state.get_player_states()
+        assert player_states["Hero"].current_bet == 150.0
+        assert player_states["Villain"].current_bet == 0.0
+
+    def test_pot_excludes_current_street_bets(self, qtbot: Any) -> None:
+        """Pot total only includes completed streets' contributions."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_betting_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+
+        # On flop after Hero bets 150: pot should be preflop total only
+        widget.replay_state.goto_street(Street.FLOP)
+        widget.replay_state.next_action()  # CHECK
+        widget.replay_state.next_action()  # BET 150
+
+        pot = widget.replay_state.calculate_pot()
+        # Preflop: 50+200 (Hero) + 100+100 (Villain) = 450
+        # Flop bets NOT in pot yet
+        assert pot == 450.0
+
+    def test_pot_increases_on_street_transition(self, qtbot: Any) -> None:
+        """Pot increases when moving to new street (previous bets added)."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_betting_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+
+        # goto_street(FLOP) puts us after CHECK, next 2 actions: BET, CALL
+        widget.replay_state.goto_street(Street.FLOP)
+        widget.replay_state.next_action()  # After BET 150
+        
+        # On flop after Hero bets 150: pot should be preflop total only
+        pot_mid_flop = widget.replay_state.calculate_pot()
+        assert pot_mid_flop == 450.0  # Only preflop bets
+        
+        widget.replay_state.next_action()  # After CALL 150
+
+        # Still on flop, pot = 450 (preflop only)
+        pot_on_flop = widget.replay_state.calculate_pot()
+        assert pot_on_flop == 450.0  # Still on flop, so flop bets not in pot
+
+        # Now go to turn - flop bets should be in pot
+        widget.replay_state.goto_street(Street.TURN)
+        pot_on_turn = widget.replay_state.calculate_pot()
+        # 450 (preflop) + 300 (flop: 150 + 150) = 750
+        assert pot_on_turn == 750.0
+
+    def test_player_bets_clear_on_street_change(self, qtbot: Any) -> None:
+        """Player current_bet resets to 0 when street changes."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_betting_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+
+        # goto_street(FLOP) = after CHECK, then BET, then CALL
+        widget.replay_state.goto_street(Street.FLOP)
+        widget.replay_state.next_action()  # After BET 150
+        widget.replay_state.next_action()  # After CALL 150
+
+        states_flop = widget.replay_state.get_player_states()
+        assert states_flop["Hero"].current_bet == 150.0
+        assert states_flop["Villain"].current_bet == 150.0
+
+        # Go to turn - bets should clear
+        widget.replay_state.goto_street(Street.TURN)
+        states_turn = widget.replay_state.get_player_states()
+        assert states_turn["Hero"].current_bet == 0.0
+        assert states_turn["Villain"].current_bet == 0.0
+
+    def test_bet_display_rendering(self, qtbot: Any) -> None:
+        """Bet chips render near players when they have current street bets."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_betting_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        widget.replay_state.goto_street(Street.FLOP)
+        widget.replay_state.next_action()  # After BET 150
+
+        # Verify drawing doesn't crash and bet position is calculated
+        positions = widget._get_player_positions()
+        for player, pos in positions:
+            bet_pos = widget._get_bet_position(pos)
+            # Bet position should be between player and table center
+            assert bet_pos is not None
+
+        widget.show()
+        qtbot.waitExposed(widget)
+
+    def test_pot_display_rendering(self, qtbot: Any) -> None:
+        """Pot display renders with correct total from completed streets."""
+        widget = TableWidget()
+        qtbot.addWidget(widget)
+        widget.resize(800, 600)
+
+        hand = self.create_betting_hand()
+        widget.set_hand(hand)
+
+        assert widget.replay_state is not None
+        widget.replay_state.goto_street(Street.TURN)
+
+        pot = widget.replay_state.calculate_pot()
+        assert pot == 750.0  # Preflop (450) + Flop (300)
+
+        widget.show()
+        qtbot.waitExposed(widget)
